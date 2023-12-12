@@ -6,6 +6,7 @@ require("dotenv").config();
 require("./config/db.connection")
 
 const { PORT } = process.env;
+const indexRouter = require('./routes/index.js')
 const projectsRouter = require('./routes/projects.js')
 
 app.use(express.urlencoded({extended:true}))
@@ -14,9 +15,6 @@ app.use(morgan("dev"));
 app.use(cors());
 
 app.use("/projects", projectsRouter);
-
-app.get("/", (req, res) => {
-  res.send("hello world");
-});
+app.use("/", indexRouter);
 
 app.listen(PORT, () => console.log(`listening on PORT ${PORT}`));
