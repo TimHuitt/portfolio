@@ -15,6 +15,7 @@ app.use(morgan("dev"));
 app.use(cors());
 
 app.use("/projects", projectsRouter);
-app.use("/", indexRouter);
+app.use("/", (req, res) => res.redirect("/projects"))
+// app.use("/", indexRouter);
 
 app.listen(PORT, () => console.log(`listening on PORT ${PORT}`));
