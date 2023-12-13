@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { getProjects } from '../../utilities/projects-service'
+import "./Projects.css"
 
 const Projects = () => {
   const [isLoading, setIsLoading] = useState(true)
@@ -28,7 +29,7 @@ const Projects = () => {
       <div>
         <h1>Projects</h1>
         {projects.map((p) => (
-          <div className='Project' key={p._id}>
+          <div className='Projects' key={p._id}>
             <p key={p._id+"title"}>{p.title}</p>
             <p key={p._id+"description"}>{p.description}</p>
             <p key={p._id+"git"}>{p.gitLink}</p>
