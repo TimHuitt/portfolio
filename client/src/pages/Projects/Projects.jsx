@@ -26,10 +26,13 @@ const Projects = () => {
     return <h1 key="load">Loading...</h1>
   } else {
     return (
-      <div>
-        <h1>Projects</h1>
+      <div className='Projects'>
+        <div className='projects-header'>
+          <h1>Projects</h1>
+        </div>
         {projects.map((p) => (
-          <div className='Projects' key={p._id}>
+          
+          <div className='project' key={p._id}>
             <p key={p._id+"title"}>{p.title}</p>
             <p key={p._id+"description"}>{p.description}</p>
             <p key={p._id+"git"}>{p.gitLink}</p>

@@ -18,7 +18,7 @@
   margin-top: -10px;
   text-decoration: none;
   color: #444;
-  background: #fff;
+  background: rgba(255, 255, 255, 0);
   border-radius: 0 0 5px 5px;
   transition: padding .25s, background-color 1s;
 }

@@ -1,3 +1,19 @@
-.Projects {
+
+.project {
+  width: 500px;
   padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px 10px #ddd;
+}
+.project:hover {
+  background: #eee;
+
+}
+.projects-header {
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #aaa;
 }
