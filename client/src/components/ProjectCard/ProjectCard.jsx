@@ -6,7 +6,7 @@ export const ProjectCard = ({p}) => {
     <div className="project-wrapper">
       <Link to={"/project/" + p._id}>
         <div className='project'>
-          <p>{p.title}</p>
+          <p className="font-bold">{p.title}</p>
           <p>{p.description}</p>
           <p>{p.gitLink}</p>
           <p>{p.deployLink}</p>

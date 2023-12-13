@@ -8,3 +8,13 @@ export const index = async () => {
     throw new Error("invalid!")
   }
 }
+
+export const find = async (id) => {
+  const fullPath = new URL(id, config.BASE_URL).href
+  const res = await fetch(fullPath)
+  if (res.ok) {
+    return res.json()
+  } else {
+    throw new Error("invalid!")
+  }
+}

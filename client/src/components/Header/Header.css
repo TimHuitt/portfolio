@@ -40,6 +40,7 @@
   top: 0;
   left: 1%;
   height: 50px;
+  filter: brightness(85%);
   pointer-events: auto;
   /* cursor: pointer; */
 }

@@ -18,13 +18,6 @@ const Footer = () => {
             </span>
           </div>
         </Link>
-        <Link to="https://www.linkedin.com/in/timhuitt/" target="_blank" rel="noopener noreferrer">
-          <div className='footer-link'>
-            <span>
-              <LinkedinSvg />
-            </span>
-          </div>
-        </Link>
         <Link to="https://codepen.io/timhuitt" target="_blank" rel="noopener noreferrer">
           <div className='footer-link'>
             <span>
@@ -32,7 +25,13 @@ const Footer = () => {
             </span>
           </div>
         </Link>
-
+        <Link to="https://www.linkedin.com/in/timhuitt/" target="_blank" rel="noopener noreferrer">
+          <div className='footer-link'>
+            <span>
+              <LinkedinSvg />
+            </span>
+          </div>
+        </Link>
       </div>
     </div>
   )

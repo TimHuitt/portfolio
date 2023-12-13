@@ -27,9 +27,9 @@ const Projects = () => {
     return <h1 key="load">Loading...</h1>
   } else {
     return (
-      <div className='Projects'>
+      <div className='Projects pt-4'>
         <div className='projects-header'>
-          <h1>Projects</h1>
+          <h1 className='p-4 font-bold text-3xl'>Projects</h1>
         </div>
         {projects.map((p) => (
           <ProjectCard  key={p._id + "-card"} p={p}/>

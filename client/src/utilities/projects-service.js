@@ -8,3 +8,12 @@ export const getProjects = async () => {
     console.log(err.message)
   }
 }
+
+export const getProject = async (id) => {
+  try {
+    const data = await projectsAPI.find(id)
+    return data
+  } catch (err) {
+    console.log(err.message)
+  }
+}
