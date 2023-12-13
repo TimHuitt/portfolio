@@ -7,31 +7,40 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  padding: 10px;
   gap: 24px;
   font-size: 1.25em;
   user-select: none;
+  pointer-events: none;
 }
 .Header a {
   position: relative;
   padding: 15px 5px;
-  margin-top: -10px;
   text-decoration: none;
   color: #444;
   background: rgba(255, 255, 255, 0);
   border-radius: 0 0 5px 5px;
-  transition: padding .25s, background-color 1s;
+  pointer-events: auto;
+  transition: padding .25s, background-color 1s, box-shadow 1s;
+}
+.Header a:last-child {
+  margin-right: 30px;
 }
 .Header a:hover {
-  padding-top: 45px;
+  padding-top: 25px;
   background: #ebebeb;
+  box-shadow: 3px 3px 5px #eee;
+}
+.Header a:active {
+  background: #e5e5e5;
+  transform: translate(2px, 2px);
 }
 .logo {
   display: block;
   position: absolute;
   top: 0;
-  left: 20px;
+  left: 1%;
   height: 50px;
+  pointer-events: auto;
   /* cursor: pointer; */
 }
 .logo:hover {

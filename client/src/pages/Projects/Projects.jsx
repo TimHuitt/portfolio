@@ -31,12 +31,11 @@ const Projects = () => {
           <h1>Projects</h1>
         </div>
         {projects.map((p) => (
-          
           <div className='project' key={p._id}>
-            <p key={p._id+"title"}>{p.title}</p>
-            <p key={p._id+"description"}>{p.description}</p>
-            <p key={p._id+"git"}>{p.gitLink}</p>
-            <p key={p._id+"deploy"}>{p.deployLink}</p>
+            <p>{p.title}</p>
+            <p>{p.description}</p>
+            <p>{p.gitLink}</p>
+            <p>{p.deployLink}</p>
           </div>
         ))}
       </div>

@@ -1,6 +1,8 @@
-
-.project {
+.Projects {
   width: 500px;
+  margin: 0 auto;
+}
+.project {
   padding: 20px;
   margin: 20px;
   border-radius: 10px;
@@ -9,8 +11,14 @@
   box-shadow: 5px 5px 10px #ddd;
 }
 .project:hover {
+  background: #fff;
+  transform: translate(-3px, -3px);
+  box-shadow: 5px 5px 15px #aaa;
+}
+.project:active {
   background: #eee;
-
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 4px #aaa;
 }
 .projects-header {
   text-align: center;
