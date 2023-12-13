@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { getProjects } from '../../utilities/projects-service'
+import { ProjectCard } from '../../components/ProjectCard/ProjectCard'
 import "./Projects.css"
 
 const Projects = () => {
@@ -31,12 +32,7 @@ const Projects = () => {
           <h1>Projects</h1>
         </div>
         {projects.map((p) => (
-          <div className='project' key={p._id}>
-            <p>{p.title}</p>
-            <p>{p.description}</p>
-            <p>{p.gitLink}</p>
-            <p>{p.deployLink}</p>
-          </div>
+          <ProjectCard  key={p._id + "-card"} p={p}/>
         ))}
       </div>
     );
