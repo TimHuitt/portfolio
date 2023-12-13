@@ -12,7 +12,10 @@
   margin: 0;
   text-align: center;
 }
-
+.Footer a {
+  text-decoration: none;
+  color: #999;
+}
 .footer-title {
   font-size: 1rem;
   transition: font-size 1s;

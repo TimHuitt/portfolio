@@ -9,9 +9,9 @@ const Header = () => {
       <div className='logo'>
         <LogoSvg />
       </div>
-      <Link to="/">Projects</Link>
-      <Link to="/">Resume</Link>
-      <Link to="/">Contact</Link>
+      <Link to="/projects">Projects</Link>
+      <Link to="/resume">Resume</Link>
+      <Link to="/contact">Contact</Link>
     </nav>
   );
 };
