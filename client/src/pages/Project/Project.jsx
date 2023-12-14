@@ -30,21 +30,26 @@ const Project = () => {
 
   const loaded = () => (
     <div className='Project'>
-      <div className="flex justify-center">
-        <div className='projects-header'>
-            <h1 className='p-4 font-bold text-3xl'>{project.title}</h1>
-        </div>
+      <div className='project-header'>
+          <h1 className='p-4 font-bold text-3xl'>{project.title}</h1>
+      </div>
+      <div className="project-images">
+        {Array.isArray(project.images) && project.images.map((image)=> (
+          <div className="m-5"key={image + "-link"}>
+            <img src={image} />
+          </div>
+        ))}
+      </div>
+      <div className="git-link">
+        <p className='text-right'><a href={project.gitLink}>View on GitHub</a></p>
       </div>
       <div className='project-details'>
-        <p className='text-right'><a href={project.gitLink}>View on GitHub</a></p>
         <div 
           className='text-base pt-2 w-full'
           dangerouslySetInnerHTML={{ __html: project.description }} 
         />
         <p>{project.deployLink}</p>
-        {Array.isArray(project.images) && project.images.map((image)=> (
-          <p key={image + "-link"}>{image}</p>
-        ))}
+        
       </div>
     </div>
   )

@@ -22,6 +22,7 @@
   border-radius: 0 0 5px 5px;
   pointer-events: auto;
   transition: padding .25s, background-color 1s, box-shadow 1s;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 1);
 }
 .Header a:last-child {
   margin-right: 30px;

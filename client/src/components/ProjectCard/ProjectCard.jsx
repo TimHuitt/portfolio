@@ -5,7 +5,7 @@ export const ProjectCard = ({p}) => {
   return (
     <div className="project-wrapper">
       <Link to={"/project/" + p._id}>
-        <div className='project text-2xl'>
+        <div className='project-card text-2xl'>
           <div className='details-wrapper'>
             <p className="font-bold">{p.title}</p>
             <div 

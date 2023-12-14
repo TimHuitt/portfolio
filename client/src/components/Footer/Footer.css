@@ -17,12 +17,12 @@
   color: #999;
 }
 .footer-title {
-  font-size: 1rem;
+  font-size: 2rem;
   transition: font-size 1s;
   cursor: pointer;
 }
 .footer-title:hover {
-  font-size: 1.5rem;
+  font-size: 3rem;
 }
 
 .footer-links {
