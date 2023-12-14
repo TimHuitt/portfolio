@@ -36,6 +36,10 @@
   background: #e5e5e5;
   padding-top: 32px;
 }
+.selected {
+  box-shadow: 3px 3px 2px #aaa;
+  pointer-events: none;
+}
 .logo {
   display: block;
   position: absolute;
