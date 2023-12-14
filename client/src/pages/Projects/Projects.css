@@ -1,10 +1,16 @@
 .Projects {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   margin: 0 auto;
 }
 
 .projects-header {
+  position: fixed;
+  top: 8%;
+  width: 75%;
+  max-width: 550px;
   text-align: center;
   border-radius: 10px;
   border: 1px solid #aaa;
+  z-index: -1;
 }

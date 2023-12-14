@@ -4,10 +4,10 @@ import Home from '../../pages/Home/Home'
 import Resume from '../../pages/Resume/Resume'
 import Contact from '../../pages/Contact/Contact'
 import Project from '../../pages/Project/Project'
-
+import '../../App.css'
 const Main = () => {
   return (
-    <main>
+    <>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/resume" element={<Resume />} />
@@ -16,7 +16,7 @@ const Main = () => {
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:id" element={<Projects />} />
       </Routes>
-    </main>
+    </>
   );
 };
 
