@@ -1,0 +1,11 @@
+.Resume {
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+.resume-container {
+  width: 90vw;
+  padding: 60px 0;
+}
