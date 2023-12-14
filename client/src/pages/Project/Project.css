@@ -1,32 +1,30 @@
 .Project {
   width: 75%;
   max-width: 600px;
-  height: 75%;
   padding-top: 60px;
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: 100px 20px 100%;
+  grid-template-rows: 100px 20px auto;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
 }
 .project-header {
   width: 100%;
-  max-width: 550px;
+  max-width: 650px;
   text-align: center;
   border-radius: 10px;
   border: 1px solid #aaa;
-  margin-top: 75px;
   grid-row: 1;
   grid-column: 1 / span 2;
   margin-top: 10px;
 }
 .project-details {
   width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
-  max-width: 500px;
   grid-row: 3;
   grid-column: 1;
 }

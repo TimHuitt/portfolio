@@ -6,8 +6,8 @@
   border: 1px solid #ddd;
   box-shadow: 5px 5px 10px #ddd;
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
 }
 .project-card:hover {
   background: #fff;
@@ -19,16 +19,16 @@
   transform: translate(0px, 0px);
   box-shadow: 2px 2px 4px #aaa;
 }
-.project-wrapper img {
+.project-card-wrapper img {
   max-height: 150px;
   grid-column: 1;
   grid-row: 1;
 }
-.project-wrapper a {
+.project-card-wrapper a {
   text-decoration: none;
   color: #222;
 }
-.project-images {
+.project-card-images {
   grid-column: 2;
   grid-row: 1;
 }

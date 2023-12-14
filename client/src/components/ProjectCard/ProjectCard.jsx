@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 import "./ProjectCard.css"
 export const ProjectCard = ({p}) => {
   return (
-    <div className="project-wrapper">
+    <div className="project-card-wrapper">
       <Link to={"/project/" + p._id}>
         <div className='project-card text-2xl'>
-          <div className='details-wrapper'>
+          <div className='card-details-wrapper'>
             <p className="font-bold">{p.title}</p>
             <div 
             className='text-base pt-2'
@@ -14,7 +14,7 @@ export const ProjectCard = ({p}) => {
             {/* <p>{p.gitLink}</p>
             <p>{p.deployLink}</p> */}
           </div>
-          <div className="project-images">
+          <div className="project-card-images">
             <img className="rounded" src={p.images[0]} />
           </div>
           
