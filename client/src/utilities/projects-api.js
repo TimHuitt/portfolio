@@ -5,7 +5,7 @@ export const index = async () => {
   if (res.ok) {
     return res.json()
   } else {
-    throw new Error("invalid!")
+    throw new Error("invalid!", config.BASE_URL)
   }
 }
 
