@@ -15,6 +15,6 @@ export const find = async (id) => {
   if (res.ok) {
     return res.json()
   } else {
-    throw new Error("invalid!")
+    throw new Error("invalid!", fullPath)
   }
 }
