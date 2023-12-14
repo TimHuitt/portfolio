@@ -1,4 +1,11 @@
+.Project {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 100px;
+}
 .project-details {
-  width: 80%;
-  padding-top: 12%;
+
 }

@@ -19,8 +19,6 @@
   transform: translate(0px, 0px);
   box-shadow: 2px 2px 4px #aaa;
 }
-.project-wrapper {
-}
 .project-wrapper img {
   max-height: 150px;
   grid-column: 1;

@@ -27,8 +27,8 @@ const Projects = () => {
     return <h1 key="load">Loading...</h1>
   } else {
     return (
-      <div className='Projects pt-24'>
-        <div className="flex justify-center w-full">
+      <div className='Projects'>
+        <div className="">
           <div className='projects-header'>
             <h1 className='p-4 font-bold text-3xl'>Projects</h1>
           </div>

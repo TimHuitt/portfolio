@@ -29,13 +29,13 @@ const Project = () => {
   )
 
   const loaded = () => (
-    <>
+    <div className='Project'>
       <div className="flex justify-center">
         <div className='projects-header'>
             <h1 className='p-4 font-bold text-3xl'>{project.title}</h1>
         </div>
       </div>
-
+      <div className='project-details'>
         <p className='text-right'><a href={project.gitLink}>View on GitHub</a></p>
         <div 
           className='text-base pt-2 w-full'
@@ -45,7 +45,8 @@ const Project = () => {
         {Array.isArray(project.images) && project.images.map((image)=> (
           <p key={image + "-link"}>{image}</p>
         ))}
-    </>
+      </div>
+    </div>
   )
   return isLoading ? loading() : loaded()
 }
