@@ -5,7 +5,7 @@ export const index = async () => {
   if (res.ok) {
     return res.json()
   } else {
-    throw new Error("invalid!", config.BASE_URL)
+    throw new Error("invalid:" + config.BASE_URL)
   }
 }
 
@@ -15,6 +15,6 @@ export const find = async (id) => {
   if (res.ok) {
     return res.json()
   } else {
-    throw new Error("invalid!", fullPath)
+    throw new Error("invalid: " + fullPath)
   }
 }
