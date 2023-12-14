@@ -29,14 +29,23 @@ const Project = () => {
 
   const loaded = () => (
     <>
-      <h1 className="text-3xl">{project.title}</h1>
-      <p>{project.description}</p>
-      <p>{project.gitLink}</p>
-      <p>{project.deployLink}</p>
-      
-      {Array.isArray(project.images) && project.images.map((image)=> (
-        <p key={image + "-link"}>{image}</p>
-      ))}
+      <div className='Projects pt-4 text-center'>
+        <div className='projects-header'>
+            <h1 className='p-4 font-bold text-3xl'>{project.title}</h1>
+        </div>
+          <p className='text-right pr-3 pt-1'><a href={project.gitLink}>View on GitHub</a></p>
+        <div className="flex-col justify-start">
+          <div 
+            className='text-base pt-2 w-full'
+            dangerouslySetInnerHTML={{ __html: project.description }} 
+          />
+          <p>{project.deployLink}</p>
+        </div>
+        
+        {Array.isArray(project.images) && project.images.map((image)=> (
+          <p key={image + "-link"}>{image}</p>
+        ))}
+      </div>
     </>
   )
   return isLoading ? loading() : loaded()
