@@ -33,23 +33,22 @@ const Project = () => {
       <div className='project-header'>
           <h1 className='p-4 font-bold text-3xl'>{project.title}</h1>
       </div>
-      <div className="project-images">
-        {Array.isArray(project.images) && project.images.map((image)=> (
-          <div className="m-5"key={image + "-link"}>
-            <img src={image} />
-          </div>
-        ))}
-      </div>
-      <div className="git-link">
-        <p className='text-right'><a href={project.gitLink}>View on GitHub</a></p>
+      <div className="project-links">
+        <p className='text-left'><a href={project.gitLink}>View Deployed App</a></p>
+        <p className='text-right'><a href={project.deployLink}>View on GitHub</a></p>
       </div>
       <div className='project-details'>
         <div 
           className='text-base pt-2 w-full'
           dangerouslySetInnerHTML={{ __html: project.description }} 
-        />
-        <p>{project.deployLink}</p>
-        
+        />        
+      </div>
+      <div className="project-images pb-24">
+        {Array.isArray(project.images) && project.images.map((image)=> (
+          <div className="m-5"key={image + "-link"}>
+            <img src={image} />
+          </div>
+        ))}
       </div>
     </div>
   )

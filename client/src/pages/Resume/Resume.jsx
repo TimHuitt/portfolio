@@ -1,10 +1,13 @@
+import "./Resume.css"
+import resumeImage from '../../assets/resume.png'
 
 const Resume = () => {
   return (
-    <>
-      <h1>Resume</h1>
-      
-    </>
+    <div className="Resume">
+      <div className="resume-container">
+        <img src={resumeImage} />
+      </div>
+    </div>
   )
 }
 

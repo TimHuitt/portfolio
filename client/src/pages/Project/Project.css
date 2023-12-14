@@ -1,6 +1,6 @@
 .Project {
   width: 75%;
-  max-width: 600px;
+  max-width: 900px;
   padding-top: 60px;
   display: grid;
   grid-template-columns: auto auto;
@@ -10,7 +10,6 @@
 }
 .project-header {
   width: 100%;
-  max-width: 650px;
   text-align: center;
   border-radius: 10px;
   border: 1px solid #aaa;
@@ -27,14 +26,23 @@
   flex-direction: column;
   grid-row: 3;
   grid-column: 1;
+  padding-top: 60px;
 }
 .project-images {
   grid-row: 3;
   grid-column: 2;
+  overflow-y: auto;
 }
-.git-link {
+.project-links {
+  display: flex;
+  justify-content: space-between;
   grid-row: 2;
-  grid-column: 2;
+  grid-column: 1 / span 2;
   text-align: right;
-  padding-right: 40px;
+  padding: 0 40px;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+.project-links a:hover {
+  text-decoration: underline;
 }
