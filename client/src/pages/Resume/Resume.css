@@ -3,7 +3,7 @@
   max-width: 1000px;
   display: flex;
   justify-content: center;
-  padding-bottom: 100px;
+  margin-bottom: 100px;
 }
 .resume-container {
   width: 90vw;

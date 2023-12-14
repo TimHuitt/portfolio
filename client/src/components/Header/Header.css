@@ -17,7 +17,7 @@
   position: relative;
   padding: 15px 5px;
   text-decoration: none;
-  color: #444;
+  color: #888;
   background: rgba(255, 255, 255, 0);
   border-radius: 0 0 5px 5px;
   pointer-events: auto;
@@ -30,15 +30,16 @@
 .Header a:hover {
   padding-top: 25px;
   background: #ebebeb;
-  box-shadow: 3px 3px 5px #eee;
+  box-shadow: 3px 3px 5px #ddd;
 }
 .Header a:active {
   background: #e5e5e5;
   padding-top: 32px;
 }
 .selected {
-  box-shadow: 3px 3px 2px #aaa;
-  pointer-events: none;
+  background: #ebebeb !important;
+  box-shadow: 3px 3px 2px #ddd;
+  pointer-events: none !important;
 }
 .logo {
   display: block;
