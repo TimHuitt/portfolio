@@ -32,6 +32,7 @@
   grid-row: 3;
   grid-column: 2;
   overflow-y: auto;
+  padding-top: 40px;
 }
 .project-links {
   display: flex;
@@ -39,7 +40,6 @@
   grid-row: 2;
   grid-column: 1 / span 2;
   text-align: right;
-  padding: 0 40px;
   font-weight: 400;
   font-size: 1.25rem;
 }

@@ -3,9 +3,52 @@
   max-width: 1000px;
   display: flex;
   justify-content: center;
-  margin-bottom: 100px;
 }
 .resume-container {
   width: 90vw;
-  padding: 60px 0;
+  margin-top: 100px;
+  z-index: -1;
+}
+.links-container {
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.open,
+.download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 40px;
+  max-height: 50px;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 5px 5px 10px #ddd;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.download {
+  left: 200px;
+}
+.open button,
+.download button {
+}
+
+.open:hover,
+.download:hover {
+  background: #fff;
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 15px #aaa;
+}
+.open:active,
+.download:active {
+  background: #eee;
+  transform: translate(0px, 0px);
+  box-shadow: 2px 2px 4px #aaa;
 }

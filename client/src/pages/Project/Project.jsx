@@ -34,8 +34,8 @@ const Project = () => {
           <h1 className='p-4 font-bold text-3xl'>{project.title}</h1>
       </div>
       <div className="project-links">
-        <p className='text-left'><a href={project.gitLink}>View Deployed App</a></p>
-        <p className='text-right'><a href={project.deployLink}>View on GitHub</a></p>
+        <p className='text-left'><a href={project.gitLink}>View Code</a></p>
+        <p className='text-right'><a href={project.deployLink}>View App</a></p>
       </div>
       <div className='project-details'>
         <div 
