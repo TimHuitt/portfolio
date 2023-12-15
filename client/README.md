@@ -22,4 +22,5 @@ ___
   - update/delete content
 - PDF view integration
 - Contact form
-- More content
+- Dark mode
+- Image Modals

@@ -1,5 +1,5 @@
 .Resume {
-  width: 90%;
+  width: 100%;
   max-width: 1000px;
   display: flex;
   justify-content: center;
@@ -11,12 +11,12 @@
 }
 .links-container {
   position: absolute;
-  top: 70px;
-  left: 10px;
-  width: 95%;
+  top: 80px;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 5%;
 }
 .open,
 .download {

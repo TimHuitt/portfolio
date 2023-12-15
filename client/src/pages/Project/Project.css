@@ -1,7 +1,7 @@
 .Project {
   width: 75%;
   max-width: 900px;
-  padding-top: 60px;
+  padding-top: 75px;
   display: grid;
   grid-template-columns: 30% auto;
   grid-template-rows: 100px 20px auto;
