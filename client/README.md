@@ -17,6 +17,7 @@ ___
 ___
 ## Planned Features
 - Overall UI updates
+- Deploy completed Express server
 - User authorization
 - Admin panel
   - update/delete content
