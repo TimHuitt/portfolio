@@ -2,9 +2,9 @@
   padding: 20px;
   margin: 20px;
   border-radius: 10px;
-  background: #fff;
+  background: var(--bg);
   border: 1px solid #ddd;
-  box-shadow: 5px 5px 10px #ddd;
+  box-shadow: 5px 5px 10px var(--shadow-light);
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
@@ -27,6 +27,9 @@
 .project-card-wrapper a {
   text-decoration: none;
   color: #222;
+}
+.link {
+  text-decoration: underline;
 }
 .project-card-images {
   display: flex;
