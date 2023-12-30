@@ -10,12 +10,12 @@
   grid-template-rows: auto;
 }
 .project-card:hover {
-  background: #fff;
+  background: var(--bg-dark);
   transform: translate(-3px, -3px);
-  box-shadow: 5px 5px 15px #aaa;
+  box-shadow: 0px 0px 10px var(--shadow-lighter);
 }
 .project-card:active {
-  background: #eee;
+  background: var(--bg);
   transform: translate(0px, 0px);
   box-shadow: 2px 2px 4px #aaa;
 }
@@ -26,7 +26,6 @@
 }
 .project-card-wrapper a {
   text-decoration: none;
-  color: #222;
 }
 .link {
   text-decoration: underline;

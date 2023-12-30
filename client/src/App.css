@@ -3,9 +3,23 @@
   font-family: 'League Spartan', sans-serif;
   font-weight: 100;
   /* Colors */
+  color: #444;
   --bg: #f6f7f9;
+  --bg-dark: #ebebeb;
   --shadow: #9a9a9a;
   --shadow-light: #c4d0de;
+  --shadow-lighter: #aaa;
+  --title-border: #aaa;
+}
+/* dark mode */
+:root {
+  color: #ccc;
+  --bg: #111;
+  --bg-dark: #131519;
+  --shadow: #232323;
+  --shadow-light: #3c434c;
+  --shadow-lighter: #4c13c6;
+  --title-border: #aaa;
 }
 .App {
   width: 100%;

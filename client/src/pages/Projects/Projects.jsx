@@ -31,7 +31,7 @@ const Projects = () => {
       
         <div className="pb-24">
           {projects.map((p) => (
-            <ProjectCard  key={p._id + "-card"} p={p}/>
+            <ProjectCard  key={p.title + "-card"} p={p}/>
           ))}
         </div>
       </div>
