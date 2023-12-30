@@ -18,14 +18,14 @@ const projects = [
     "description": "Advanced computer opponent<br /> Customizable ship placement<br /> Turn based tactical game play<br /> Game Stats<br /> Pop-up notifications",
     "images": ["https://i.imgur.com/ukgZLb4.png", "https://i.imgur.com/LOHaSfv.png"],
     "gitLink": "https://github.com/TimHuitt/battleship",
-    "deployLink": "https://codepen.io/timhuitt/full/NWoGKmo"
+    "deployLink": "https://timhuitt.github.io/battleship/"
   },
   {
     "title": "Tic Tac Toe",
     "description": "Traditional two player Tic-Tac-Toe game with an updated UI. Features player turn/piece tracking and a resettable persistent score",
     "images": ["https://i.imgur.com/ehk6k0f.png", "https://i.imgur.com/idWiPTd.png", "https://i.imgur.com/Q0PvA5m.png"],
     "gitLink": "https://codepen.io/timhuitt/pen/NWoGKmo",
-    "deployLink": "https://timhuitt.github.io/battleship/"
+    "deployLink": "https://codepen.io/timhuitt/full/NWoGKmo"
   },
   {
     "title": "Muscle Memory Typing Game",
