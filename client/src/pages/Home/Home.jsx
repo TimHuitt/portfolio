@@ -20,6 +20,7 @@ const Home = () => {
           </p>
       </div>
       <Skills />
+      <div className="spacer" />
     </div>
   )
 }

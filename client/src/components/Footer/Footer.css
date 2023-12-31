@@ -66,3 +66,12 @@
   width: auto;
   height: 100%;
 }
+
+@media (max-width: 500px) {
+  .footer-title {
+    font-size: 1.25rem;
+  }
+  .footer-title:hover {
+    font-size: 1.25rem;
+  }
+}

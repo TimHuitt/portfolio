@@ -10,3 +10,8 @@
   border-radius: 10px;
   border: 1px solid #aaa;
 }
+@media (max-width: 500px) {
+  .Projects {
+    width: 95%;
+  }
+}
