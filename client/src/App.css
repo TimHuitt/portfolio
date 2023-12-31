@@ -15,16 +15,16 @@
 
 }
 /* dark mode */
-/* :root {
+:root {
   color: #ccc;
   --bg: #111;
   --bg-dark: #131519;
   --bg-light: #272d37;
   --shadow: #232323;
   --shadow-light: #3c434c;
-  --shadow-lighter: #8372a7;
+  --shadow-lighter: #7281a7;
   --title-border: #aaa;
-} */
+}
 .App {
   width: 100%;
   min-height: 100%;
