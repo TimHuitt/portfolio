@@ -38,7 +38,7 @@
 }
 .selected {
   background-color: var(--bg-dark) !important;
-  box-shadow: inset 0px 0px 5px var(--shadow-lighter);
+  box-shadow: inset -1px -1px 5px var(--shadow-lighter);
   pointer-events: none !important;
 }
 .logo {

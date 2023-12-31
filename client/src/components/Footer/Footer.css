@@ -14,7 +14,7 @@
 }
 .Footer a {
   text-decoration: none;
-  color: #999;
+  color: var(--shadow-light);
 }
 .footer-title {
   font-size: 2rem;
