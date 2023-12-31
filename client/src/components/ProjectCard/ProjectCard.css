@@ -2,7 +2,7 @@
   padding: 20px;
   margin: 20px;
   border-radius: 10px;
-  background: var(--bg);
+  background-color: var(--bg);
   border: 1px solid #ddd;
   box-shadow: 5px 5px 10px var(--shadow-light);
   display: grid;
@@ -10,12 +10,12 @@
   grid-template-rows: auto;
 }
 .project-card:hover {
-  background: var(--bg-dark);
+  background-color: var(--bg-light);
   transform: translate(-3px, -3px);
-  box-shadow: 0px 0px 10px var(--shadow-lighter);
+  box-shadow: 0px 0px 4px var(--shadow-lighter);
 }
 .project-card:active {
-  background: var(--bg);
+  background-color: var(--bg);
   transform: translate(0px, 0px);
   box-shadow: 2px 2px 4px #aaa;
 }

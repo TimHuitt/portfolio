@@ -18,27 +18,27 @@
   padding: 15px 5px;
   text-decoration: none;
   color: #888;
-  background: transparent;
+  background-color: transparent;
   border-radius: 0 0 5px 5px;
   pointer-events: auto;
   transition: padding .25s, background-color 1s, box-shadow 1s;
-  text-shadow: 0 0 1px rgba(255, 255, 255, 1);
+  /* text-shadow: 0 0 .5px rgba(255, 255, 255, 1); */
 }
 .Header a:last-child {
   margin-right: 30px;
 }
 .Header a:hover {
   padding-top: 25px;
-  background: var(--bg-dark);
-  box-shadow: 1px 1px 2px var(--shadow-lighter);
+  background-color: var(--bg-dark);
+  box-shadow: 2px 2px 4px var(--shadow-lighter);
 }
 .Header a:active {
-  background: #e5e5e5;
+  background-color: #e5e5e5;
   padding-top: 32px;
 }
 .selected {
-  background: var(--bg-dark) !important;
-  box-shadow: 1px 1px 2px var(--shadow-lighter);
+  background-color: var(--bg-dark) !important;
+  box-shadow: 2px 2px 4px var(--shadow-lighter);
   pointer-events: none !important;
 }
 .logo {

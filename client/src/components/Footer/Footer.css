@@ -37,7 +37,7 @@
   height: 45px;
   width: 45px;
   border-radius: 5px;
-  background: var(--bg-dark);
+  background-color: var(--shadow-light);
   margin: 5px 20px;
   cursor: pointer;
   transform: rotate(45deg);
@@ -58,7 +58,7 @@
 }
 .footer-link:hover {
   transform: rotate(0deg);
-  background: var(--shadow-light);
+  background-color: var(--shadow-light);
 }
 .footer-link svg {
   max-height: 50px;

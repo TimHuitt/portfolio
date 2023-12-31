@@ -26,7 +26,7 @@
   height: 40px;
   max-height: 50px;
   border-radius: 10px;
-  background: #fff;
+  background-color: #fff;
   border: 1px solid #ddd;
   box-shadow: 5px 5px 10px #ddd;
   font-size: 1rem;
@@ -41,13 +41,13 @@
 
 .open:hover,
 .download:hover {
-  background: #fff;
+  background-color: #fff;
   transform: translate(-1px, -1px);
   box-shadow: 5px 5px 15px #aaa;
 }
 .open:active,
 .download:active {
-  background: #eee;
+  background-color: #eee;
   transform: translate(0px, 0px);
   box-shadow: 2px 2px 4px #aaa;
 }

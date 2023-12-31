@@ -31,23 +31,22 @@
   margin: 20px auto;
   
   border-radius: 10px;
-  background: #fff;
+  background-color: var(--bg);
   border: 1px solid #ddd;
-  box-shadow: 5px 5px 10px #ddd;
+  box-shadow: 5px 5px 10px var(--shadow-light);
 }
 .contact button {
   font-size: 1.3rem;
   font-weight: 400;
-  color: #444 !important;
 }
 
 .contact:hover {
-  background: #fff;
+  background-color: var(--bg-dark);
   transform: translate(-1px, -1px);
-  box-shadow: 5px 5px 15px #aaa;
+  box-shadow: 0px 0px 10px var(--shadow-lighter);
 }
 .contact:active {
-  background: #eee;
+  background-color: #eee;
   transform: translate(0px, 0px);
   box-shadow: 2px 2px 4px #aaa;
 }

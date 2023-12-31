@@ -3,11 +3,16 @@ import LogoSvg from '../../assets/logo.jsx'
 
 import "./Header.css"
 
-const Header = () => {
+const Header = ({ isDark, setIsDark }) => {
   const loc = useLocation().pathname
+
+  const toggleDark = () => {
+    setIsDark(!isDark)
+  }
+
   return (
     <nav className='Header'>
-      <div className='logo'>
+      <div className='logo' onClick={toggleDark}>
         <LogoSvg />
       </div>
       <Link 
@@ -33,3 +38,4 @@ const Header = () => {
 };
 
 export default Header;
+
