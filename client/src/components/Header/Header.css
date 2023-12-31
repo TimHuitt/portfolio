@@ -12,6 +12,8 @@
   user-select: none;
   pointer-events: none;
   z-index: 2;
+  background: var(--gradient-light);
+  filter: blur(0);
 }
 .Header a {
   position: relative;
