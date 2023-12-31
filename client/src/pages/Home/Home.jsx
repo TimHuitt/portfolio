@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import './Home.css'
 import profileImage from '../../assets/profile.png'
+import Skills from '../../components/Skills'
+
 const Home = () => {
   return (
     <div className='Home'>
@@ -17,7 +19,9 @@ const Home = () => {
             I have spent the past several years building my development skills and I am eager to bring my skill set to a team that values innovation, creativity, and continuous learning.
           </p>
       </div>
+      <Skills />
     </div>
   )
 }
+
 export default Home
