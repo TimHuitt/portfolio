@@ -9,8 +9,8 @@ const App = () => {
 
   useEffect(() => {
     const root = document.documentElement;
-    const gradientLight = "linear-gradient(rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0) 90%)"
-    const gradientDark = "linear-gradient(rgba(28, 30, 41, 1) 30%, rgba(0, 0, 0, 0) 90%)"
+    const gradientLight = "linear-gradient(rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%)"
+    const gradientDark = "linear-gradient(rgba(28, 30, 41, 1) 0%, rgba(28, 30, 41, .90) 60%, rgba(28, 30, 41, .5) 75%, rgba(28, 30, 41, 0) 100%)"
     root.style.setProperty('--bg', isDark ? '#1c1e29' : '#f6f7f9')
     root.style.setProperty('--bg-dark', isDark ? '#131519' : '#ebebeb')
     root.style.setProperty('--bg-light', isDark ? '#272d37' : '#fafafa')
