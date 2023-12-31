@@ -17,7 +17,7 @@
   position: relative;
   padding: 15px 5px;
   text-decoration: none;
-  color: #888;
+  color: #aaa;
   background-color: transparent;
   border-radius: 0 0 5px 5px;
   pointer-events: auto;
@@ -30,7 +30,7 @@
 .Header a:hover {
   padding-top: 25px;
   background-color: var(--bg-dark);
-  box-shadow: 2px 2px 4px var(--shadow-lighter);
+  box-shadow: 1px 1px 5px var(--shadow-lighter);
 }
 .Header a:active {
   background-color: #e5e5e5;
@@ -38,7 +38,7 @@
 }
 .selected {
   background-color: var(--bg-dark) !important;
-  box-shadow: 2px 2px 4px var(--shadow-lighter);
+  box-shadow: 1px 1px 5px var(--shadow-lighter);
   pointer-events: none !important;
 }
 .logo {
