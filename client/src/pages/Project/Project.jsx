@@ -12,8 +12,8 @@ const Project = () => {
   
   const handleRequest = async () => {
     try {
-      const personData = await getProject(id)
-      if (personData) setProject(personData)
+      const projectData = await getProject(id)
+      if (projectData) setProject(projectData)
     } catch (err) {
       console.log(err)
     }
