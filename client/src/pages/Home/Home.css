@@ -30,3 +30,7 @@
   height: 150px;
   border-radius: 50%;
 }
+.spacer {
+  min-height: 100px;
+  width: 100%;
+}
