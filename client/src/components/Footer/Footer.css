@@ -58,7 +58,7 @@
 }
 .footer-link:hover {
   transform: rotate(0deg);
-  background-color: var(--shadow-light);
+  background-color: var(--shadow-lighter);
 }
 .footer-link svg {
   max-height: 50px;

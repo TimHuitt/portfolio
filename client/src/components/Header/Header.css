@@ -38,7 +38,7 @@
 }
 .selected {
   background-color: var(--bg-dark) !important;
-  box-shadow: 1px 1px 5px var(--shadow-lighter);
+  box-shadow: inset 0px 0px 5px var(--shadow-lighter);
   pointer-events: none !important;
 }
 .logo {
@@ -49,10 +49,11 @@
   height: 50px;
   filter: brightness(85%);
   pointer-events: auto;
+  cursor: pointer;
   /* cursor: pointer; */
 }
 .logo:hover {
-  filter: brightness(80%);
+  filter: brightness(40%);
 }
 /* @media (max-width: 600px) {
   .Header {

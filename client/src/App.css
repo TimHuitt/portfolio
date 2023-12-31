@@ -2,28 +2,6 @@
 :root {
   font-family: 'League Spartan', sans-serif;
   font-weight: 100;
-  /* Colors */
-  color: #444;
-  --bg: #f6f7f9;
-  --bg-dark: #ebebeb;
-  --bg-light: #fafafa;
-  --shadow: #9a9a9a;
-  --shadow-light: #c4d0de;
-  --shadow-lighter: #aaa;
-  --title-border: #aaa;
-  transition: background-color 1s ease, border-color 0.3s ease, color 0.3s ease;
-
-}
-/* dark mode */
-:root {
-  color: #ccc;
-  --bg: #111;
-  --bg-dark: #131519;
-  --bg-light: #272d37;
-  --shadow: #232323;
-  --shadow-light: #3c434c;
-  --shadow-lighter: #7281a7;
-  --title-border: #aaa;
 }
 .App {
   width: 100%;
