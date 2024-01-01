@@ -1,19 +1,19 @@
 import { useEffect } from 'react'
 import './Skills.css'
-import reactSvg from '../../assets/react.svg'
-import expressSvg from '../../assets/express.svg'
-import mongoSvg from '../../assets/mongo.svg'
-import jsSvg from '../../assets/javascript.svg'
-import htmlSvg from '../../assets/html.svg'
-import cssSvg from '../../assets/css.svg'
-import bootstrapSvg from '../../assets/bootstrap.svg'
-import tailwindSvg from '../../assets/tailwind.svg'
-import npmSvg from '../../assets/npm.svg'
-import gitSvg from '../../assets/git.svg'
-import nodeSvg from '../../assets/node.svg'
-import pythonSvg from '../../assets/python.svg'
-import vbaSvg from '../../assets/vba.svg'
-import jquerySvg from '../../assets/jquery.svg'
+import reactSvg from '/react.svg'
+import expressSvg from '/express.svg'
+import mongoSvg from '/mongo.svg'
+import jsSvg from '/javascript.svg'
+import htmlSvg from '/html.svg'
+import cssSvg from '/css.svg'
+import bootstrapSvg from '/bootstrap.svg'
+import tailwindSvg from '/tailwind.svg'
+import npmSvg from '/npm.svg'
+import gitSvg from '/git.svg'
+import nodeSvg from '/node.svg'
+import pythonSvg from '/python.svg'
+import vbaSvg from '/vba.svg'
+import jquerySvg from '/jquery.svg'
 
 const Skills = ({ small, skills }) => {
 
@@ -45,13 +45,17 @@ const Skills = ({ small, skills }) => {
   return (
     <div className="Skills">
       {Object.keys(skillsList).map((skill) => {
-          const name = skillsList[skill].name
-          const link = skillsList[skill].link
+        const name = skillsList[skill].name
+        const link = skillsList[skill].link
         return (
-          <div className="skill-container" key={"skill-" + name}>
-            <img src={link} />
-            <p>{name}</p>
-          </div>
+          skills.includes(skill) || skills === 'all' ? (
+            <div className="skill-container" key={"skill-" + name}>
+              <img src={link} />
+              <p>{name}</p>
+            </div>
+          ) : (
+            null
+          )
         )
       })}
     </div>

@@ -19,7 +19,7 @@ const Home = () => {
             I have spent the past several years building my development skills and I am eager to bring my skill set to a team that values innovation, creativity, and continuous learning.
           </p>
       </div>
-      <Skills small={true} />
+      <Skills small={false} skills={'all'}/>
       <div className="spacer" />
     </div>
   )
