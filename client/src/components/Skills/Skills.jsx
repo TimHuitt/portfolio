@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import './Skills.css'
 import reactSvg from '../../assets/react.svg'
 import expressSvg from '../../assets/express.svg'
@@ -14,33 +15,45 @@ import pythonSvg from '../../assets/python.svg'
 import vbaSvg from '../../assets/vba.svg'
 import jquerySvg from '../../assets/jquery.svg'
 
-const Skills = ({ size, skills }) => {
+const Skills = ({ small, skills }) => {
 
-  const skillsList = [
-    {'name': 'React', 'link': reactSvg},
-    {'name': 'Express', 'link': expressSvg},
-    {'name': 'Mongo', 'link': mongoSvg},
-    {'name': 'Node.js', 'link': nodeSvg},
-    {'name': 'JavaScript', 'link': jsSvg},
-    {'name': 'jQuery', 'link': jquerySvg},
-    {'name': 'Python', 'link': pythonSvg},
-    {'name': 'VBA', 'link': vbaSvg},
-    {'name': 'HTML5', 'link': htmlSvg},
-    {'name': 'CSS3', 'link': cssSvg},
-    {'name': 'Bootstrap', 'link': bootstrapSvg},
-    {'name': 'Tailwind', 'link': tailwindSvg},
-    {'name': 'npm', 'link': npmSvg},
-    {'name': 'git', 'link': gitSvg},
-  ]
+  const skillsList = {
+    'react': { 'name': 'React', 'link': reactSvg },
+    'express': { 'name': 'Express', 'link': expressSvg },
+    'mongo': { 'name': 'Mongo', 'link': mongoSvg },
+    'node': { 'name': 'Node.js', 'link': nodeSvg },
+    'js': { 'name': 'JavaScript', 'link': jsSvg },
+    'jq': { 'name': 'jQuery', 'link': jquerySvg },
+    'py': { 'name': 'Python', 'link': pythonSvg },
+    'vba': { 'name': 'VBA', 'link': vbaSvg },
+    'html': { 'name': 'HTML5', 'link': htmlSvg },
+    'css': { 'name': 'CSS3', 'link': cssSvg },
+    'bootstrap': { 'name': 'Bootstrap', 'link': bootstrapSvg },
+    'tailwind': { 'name': 'Tailwind', 'link': tailwindSvg },
+    'npm': { 'name': 'npm', 'link': npmSvg },
+    'git': { 'name': 'git', 'link': gitSvg },
+  }
+  
+  
+  useEffect(() => {
+    const root = document.documentElement;
+    root.style.setProperty('--skills-width', small ? '30px' : '50px')
+    root.style.setProperty('--skills-height', small ? '30px' : '50px')
+    root.style.setProperty('--skills-display', small ? 'none' : 'block')
+  },[])
 
   return (
     <div className="Skills">
-      {skillsList.map((skill) => (
-        <div className="skill-container" key={"skill-" + skill.name}>
-          <img src={skill.link} />
-          <p>{skill.name}</p>
-        </div>
-      ))}
+      {Object.keys(skillsList).map((skill) => {
+          const name = skillsList[skill].name
+          const link = skillsList[skill].link
+        return (
+          <div className="skill-container" key={"skill-" + name}>
+            <img src={link} />
+            <p>{name}</p>
+          </div>
+        )
+      })}
     </div>
   )
 }
