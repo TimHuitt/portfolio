@@ -34,12 +34,12 @@ const Skills = ({ small, skills }) => {
     'git': { 'name': 'git', 'link': gitSvg },
   }
   
-  
   useEffect(() => {
     const root = document.documentElement;
     root.style.setProperty('--skills-width', small ? '30px' : '50px')
     root.style.setProperty('--skills-height', small ? '30px' : '50px')
     root.style.setProperty('--skills-display', small ? 'none' : 'block')
+    root.style.setProperty('--skills-img-height', small ? '85%' : '60%')
   },[])
 
   return (
