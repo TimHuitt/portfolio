@@ -38,25 +38,25 @@
   background-color: #e5e5e5;
   padding-top: 32px;
 }
+.header-title {
+  position: absolute;
+  top: -45px;
+  left: 2%;
+  font-size: 2rem;
+  transition: font-size 1s;
+  cursor: pointer;
+}
+.header-title a:hover {
+  padding-top: 0px;
+  background-color: transparent;
+  box-shadow: none;
+}
 .selected {
   background-color: var(--bg-dark) !important;
   box-shadow: inset -1px -1px 5px var(--shadow-lighter);
   pointer-events: none !important;
 }
-.logo {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 1%;
-  height: 50px;
-  filter: brightness(85%);
-  pointer-events: auto;
-  cursor: pointer;
-  /* cursor: pointer; */
-}
-.logo:hover {
-  filter: brightness(40%);
-}
+
 /* @media (max-width: 600px) {
   .Header {
     justify-content: space-around;

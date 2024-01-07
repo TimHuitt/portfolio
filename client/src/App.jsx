@@ -5,7 +5,7 @@ import Footer from './components/Footer/Footer'
 import './App.css'
 
 const App = () => {
-  const [ isDark, setIsDark ] = useState(false)
+  const [ isDark, setIsDark ] = useState(true)
 
   useEffect(() => {
     const root = document.documentElement;
@@ -23,9 +23,9 @@ const App = () => {
 
   return (
     <div className='App'>
-      <Header setIsDark={setIsDark} isDark={isDark} />
+      <Header />
       <Main />
-      <Footer />
+      <Footer setIsDark={setIsDark} isDark={isDark} />
     </div>
   )
 }

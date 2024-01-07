@@ -1,14 +1,19 @@
 import { Link } from 'react-router-dom'
+import LogoSvg from '../../assets/logo.jsx'
 import CodepenSvg from '../../assets/codepen.jsx'
 import GithubSvg from '../../assets/github.jsx'
 import LinkedinSvg from '../../assets/linkedin.jsx'
 import './Footer.css'
-const Footer = () => {
+const Footer = ({ isDark, setIsDark }) => {
+
+  const toggleDark = () => {
+    setIsDark(!isDark)
+  }
 
   return (
     <div className='Footer'>
-      <div className='footer-title'>
-        <Link to="/"><h1>Tim Huitt</h1></Link>
+      <div className='logo' onClick={toggleDark}>
+        <LogoSvg />
       </div>
       <div className='footer-links'>
         <Link to="https://github.com/TimHuitt" target="_blank" rel="noopener noreferrer">

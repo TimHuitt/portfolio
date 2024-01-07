@@ -1,35 +1,30 @@
 import { Link, useLocation } from 'react-router-dom'
-import LogoSvg from '../../assets/logo.jsx'
-
 import "./Header.css"
 
-const Header = ({ isDark, setIsDark }) => {
+const Header = () => {
   const loc = useLocation().pathname
-
-  const toggleDark = () => {
-    setIsDark(!isDark)
-  }
 
   return (
     <nav className='Header'>
-      <div className='logo' onClick={toggleDark}>
-        <LogoSvg />
+
+      <div className='header-title'>
+        <Link to="/"><h1>Tim Huitt</h1></Link>
       </div>
       <Link 
         to="/projects" 
-        className={loc==='/projects' ? 'selected' : ''}
+        className={loc==='/projects' ? 'selected tab' : 'tab'}
       >
         Projects
       </Link>
       <Link 
         to="/resume" 
-        className={loc==='/resume' ? 'selected' : ''}
+        className={loc==='/resume' ? 'selected tab' : 'tab'}
       >
         Resume
       </Link>
       <Link 
         to="/contact" 
-        className={loc==='/contact' ? 'selected' : ''}
+        className={loc==='/contact' ? 'selected tab' : 'tab'}
       >
         Contact
       </Link>

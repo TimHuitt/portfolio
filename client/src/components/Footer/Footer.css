@@ -16,14 +16,6 @@
   text-decoration: none;
   color: var(--shadow-light);
 }
-.footer-title {
-  font-size: 2rem;
-  transition: font-size 1s;
-  cursor: pointer;
-}
-.footer-title:hover {
-  font-size: 3rem;
-}
 
 .footer-links {
   display: flex;
@@ -65,6 +57,18 @@
   max-width: 100%;
   width: auto;
   height: 100%;
+}
+
+.logo {
+  display: block;
+  height: 50px;
+  filter: brightness(85%);
+  pointer-events: auto;
+  cursor: pointer;
+  /* cursor: pointer; */
+}
+.logo:hover {
+  filter: brightness(40%);
 }
 
 @media (max-width: 500px) {
