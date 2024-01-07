@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
-import './Home.css'
 import profileImage from '../../assets/profile.png'
 import Skills from '../../components/Skills/Skills'
+import './Home.css'
 
 const Home = () => {
   return (

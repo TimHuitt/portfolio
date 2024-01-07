@@ -1,6 +1,6 @@
 ## Tim Huitt
 
-I'm a Software Developer with a passion for solving complex problems through creative programming. I've spent several years building my development skills, initially through self-teaching and now formal education. 
+I'm a Software Developer and I've spent several years building my development skills, initially through self-teaching and now formal education. 
 
 > Along the way, I have acquired extensive leadership experience in various industries, including service, finance, and analytics, where I've excelled at guiding, directing, and training teams and management. 
 
