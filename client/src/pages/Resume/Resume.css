@@ -5,17 +5,18 @@
   justify-content: center;
 }
 .resume-container {
+  position: relative;
   width: 90vw;
   margin-top: 100px;
 }
 .links-container {
   position: absolute;
-  top: 80px;
-  width: 100%;
+  top: 70px;
+  right: 0;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 5%;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 0 2%;
 }
 .open,
 .download {
@@ -25,29 +26,26 @@
   width: 120px;
   height: 40px;
   max-height: 50px;
+  color: #ccc;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #131519;
   border: 1px solid #ddd;
-  box-shadow: 5px 5px 10px #ddd;
+  box-shadow: 5px 5px 10px #232323;
   font-size: 1rem;
   font-weight: 400;
 }
 .download {
   left: 200px;
 }
-.open button,
-.download button {
-}
-
 .open:hover,
 .download:hover {
-  background-color: #fff;
+  background-color: #272d37;
   transform: translate(-1px, -1px);
-  box-shadow: 5px 5px 15px #aaa;
+  box-shadow: 5px 5px 15px #141516;
 }
 .open:active,
 .download:active {
-  background-color: #eee;
+  background-color: #131519;
   transform: translate(0px, 0px);
-  box-shadow: 2px 2px 4px #aaa;
+  box-shadow: 2px 2px 4px #282d35;
 }
