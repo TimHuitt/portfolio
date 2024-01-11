@@ -4,10 +4,11 @@
   position: relative;
   width: 75%;
   max-width: 900px;
+  min-height: 100vh;
   padding-top: 80px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 .home-header {
   position: relative;
@@ -122,9 +123,6 @@
   border-radius: 50%;
 }
 .home-skills-container {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
   width: 100%;
   animation: slide-up 1s forwards;
   animation-delay: 1.5s;
@@ -132,10 +130,10 @@
 }
 @keyframes slide-up {
   0% {
-    transform: translate(-50%, 200px);
+    transform: translateY(200px);
   }
   100% {
-    transform: translate(-50%, 0);
+    transform: translateY(0);
     opacity: 1;
   }
 }

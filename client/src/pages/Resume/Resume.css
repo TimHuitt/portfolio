@@ -11,11 +11,12 @@
 }
 .links-container {
   position: absolute;
-  top: 70px;
-  right: 0;
+  bottom: 2%;
+  left: 0;
   display: flex;
-  justify-content: flex-end;
   gap: 20px;
+  width: 100%;
+  justify-content: space-between;
   padding: 0 2%;
 }
 .open,

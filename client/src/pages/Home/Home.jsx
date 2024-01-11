@@ -1,9 +1,21 @@
 /* eslint-disable react/no-unescaped-entities */
 import profileImage from '../../assets/profile.png'
 import Skills from '../../components/Skills/Skills'
+import Projects from '../Projects/Projects'
 import './Home.css'
 
 const Home = () => {
+
+//   function isScrolledIntoView(elem){
+//       var docViewTop = $(window).scrollTop();
+//       var docViewBottom = docViewTop + $(window).height();
+// 
+//       var elemTop = $(elem).offset().top;
+//       var elemBottom = elemTop + $(elem).height();
+// 
+//       return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+//   }
+
   return (
     <div className='Home'>
       <div className="home-header">
@@ -27,6 +39,7 @@ const Home = () => {
         <Skills small={false} skills={'all'}/>
       </div>
       <div className="spacer" />
+      {/* <Projects /> */}
     </div>
   )
 }
