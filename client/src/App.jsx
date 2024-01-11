@@ -23,7 +23,7 @@ const App = () => {
 
   return (
     <div className='App'>
-      <Header />
+      <Header isDark={isDark}/>
       <Main />
       <Footer setIsDark={setIsDark} isDark={isDark} />
     </div>

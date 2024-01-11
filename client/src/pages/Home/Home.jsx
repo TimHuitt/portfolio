@@ -6,19 +6,26 @@ import './Home.css'
 const Home = () => {
   return (
     <div className='Home'>
-      <div className='profile-image'>
-        <img src={ profileImage } />
+      <div className="home-header">
+        <h1>Tim Huitt</h1>
+        <div />
+        <h2>Software Engineer</h2>
       </div>
+      {/* <div className='profile-image'>
+        <img src={ profileImage } />
+      </div> */}
       <div className='about-me'>
-          <p className='p-4 font-bold text-3xl'>
-          I'm a Software Engineer with a passion for solving complex problems through creative programming. I have spent the past several years building my development skills and I am eager to put these skills to work.
+          <p className='home-about-1'>
+          I'm a Software Engineer with a passion for solving complex problems through creative programming. 
+          </p>
           <br/><br/>
-          Along the way, I have acquired extensive leadership experience in various industries, including service, finance, and analytics, where I've excelled at guiding, directing, and training teams and management. 
-          <br/><br/>
-          In addition to many personal and collaborative projects, I have developed several professional applications using Python for standalone programs and VBA for complex excel data processing and manipulation. 
+          <p className='home-about-2'>
+          I have spent the past several years building my development skills and I am eager to put these skills to work.
           </p>
       </div>
-      <Skills small={false} skills={'all'}/>
+      <div className="home-skills-container">
+        <Skills small={false} skills={'all'}/>
+      </div>
       <div className="spacer" />
     </div>
   )

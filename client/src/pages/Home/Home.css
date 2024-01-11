@@ -1,4 +1,7 @@
 .Home {
+  display: flex;
+  gap: 5%;
+  position: relative;
   width: 75%;
   max-width: 900px;
   padding-top: 80px;
@@ -7,21 +10,108 @@
   align-items: flex-start;
 }
 .home-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  text-align: center;
+  text-align: end;
+  letter-spacing: 5px;
   border-radius: 10px;
   border: 1px solid var(--title-border);
   margin-top: 10px;
+}
+.home-header h1 {
+  position: relative;
+  top: -100px;
+  margin: -22px 0;
+  font-size: 5rem;
+  animation: slide-down .5s ease-in forwards;
+}
+@keyframes slide-down {
+  0% {
+    top: -50px;
+    opacity: 0;
+  }
+  50% {
+    top: -25px;
+    opacity: .1;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+.home-header > div {
+  width: 275px;
+  height: 2px;
+  margin-right: 10px;
+  background-color: rgb(171, 181, 202);
+  animation: slide-in .5s ease-in forwards;
+  animation-delay: .5s;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  95% {
+    transform: translateX(20%);
+    opacity: .75;
+  }
+  100% {
+    transform: translateX(10%);
+    opacity: 1;
+  }
+}
+.home-header h2 {
+  transform: translateX(15%);
+  margin: 4px 0;
+  color: rgb(105, 119, 137);
+  font-size: 1.5rem;
+  animation: fade-in 1s ease-in forwards;
+  animation-delay: .5s;
+  opacity: 0;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .about-me {
   margin: 0 auto;
   padding-bottom: 50px;
   width: 60%;
+  max-width: 400px;
   text-align: center;
 }
 .about-me p {
   font-size: 1rem;
   font-weight: 100;
+}
+.home-about-2,
+.home-about-1 {
+  animation: text-in .4s ease-in forwards;
+  opacity: 0;
+  animation-delay: 1s;
+}
+.home-about-2 {
+  animation-delay: 1.3s;
+}
+@keyframes text-in {
+  0% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
 .profile-image {
   margin: 0 auto;
@@ -30,6 +120,24 @@
 .profile-image img {
   height: 150px;
   border-radius: 50%;
+}
+.home-skills-container {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  animation: slide-up 1s forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
+}
+@keyframes slide-up {
+  0% {
+    transform: translate(-50%, 200px);
+  }
+  100% {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
 }
 .spacer {
   min-height: 100px;

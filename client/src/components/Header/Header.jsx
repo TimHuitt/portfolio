@@ -1,13 +1,16 @@
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useParams } from 'react-router-dom'
 import "./Header.css"
 
-const Header = () => {
+const Header = ({ isDark }) => {
   const loc = useLocation().pathname
+
+  console.log(loc)
+  const headerTitle = loc != '/' ? 'Tim Huitt' : ''
 
   return (
     <nav className='Header'>
       <div className='header-title'>
-        <Link to="/"><h1>Tim Huitt</h1></Link>
+        <Link to="/"><h1>{headerTitle}</h1></Link>
       </div>
       <Link 
         to="/projects" 
