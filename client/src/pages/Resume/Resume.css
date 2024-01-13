@@ -11,16 +11,13 @@
 }
 .links-container {
   position: absolute;
-  bottom: 2%;
-  left: 0;
+  top: 8%;
+  right: 0;
   display: flex;
-  gap: 20px;
-  width: 100%;
   justify-content: space-between;
   padding: 0 2%;
 }
-.open,
-.download {
+.open {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,17 +32,12 @@
   font-size: 1rem;
   font-weight: 400;
 }
-.download {
-  left: 200px;
-}
-.open:hover,
-.download:hover {
+.open:hover {
   background-color: #272d37;
   transform: translate(-1px, -1px);
   box-shadow: 5px 5px 15px #141516;
 }
-.open:active,
-.download:active {
+.open:active{
   background-color: #131519;
   transform: translate(0px, 0px);
   box-shadow: 2px 2px 4px #282d35;

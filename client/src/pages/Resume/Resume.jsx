@@ -22,14 +22,6 @@ const Resume = () => {
               </button>
             </div>
           </Link>
-          <a 
-            href="../../Tim-Huitt_Resume.docx" 
-            download="Tim-Huitt_Resume.docx"
-          >
-            <div className="download">
-              Download .docx
-            </div>
-          </a>
         </div>
         <object data={resumePDF} type="application/pdf" width="100%" height="100%" />
       </div>
