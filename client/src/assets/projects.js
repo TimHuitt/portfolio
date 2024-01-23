@@ -9,7 +9,7 @@ const projects = [
   },
   {
     "title": "Green Diary",
-    "description": "An npm published tool that streamlines UI element creation in React projects through AI prompted element generation. <br><br><a class='link' href='https://auto-component.com'>auto-component.com</a>",
+    "description": "Green Diary is an innovative CO2 tracking platform that helps you monitor the environmental impact of your vehicle trips. By understanding the carbon footprint of your travels, Green Diary aims to foster more eco-conscious decisions and behaviors.</a>",
     "images": ["https://i.imgur.com/xurUff3.png", "https://i.imgur.com/CZm7h8i.png", "https://i.imgur.com/TCLAWoa.png"],
     "gitLink": "https://github.com/elliesolhjou/Green-Diary",
     "deployLink": "https://green-diary-app-2098e92803f3.herokuapp.com/",
