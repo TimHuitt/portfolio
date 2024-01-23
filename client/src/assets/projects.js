@@ -5,7 +5,15 @@ const projects = [
     "images": ["https://camo.githubusercontent.com/8b10ffd215e9b1bd8f945c9c1fdb874ae2f639c72fca440d96edebad03a674c9/68747470733a2f2f692e696d6775722e636f6d2f446d58575064432e676966", "https://camo.githubusercontent.com/d43a391e7ffec538f06a4c312fd0492f71d1ba6a8484feec242145a062b0fbae/68747470733a2f2f692e696d6775722e636f6d2f7a5371783969502e676966"],
     "gitLink": "https://github.com/TimHuitt/auto-component",
     "deployLink": "https://auto-component.com/",
-    "skills" : ['react', 'js', 'express', 'node']
+    "skills" : ['react', 'js', 'express', 'node', 'html', 'css']
+  },
+  {
+    "title": "Green Diary",
+    "description": "An npm published tool that streamlines UI element creation in React projects through AI prompted element generation. <br><br><a class='link' href='https://auto-component.com'>auto-component.com</a>",
+    "images": ["https://i.imgur.com/xurUff3.png", "https://i.imgur.com/CZm7h8i.png", "https://i.imgur.com/TCLAWoa.png"],
+    "gitLink": "https://github.com/elliesolhjou/Green-Diary",
+    "deployLink": "https://green-diary-app-2098e92803f3.herokuapp.com/",
+    "skills" : ['py', 'django', 'bootstrap', 'postgresql', 'html', 'css']
   },
   {
     "title": "pawzbe",

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useEffect } from 'react'
 import './Skills.css'
 import reactSvg from '/react.svg'
@@ -6,7 +7,9 @@ import mongoSvg from '/mongo.svg'
 import jsSvg from '/javascript.svg'
 import htmlSvg from '/html.svg'
 import cssSvg from '/css.svg'
+import djangoSvg from '/django.svg'
 import bootstrapSvg from '/bootstrap.svg'
+import postgresqlSvg from '/postgresql.svg'
 import tailwindSvg from '/tailwind.svg'
 import npmSvg from '/npm.svg'
 import gitSvg from '/git.svg'
@@ -22,6 +25,8 @@ const Skills = ({ small, skills }) => {
     'express': { 'name': 'Express', 'link': expressSvg },
     'mongo': { 'name': 'Mongo', 'link': mongoSvg },
     'node': { 'name': 'Node.js', 'link': nodeSvg },
+    'django': { 'name': 'Django', 'link': djangoSvg },
+    'postgresql': { 'name': 'PostgreSQL', 'link': postgresqlSvg },
     'js': { 'name': 'JavaScript', 'link': jsSvg },
     'jq': { 'name': 'jQuery', 'link': jquerySvg },
     'py': { 'name': 'Python', 'link': pythonSvg },
