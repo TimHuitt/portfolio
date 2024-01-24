@@ -18,7 +18,7 @@ const projects = [
   {
     "title": "pawzbe",
     "description": "Pawzbe is a pet social media platform. User can create accounts using either Google or Github logins, and share photos and updates about their pets with their friends.<br><br><a class='link' href='https://pawzbe.com'>pawzbe.com</a>",
-    "images": ["https://camo.githubusercontent.com/8ed05f26bad13a9d3af282644e95ff5acea3ff0e114ef4fd2a7c8c96bdf90e5d/68747470733a2f2f692e696d6775722e636f6d2f4b59394e386d672e706e67", "https://camo.githubusercontent.com/0eca8aa207366fc386342f309b0cbdbef9c35eb62e977c12e19eb69b93393963/68747470733a2f2f692e696d6775722e636f6d2f4b4b34376d7a572e706e67"],
+    "images": ["https://i.imgur.com/Ct1IKgx.png", "https://i.imgur.com/6CN6238.png", "https://i.imgur.com/DJagbm4.png"],
     "gitLink": "https://github.com/TimHuitt/pawzbe",
     "deployLink": "https://pawzbe.com/",
     "skills" : ['js', 'express', 'node', 'mongo', 'html', 'css']
