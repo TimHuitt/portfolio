@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import "./Resume.css"
 import { useEffect } from 'react'
-import resumePDF from '../../assets/resume.pdf'
+import resumePDF from '../../assets/Tim-Huitt_Resume.pdf'
 
 const Resume = () => {
   const resume_url = "https://docs.google.com/document/d/1_sAfRg1CnfYK6I2_q3yoDlR0f7ZbxTHAT0Y6fEnLhyI/edit?usp=sharing"

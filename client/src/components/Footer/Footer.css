@@ -20,7 +20,8 @@
 .footer-links {
   display: flex;
   align-items: flex-end;
-  margin: 10px;
+  margin: 10px 20px;
+  color: #648792;
 }
 .footer-link {
   display: flex;
@@ -29,7 +30,7 @@
   height: 45px;
   width: 45px;
   border-radius: 5px;
-  background-color: var(--shadow-light);
+  background-color: var(--footer);
   margin: 5px 20px;
   cursor: pointer;
   transform: rotate(45deg);
