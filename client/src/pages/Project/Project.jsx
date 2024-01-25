@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import { getProject } from '../../utilities/projects-service'
 import Skills from '../../components/Skills/Skills'
 import './Project.css'
@@ -36,8 +36,8 @@ const Project = () => {
           <h1 className='p-4 font-bold text-3xl'>{project.title}</h1>
       </div>
       <div className="project-links">
-        <p className='text-left'><a href={project.gitLink}>View Code</a></p>
-        <p className='text-right'><a href={project.deployLink}>View App</a></p>
+        <Link to={project.gitLink} target="_blank" rel="noopener noreferrer">View Code</Link>
+        <Link to={project.deployLink} target="_blank" rel="noopener noreferrer">View App</Link>
       </div>
       <div className="project-skills-container">
           <Skills small={false} skills={project.skills?.length > 0 ? project.skills : ''} />
