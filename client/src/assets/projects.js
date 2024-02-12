@@ -1,5 +1,13 @@
 const projects = [
   {
+    "title": "CodeChallenger",
+    "description": "AI Generated code challenges. Customize challenges and let AI evaluate your solution. Provides challenge details, test cases, hints, and solutions.",
+    "images": ["https://i.imgur.com/gjRtX8j.png", "https://i.imgur.com/L8RUr0U.png"],
+    "gitLink": "https://github.com/TimHuitt/code-challenger-client",
+    "deployLink": "https://code-challenger-app.netlify.app/",
+    "skills" : ['react', 'js', 'express', 'node', 'html', 'css']
+  },
+  {
     "title": "Auto Component",
     "description": "An npm published tool that streamlines UI element creation in React projects through AI prompted element generation. <br><br><a class='link' href='https://auto-component.com'>auto-component.com</a>",
     "images": ["https://camo.githubusercontent.com/8b10ffd215e9b1bd8f945c9c1fdb874ae2f639c72fca440d96edebad03a674c9/68747470733a2f2f692e696d6775722e636f6d2f446d58575064432e676966", "https://camo.githubusercontent.com/d43a391e7ffec538f06a4c312fd0492f71d1ba6a8484feec242145a062b0fbae/68747470733a2f2f692e696d6775722e636f6d2f7a5371783969502e676966"],

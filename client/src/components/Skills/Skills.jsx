@@ -17,16 +17,20 @@ import nodeSvg from '/node.svg'
 import pythonSvg from '/python.svg'
 import vbaSvg from '/vba.svg'
 import jquerySvg from '/jquery.svg'
+import nextSvg from '/next.svg'
+import typescriptSvg from '/typescript.svg'
 
 const Skills = ({ small, skills }) => {
 
   const skillsList = {
     'react': { 'name': 'React', 'link': reactSvg },
+    'next': { 'name': 'Next.js', 'link': nextSvg },
     'express': { 'name': 'Express', 'link': expressSvg },
     'mongo': { 'name': 'Mongo', 'link': mongoSvg },
     'node': { 'name': 'Node.js', 'link': nodeSvg },
     'django': { 'name': 'Django', 'link': djangoSvg },
     'postgresql': { 'name': 'PostgreSQL', 'link': postgresqlSvg },
+    'ts': { 'name': 'TypeScript', 'link': typescriptSvg },
     'js': { 'name': 'JavaScript', 'link': jsSvg },
     'jq': { 'name': 'jQuery', 'link': jquerySvg },
     'py': { 'name': 'Python', 'link': pythonSvg },
