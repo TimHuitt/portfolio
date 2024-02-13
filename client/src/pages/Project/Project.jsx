@@ -49,11 +49,23 @@ const Project = () => {
         />
       </div>
       <div className="project-images pb-24">
-        {Array.isArray(project.images) && project.images.map((image)=> (
-          <div className="m-5"key={image + "-link"}>
-            <img src={image} />
-          </div>
-        ))}
+        {
+          Array.isArray(project.images) && project.images.map((image)=> {
+            let isWire = false
+            image.slice(0,2) === "w-" 
+              ? (image = image.slice(2), isWire = true)
+              : null
+
+            return (
+              <>
+                { isWire && <p>Wireframe:</p> }
+                <div className="m-5"key={image + "-link"}>
+                  <img src={image} />
+                </div>
+              </>
+            )
+          })
+        }
       </div>
     </div>
   )

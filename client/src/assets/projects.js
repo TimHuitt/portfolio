@@ -2,7 +2,7 @@ const projects = [
   {
     "title": "CodeChallenger",
     "description": "AI Generated code challenges. Customize challenges and let AI evaluate your solution. Provides challenge details, test cases, hints, and solutions.",
-    "images": ["https://i.imgur.com/gjRtX8j.png", "https://i.imgur.com/L8RUr0U.png"],
+    "images": ["https://i.imgur.com/gjRtX8j.png", "https://i.imgur.com/L8RUr0U.png", "w-https://i.imgur.com/EOIECN8.png"],
     "gitLink": "https://github.com/TimHuitt/code-challenger-client",
     "deployLink": "https://code-challenger-app.netlify.app/",
     "skills" : ['react', 'js', 'express', 'node', 'html', 'css']
@@ -10,7 +10,7 @@ const projects = [
   {
     "title": "Auto Component",
     "description": "An npm published tool that streamlines UI element creation in React projects through AI prompted element generation. <br><br><a class='link' href='https://auto-component.com'>auto-component.com</a>",
-    "images": ["https://camo.githubusercontent.com/8b10ffd215e9b1bd8f945c9c1fdb874ae2f639c72fca440d96edebad03a674c9/68747470733a2f2f692e696d6775722e636f6d2f446d58575064432e676966", "https://camo.githubusercontent.com/d43a391e7ffec538f06a4c312fd0492f71d1ba6a8484feec242145a062b0fbae/68747470733a2f2f692e696d6775722e636f6d2f7a5371783969502e676966"],
+    "images": ["https://i.imgur.com/woDHKJY.png", "https://camo.githubusercontent.com/8b10ffd215e9b1bd8f945c9c1fdb874ae2f639c72fca440d96edebad03a674c9/68747470733a2f2f692e696d6775722e636f6d2f446d58575064432e676966", "https://camo.githubusercontent.com/d43a391e7ffec538f06a4c312fd0492f71d1ba6a8484feec242145a062b0fbae/68747470733a2f2f692e696d6775722e636f6d2f7a5371783969502e676966", "w-https://i.imgur.com/qDJiLJe.png"],
     "gitLink": "https://github.com/TimHuitt/auto-component",
     "deployLink": "https://auto-component.com/",
     "skills" : ['react', 'js', 'express', 'node', 'html', 'css']
@@ -18,7 +18,7 @@ const projects = [
   {
     "title": "Green Diary",
     "description": "Green Diary is an innovative CO2 tracking platform that helps you monitor the environmental impact of your vehicle trips. By understanding the carbon footprint of your travels, Green Diary aims to foster more eco-conscious decisions and behaviors.</a>",
-    "images": ["https://i.imgur.com/xurUff3.png", "https://i.imgur.com/CZm7h8i.png", "https://i.imgur.com/TCLAWoa.png"],
+    "images": ["https://i.imgur.com/xurUff3.png", "https://i.imgur.com/CZm7h8i.png", "https://i.imgur.com/TCLAWoa.png", "w-https://i.imgur.com/YYFRFXu.png"],
     "gitLink": "https://github.com/elliesolhjou/Green-Diary",
     "deployLink": "https://green-diary-app-2098e92803f3.herokuapp.com/",
     "skills" : ['py', 'django', 'bootstrap', 'postgresql', 'html', 'css']
