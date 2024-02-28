@@ -1,7 +1,6 @@
 import Skills from '../../components/Skills/Skills'
 import Projects from '../Projects/Projects'
 import './Home.css'
-import '../projects/Projects.css'
 
 const Home = () => {
 
