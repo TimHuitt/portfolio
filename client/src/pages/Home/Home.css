@@ -96,14 +96,23 @@
   font-size: 1rem;
   font-weight: 100;
 }
-.home-about-2,
-.home-about-1 {
+.about-1,
+.home-about {
   animation: text-in .4s ease-in forwards;
   opacity: 0;
-  animation-delay: 1s;
+  animation-delay: 1.5s;
 }
-.home-about-2 {
-  animation-delay: 1.3s;
+.about-2 {
+  animation-delay: 2s;
+}
+.about-3 {
+  animation-delay: 2.5s;
+}
+.about-4 {
+  animation-delay: 3s;
+}
+.about-5 {
+  animation-delay: 3.5s;
 }
 @keyframes text-in {
   0% {
@@ -124,8 +133,9 @@
 }
 .home-skills-container {
   width: 100%;
+  max-width: 500px;
   animation: slide-up 1s forwards;
-  animation-delay: 1.5s;
+  animation-delay: .75s;
   opacity: 0;
 }
 @keyframes slide-up {
