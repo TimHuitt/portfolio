@@ -1,8 +1,7 @@
-/* eslint-disable react/no-unescaped-entities */
-import profileImage from '../../assets/profile.png'
 import Skills from '../../components/Skills/Skills'
 import Projects from '../Projects/Projects'
 import './Home.css'
+import '../projects/Projects.css'
 
 const Home = () => {
 
@@ -46,8 +45,8 @@ const Home = () => {
           I am excited about the prospect of bringing my unique blend of experience, passion, and commitment to your team. I am keen to contribute to innovative projects and collaborate with talented individuals to drive success and surpass expectations. I eagerly anticipate the opportunity to discuss how my background, skills, and enthusiasm can align with the objectives of your company. 
           </p>
       </div>
-      <div className="spacer" />
-      {/* <Projects /> */}
+      <div className='projects-header'>Projects</div>
+      <Projects />
     </div>
   )
 }

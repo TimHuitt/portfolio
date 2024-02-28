@@ -55,13 +55,13 @@ const projects = [
     "deployLink": "https://codepen.io/timhuitt/full/QWYWqwR",
     "skills" : ['js', 'html', 'css']
   },
-  {
-    "title": "Cats, Bats, and Owls",
-    "description": "Spooky twist on the classic Rock, Paper, Scissors game. Features animated pieces with result based reactions and persistent score keeping.",
-    "images": ["https://i.imgur.com/LflnR9g.png", "https://i.imgur.com/L6JeBny.png", "https://i.imgur.com/PkorTRn.png"],
-    "gitLink": "https://codepen.io/timhuitt/pen/yLGRJMK",
-    "deployLink": "https://codepen.io/timhuitt/full/yLGRJMK",
-    "skills" : ['js', 'html', 'css']
-  },
+  // {
+  //   "title": "Cats, Bats, and Owls",
+  //   "description": "Spooky twist on the classic Rock, Paper, Scissors game. Features animated pieces with result based reactions and persistent score keeping.",
+  //   "images": ["https://i.imgur.com/LflnR9g.png", "https://i.imgur.com/L6JeBny.png", "https://i.imgur.com/PkorTRn.png"],
+  //   "gitLink": "https://codepen.io/timhuitt/pen/yLGRJMK",
+  //   "deployLink": "https://codepen.io/timhuitt/full/yLGRJMK",
+  //   "skills" : ['js', 'html', 'css']
+  // },
   ]
   export default projects
