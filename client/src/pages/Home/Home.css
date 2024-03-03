@@ -97,6 +97,7 @@
   }
 }
 .about-me {
+  position: relative;
   margin: 0 auto;
   padding: 0 10px 10px 0;
   width: 60%;
@@ -108,23 +109,38 @@
   font-size: 1rem;
   font-weight: 100;
 }
+
+.more-button {
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  padding: 2px 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.more-button:hover {
+  background: var(--bg-light);
+  filter: brightness(200%);
+}
+.about-more {
+}
 .about-1,
 .home-about {
   animation: text-in .4s ease-in forwards;
   opacity: 0;
-  animation-delay: 1.5s;
+  animation-delay: 1.25s;
 }
 .about-2 {
-  animation-delay: 2s;
+  animation-delay: .1s;
 }
 .about-3 {
-  animation-delay: 2.5s;
+  animation-delay: .25s;
 }
 .about-4 {
-  animation-delay: 3s;
+  animation-delay: .5s;
 }
 .about-5 {
-  animation-delay: 3.5s;
+  animation-delay: .75s;
 }
 @keyframes text-in {
   0% {
