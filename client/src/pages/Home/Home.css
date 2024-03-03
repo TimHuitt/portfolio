@@ -153,9 +153,16 @@
 }
 .profile-image {
   margin: 0 auto;
-  padding: 40px;
+  padding: 10px;
 }
 .profile-image img {
+  .project-card-wrapper img {
+    max-height: 150px;
+    grid-row: 2;
+  }
+  .project-card-wrapper a {
+    text-decoration: none;
+  }
   height: 150px;
   border-radius: 50%;
 }

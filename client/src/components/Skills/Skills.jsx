@@ -26,7 +26,7 @@ const Skills = ({ small, skills }) => {
     'react': { 'name': 'React', 'link': reactSvg },
     'next': { 'name': 'Next.js', 'link': nextSvg },
     'express': { 'name': 'Express', 'link': expressSvg },
-    'mongo': { 'name': 'Mongo', 'link': mongoSvg },
+    'mongo': { 'name': 'MongoDB', 'link': mongoSvg },
     'node': { 'name': 'Node.js', 'link': nodeSvg },
     'django': { 'name': 'Django', 'link': djangoSvg },
     'postgresql': { 'name': 'PostgreSQL', 'link': postgresqlSvg },

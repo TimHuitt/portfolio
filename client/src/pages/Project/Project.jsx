@@ -22,9 +22,11 @@ const Project = () => {
   }
 
   useEffect(() => {
-    window.scrollTo(0,0)
-    handleRequest()
-  }, [])
+    handleRequest();
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100); // Adjust the delay as needed
+  }, []);
 
   const loading = () => (
     <h1>Loading...</h1>

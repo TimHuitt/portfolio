@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Skills from '../../components/Skills/Skills'
 import Projects from '../Projects/Projects'
+import profileImage from '/profile.png'
 import './Home.css'
 
 const Home = () => {
@@ -17,7 +18,6 @@ const Home = () => {
 //   }
 
   const handleMore = () => {
-    console.log('test')
     setShowMore(prev => !prev)
   }
 
@@ -28,15 +28,15 @@ const Home = () => {
         <div />
         <h2>Software Engineer</h2>
       </div>
-      {/* <div className='profile-image'>
+      <div className='profile-image'>
         <img src={ profileImage } />
-      </div> */}
+      </div>
       <div className="home-skills-container">
-        <Skills small={false} skills={'all'}/>
+        <Skills small={true} skills={'all'}/>
       </div>
       <div className='about-me'>
           <p className='home-about about-1'>
-          I am deeply passionate about programming and application development. My experience in this field, extending over five years, was most recently enhanced through a rigorous Software Engineering bootcamp, marking a significant milestone in my continuous pursuit of technical excellence and innovation. This period has included by a combination of personal ventures and professional projects, each contributing to my comprehensive understanding of software development and technology.          </p><br/>
+          I am deeply passionate about programming and application development. My experience in this field, extending over five years, was most recently expanded through a rigorous Software Engineering bootcamp, marking a significant milestone in my continuous pursuit of technical excellence and innovation. This period has also included by a combination of personal ventures and professional projects for small businesses, each contributing to my comprehensive understanding of software development and technology.          </p><br/>
           <div className="more-button" onClick={handleMore}>
             { showMore ? 'less' : 'more'}
           </div>

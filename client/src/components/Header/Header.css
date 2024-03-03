@@ -40,8 +40,8 @@
 }
 .header-title {
   position: absolute;
-  top: 20%;
-  left: 1%;
+  top: 30%;
+  left: 4%;
   font-size: 2rem;
   transition: font-size 1s;
   pointer-events: auto;

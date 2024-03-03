@@ -1,10 +1,8 @@
-import { Link, useLocation, useParams } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import "./Header.css"
 
-const Header = ({ isDark }) => {
+const Header = () => {
   const loc = useLocation().pathname
-
-  console.log(loc)
   const headerTitle = loc != '/' ? 'Tim Huitt' : ''
 
   return (
@@ -12,12 +10,12 @@ const Header = ({ isDark }) => {
       <div className='header-title'>
         <Link to="/"><h1>{headerTitle}</h1></Link>
       </div>
-      <Link 
+      {/* <Link 
         to="/projects" 
         className={loc==='/projects' ? 'selected tab' : 'tab'}
       >
         Projects
-      </Link>
+      </Link> */}
       <Link 
         to="/resume" 
         className={loc==='/resume' ? 'selected tab' : 'tab'}
