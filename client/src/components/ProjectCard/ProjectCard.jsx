@@ -1,11 +1,18 @@
 /* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom'
+import { useScrollContext } from '../../scrollContext'
 import Skills from '../../components/Skills/Skills'
 import "./ProjectCard.css"
 
 export const ProjectCard = ({p}) => {
+  const { windowRef } = useScrollContext()
+
+  const handleClick = () => {
+    sessionStorage.setItem('pos', windowRef.current.scrollTop)
+  }
+
   return (
-    <div className="project-card-wrapper">
+    <div className="project-card-wrapper" onClick={handleClick}>
       <Link to={"/project/" + p.title}>
         <div className='project-card text-2xl'>
           <div className='card-details-wrapper'>

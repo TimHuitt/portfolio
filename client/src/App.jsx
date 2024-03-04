@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react'
+import { useScrollContext } from './scrollContext'
 import Main from './components/Main/Main'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import './App.css'
 
 const App = () => {
+  const  { windowRef }  = useScrollContext()
   const [ isDark, setIsDark ] = useState(true)
 
   useEffect(() => {
@@ -22,8 +24,19 @@ const App = () => {
     root.style.setProperty('color', isDark ? '#ccc' : '#444')
   },[isDark])
 
+  useEffect(() => {
+    const clearStorage = () => {
+      sessionStorage.clear()
+    }
+    window.addEventListener('beforeunload', clearStorage)
+
+    return () => {
+      window.removeEventListener('beforeunload', clearStorage)
+    }
+  },[])
+
   return (
-    <div className='App'>
+    <div className='App' ref={windowRef}>
       <Header isDark={isDark}/>
       <Main />
       <Footer setIsDark={setIsDark} isDark={isDark} />

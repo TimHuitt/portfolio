@@ -1,25 +1,30 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useScrollContext } from '../../scrollContext'
 import Skills from '../../components/Skills/Skills'
 import Projects from '../Projects/Projects'
 import profileImage from '/profile.png'
 import './Home.css'
 
 const Home = () => {
+  const { windowRef } = useScrollContext()
   const [ showMore, setShowMore ] = useState(false)
-
-//   function isScrolledIntoView(elem){
-//       var docViewTop = $(window).scrollTop();
-//       var docViewBottom = docViewTop + $(window).height();
-// 
-//       var elemTop = $(elem).offset().top;
-//       var elemBottom = elemTop + $(elem).height();
-// 
-//       return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-//   }
 
   const handleMore = () => {
     setShowMore(prev => !prev)
   }
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (windowRef.current) {
+        const pos = sessionStorage.getItem('pos')
+          if (pos !== null) {
+            windowRef.current.scrollTop = parseInt(pos, 10)
+          }
+      }
+    }, 300)
+    return () => clearTimeout(timer)
+  },[])
+
 
   return (
     <div className='Home'>
@@ -36,7 +41,7 @@ const Home = () => {
       </div>
       <div className='about-me'>
           <p className='home-about about-1'>
-          I am deeply passionate about programming and application development. My experience in this field, extending over five years, was most recently expanded through a rigorous Software Engineering bootcamp, marking a significant milestone in my continuous pursuit of technical excellence and innovation. This period has also included by a combination of personal ventures and professional projects for small businesses, each contributing to my comprehensive understanding of software development and technology.          </p><br/>
+          I am deeply passionate about programming and application development. My experience in this field, extending over five years, was most recently expanded through a rigorous Software Engineering bootcamp, marking a significant milestone in my continuous pursuit of technical excellence and innovation. This period has also included a combination of professional projects for small businesses and personal ventures, each contributing to my comprehensive understanding of software development and technology.</p><br/>
           <div className="more-button" onClick={handleMore}>
             { showMore ? 'less' : 'more'}
           </div>
