@@ -1,7 +1,6 @@
 .Projects {
   width: 80%;
   max-width: 900px;
-  padding-top: 75px;
 }
 @media (max-width: 500px) {
   .Projects {

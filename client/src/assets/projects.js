@@ -8,6 +8,14 @@ const projects = [
     "skills" : ['react', 'js', 'express', 'node', 'html', 'css']
   },
   {
+    "title": "Promptopus",
+    "description": "Prompt generator for artist inspiration. Artists can choose between Prompts or Stories. Prompts provide creativity prompts through randomly selected emojis or words. Stories provide random AI generated stories with length and theme options.",
+    "images": ["https://i.imgur.com/8gaRKbp.png", "https://i.imgur.com/8AOi92k.png", "https://i.imgur.com/DoMvn3Z.png", "https://i.imgur.com/fzu6Xx3.png", "https://i.imgur.com/fpH8MtV.png"],
+    "gitLink": "https://github.com/TimHuitt/Promptopus",
+    "deployLink": "https://promptopus.netlify.app/",
+    "skills" : ['next', 'ts', 'express', 'node', 'html', 'css']
+  },
+  {
     "title": "Auto Component",
     "description": "An npm published tool that streamlines UI element creation in React projects through AI prompted element generation. <br><br><a class='link' href='https://auto-component.com'>auto-component.com</a>",
     "images": ["https://i.imgur.com/woDHKJY.png", "https://camo.githubusercontent.com/8b10ffd215e9b1bd8f945c9c1fdb874ae2f639c72fca440d96edebad03a674c9/68747470733a2f2f692e696d6775722e636f6d2f446d58575064432e676966", "https://camo.githubusercontent.com/d43a391e7ffec538f06a4c312fd0492f71d1ba6a8484feec242145a062b0fbae/68747470733a2f2f692e696d6775722e636f6d2f7a5371783969502e676966", "w-https://i.imgur.com/qDJiLJe.png"],

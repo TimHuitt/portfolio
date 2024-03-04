@@ -11,16 +11,14 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  width: var(--skills-width);
-  height: var(--skills-height);
+  width: 30px;
+  height: 30px;
   border: 1px solid black;
   border-radius: 10px;
   background-color: #eee;
   overflow: hidden;
-  /* filter: brightness(0%); */
 }
 .skill-container p {
-  display: var(--skills-display);
   position: absolute;
   font-size: .6rem;
   font-weight: bold;
@@ -33,5 +31,4 @@
 .skill-container img {
   position: absolute;
   top: 10%;
-  height: var(--skills-img-height);
 }

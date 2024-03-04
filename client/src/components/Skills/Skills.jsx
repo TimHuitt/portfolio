@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import { useEffect } from 'react'
 import './Skills.css'
 import reactSvg from '/react.svg'
 import expressSvg from '/express.svg'
@@ -23,44 +22,36 @@ import typescriptSvg from '/typescript.svg'
 const Skills = ({ small, skills }) => {
 
   const skillsList = {
-    'react': { 'name': 'React', 'link': reactSvg },
-    'next': { 'name': 'Next.js', 'link': nextSvg },
-    'express': { 'name': 'Express', 'link': expressSvg },
-    'mongo': { 'name': 'MongoDB', 'link': mongoSvg },
-    'node': { 'name': 'Node.js', 'link': nodeSvg },
-    'django': { 'name': 'Django', 'link': djangoSvg },
-    'postgresql': { 'name': 'PostgreSQL', 'link': postgresqlSvg },
-    'ts': { 'name': 'TypeScript', 'link': typescriptSvg },
-    'js': { 'name': 'JavaScript', 'link': jsSvg },
-    'jq': { 'name': 'jQuery', 'link': jquerySvg },
-    'py': { 'name': 'Python', 'link': pythonSvg },
-    'vba': { 'name': 'VBA', 'link': vbaSvg },
-    'html': { 'name': 'HTML5', 'link': htmlSvg },
-    'css': { 'name': 'CSS3', 'link': cssSvg },
-    'bootstrap': { 'name': 'Bootstrap', 'link': bootstrapSvg },
-    'tailwind': { 'name': 'Tailwind', 'link': tailwindSvg },
-    'npm': { 'name': 'npm', 'link': npmSvg },
-    'git': { 'name': 'git', 'link': gitSvg },
+    'react': { 'name': 'React', 'path': reactSvg },
+    'next': { 'name': 'Next.js', 'path': nextSvg },
+    'js': { 'name': 'JavaScript', 'path': jsSvg },
+    'ts': { 'name': 'TypeScript', 'path': typescriptSvg },
+    'django': { 'name': 'Django', 'path': djangoSvg },
+    'py': { 'name': 'Python', 'path': pythonSvg },
+    'node': { 'name': 'Node.js', 'path': nodeSvg },
+    'express': { 'name': 'Express', 'path': expressSvg },
+    'mongo': { 'name': 'MongoDB', 'path': mongoSvg },
+    'postgresql': { 'name': 'PostgreSQL', 'path': postgresqlSvg },
+    'jq': { 'name': 'jQuery', 'path': jquerySvg },
+    'vba': { 'name': 'VBA', 'path': vbaSvg },
+    'html': { 'name': 'HTML5', 'path': htmlSvg },
+    'css': { 'name': 'CSS3', 'path': cssSvg },
+    'bootstrap': { 'name': 'Bootstrap', 'path': bootstrapSvg },
+    'tailwind': { 'name': 'Tailwind', 'path': tailwindSvg },
+    'npm': { 'name': 'npm', 'path': npmSvg },
+    'git': { 'name': 'git', 'path': gitSvg },
   }
-  
-  useEffect(() => {
-    const root = document.documentElement;
-    root.style.setProperty('--skills-width', small ? '30px' : '50px')
-    root.style.setProperty('--skills-height', small ? '30px' : '50px')
-    root.style.setProperty('--skills-display', small ? 'none' : 'block')
-    root.style.setProperty('--skills-img-height', small ? '85%' : '60%')
-  },[])
 
   return (
     <div className="Skills">
       {Object.keys(skillsList).map((skill) => {
         const name = skillsList[skill].name
-        const link = skillsList[skill].link
+        const path = skillsList[skill].path
         return (
           skills.includes(skill) || skills === 'all' ? (
-            <div className="skill-container" key={"skill-" + name}>
-              <img src={link} />
-              <p>{name}</p>
+            <div className="skill-container" key={"skill-" + name} style={{ width: small ? '30px' : '50px', height: small ? '30px' : '50px' }}>
+              <img src={path} alt={name} style={{ height: small ? '85%' : '60%' }}/>
+              <p>{small ? '' : name}</p>
             </div>
           ) : (
             null

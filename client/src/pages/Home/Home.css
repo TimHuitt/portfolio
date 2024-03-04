@@ -37,9 +37,11 @@
 }
 .projects-header {
   position: relative;
-  top: 100px;
-  font-size: 3rem;
+  margin-top: 50px;
   border: none;
+}
+.projects-header h1 {
+  font-size: 3rem;
 }
 @keyframes slide-down {
   0% {
@@ -162,7 +164,7 @@
 .home-skills-container {
   width: 100%;
   max-width: 400px;
-  animation: slide-up 1s 2s forwards;
+  animation: slide-up 1s 1.5s forwards;
   opacity: 0;
 }
 @keyframes slide-up {

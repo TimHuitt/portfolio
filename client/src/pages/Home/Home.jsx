@@ -65,7 +65,10 @@ const Home = () => {
           )}
       </div>
 
-      <div className='projects-header'>Projects</div>
+      <div className='projects-header'>
+        <h1>Projects</h1>
+        <small>click for more details</small>
+      </div>
       <Projects />
     </div>
   )
