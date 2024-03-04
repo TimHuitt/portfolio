@@ -1,16 +1,9 @@
 import { Link } from 'react-router-dom'
 import "./Resume.css"
-import { useEffect } from 'react'
-import { useScrollContext } from '../../scrollContext'
 import resumePDF from '../../assets/Tim-Huitt_Resume.pdf'
 
 const Resume = () => {
-  const { windowRef } = useScrollContext()
   const resume_url = "https://docs.google.com/document/d/1_sAfRg1CnfYK6I2_q3yoDlR0f7ZbxTHAT0Y6fEnLhyI/edit?usp=sharing"
-
-  useEffect(() => {
-    windowRef.scrollTo(0,0)
-  }, [])
 
   return (
     <div className="Resume">

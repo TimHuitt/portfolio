@@ -83,8 +83,7 @@
   margin: 4px 0;
   color: rgb(105, 119, 137);
   font-size: 1.5rem;
-  animation: fade-in 1s ease-in forwards;
-  animation-delay: .5s;
+  animation: fade-in 1s 1s ease-in forwards;
   opacity: 0;
 }
 
@@ -121,8 +120,6 @@
 .more-button:hover {
   background: var(--bg-light);
   filter: brightness(200%);
-}
-.about-more {
 }
 .about-1,
 .home-about {
