@@ -3,19 +3,17 @@
   max-width: 900px;
   padding-top: 75px;
   display: grid;
-  grid-template-columns: 30% auto;
-  grid-template-rows: 100px 20px auto auto;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 .project-header {
   width: 100%;
+  padding: 8px;
   text-align: center;
   border-radius: 10px;
   border: 1px solid #aaa;
   grid-row: 1;
   grid-column: 1 / span 2;
-  margin-top: 10px;
 }
 .project-links {
   display: flex;
@@ -47,7 +45,6 @@
 .project-images {
   grid-row: 4 / span 2;
   grid-column: 2;
-  overflow-y: auto;
 }
 @media (max-width: 500px) {
   .Project {

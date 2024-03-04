@@ -4,8 +4,9 @@
   position: relative;
   width: 75%;
   max-width: 900px;
-  min-height: 100vh;
+  height: 100%;
   padding-top: 80px;
+  margin-bottom: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -151,23 +152,17 @@
 .profile-image {
   margin: 0 auto;
   padding: 10px;
+  opacity: 0;
+  animation: fade-in 1s 1s ease-in forwards;
 }
 .profile-image img {
-  .project-card-wrapper img {
-    max-height: 150px;
-    grid-row: 2;
-  }
-  .project-card-wrapper a {
-    text-decoration: none;
-  }
   height: 150px;
   border-radius: 50%;
 }
 .home-skills-container {
   width: 100%;
   max-width: 400px;
-  animation: slide-up 1s forwards;
-  animation-delay: .75s;
+  animation: slide-up 1s 2s forwards;
   opacity: 0;
 }
 @keyframes slide-up {

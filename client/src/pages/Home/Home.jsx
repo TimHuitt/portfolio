@@ -64,6 +64,7 @@ const Home = () => {
             ''
           )}
       </div>
+
       <div className='projects-header'>Projects</div>
       <Projects />
     </div>

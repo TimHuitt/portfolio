@@ -26,8 +26,8 @@ const Project = () => {
   useEffect(() => {
     handleRequest();
     setTimeout(() => {
-      windowRef.scrollTo(0, 0)
-    }, 300)
+      windowRef.current.scrollTo(0, 0)
+    }, 200)
   }, [])
 
   const loading = () => (
@@ -37,7 +37,7 @@ const Project = () => {
   const loaded = () => (
     <div className='Project'>
       <div className='project-header'>
-          <h1 className='p-4 font-bold text-3xl'>{project.title}</h1>
+          <h1 className='font-bold text-3xl'>{project.title}</h1>
       </div>
       <div className="project-links">
         <Link to={project.gitLink} target="_blank" rel="noopener noreferrer">View Code</Link>
