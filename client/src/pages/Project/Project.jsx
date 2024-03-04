@@ -1,11 +1,13 @@
 
 import { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
+import { useScrollContext } from '../../scrollContext'
 import { getProject } from '../../utilities/projects-service'
 import Skills from '../../components/Skills/Skills'
 import './Project.css'
 
 const Project = () => {
+  const { windowRef } = useScrollContext()
   const [isLoading, setIsLoading] = useState(false)
   const [project, setProject] = useState([])
   
@@ -24,9 +26,9 @@ const Project = () => {
   useEffect(() => {
     handleRequest();
     setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 100); // Adjust the delay as needed
-  }, []);
+      windowRef.scrollTo(0, 0)
+    }, 300)
+  }, [])
 
   const loading = () => (
     <h1>Loading...</h1>
