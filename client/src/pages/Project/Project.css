@@ -46,4 +46,8 @@
 .project-images {
   grid-row: 5 / span 2;
   grid-column: 1 / span 2;
+  margin: 0 auto;
+}
+.project-images img {
+  max-height: 70vh;
 }
