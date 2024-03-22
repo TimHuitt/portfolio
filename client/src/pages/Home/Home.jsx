@@ -41,7 +41,7 @@ const Home = () => {
       </div>
       <div className='about-me'>
           <p className='home-about about-1'>
-          I'm an experienced and passionate Full-Stack Developer with a strong focus on JavaScript, React, Node.js, and Express, skilled in crafting dynamic applications for diverse needs.
+          I'm an experienced and passionate Full-Stack Developer with a strong focus on JavaScript, React, Node.js, and Express. My experience in this field, extending over five years, included a combination of professional projects for small businesses, personal ventures, and continued education, each contributing to my comprehensive understanding of software development and technology.
           </p><br/>
           <div className="more-button" onClick={handleMore}>
             { showMore ? 'less' : 'more'}
@@ -49,12 +49,15 @@ const Home = () => {
           { showMore ? (
             <div className='about-more'>
               <p className='home-about about-2'>
-              A graduate of General Assembly's Software Engineering bootcamp, I am well-versed in modern development practices and technologies.
+              Over the last decade, I have consistently utilized my initiative in professional settings to engineer more efficient systems, earning the trust of my peers and superiors to tackle critical technical challenges. The past five years have been especially transformative, during which I have achieved educational milestones and led the development of enterprise-wide applications for small business using Python and VBA, reflecting my ability to adapt and excel in diverse technological environments.
               </p><br/>
               <p className='home-about about-3'>
-              I have successfully applied my knowledge in a variety of settings, from small business projects to personal ventures, creating solutions for a wide range of needs including data visualization, file management, process optimization, IoT solutions, automation tools, and entertainment applications.
+              My journey began when I was accepted as part of a Google Scholarship program, where I explored Android development among a select group of candidates. In my professional career, I have been tasked with developing and deploying a wide range of applications and tools including data visualization and manipulation, file management and organization, video and data analysis, and customizable client deliverables.
               </p><br/>
               <p className='home-about about-4'>
+              Outside of my professional endeavors, I have pursued my curiosity and creativity through a series of personal projects. These range from IoT solutions and automation tools to applications designed for entertainment and personal growth, each reinforcing my problem-solving skills and technical versatility.
+              </p><br/>
+              <p className='home-about about-5'>
               My current interests and learning goals include  Web3, Blockchain, Smart Contracts, Machine Learning, Neural Networks, Cybersecurity, AWS, Azure, GCP, Docker, Kubernetes.
               </p><br/>
             </div>
