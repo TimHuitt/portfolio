@@ -11,8 +11,9 @@
 }
 .links-container {
   position: absolute;
-  top: 8%;
-  right: 0;
+  top: -50px;
+  right: 50%;
+  transform: translateX(50%);
   display: flex;
   justify-content: space-between;
   padding: 0 2%;
