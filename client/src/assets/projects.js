@@ -2,6 +2,34 @@ const projects = [
   {
     "title": "CodeChallenger",
     "description": "AI Generated code challenges. Customize challenges and let AI evaluate your solution. Provides challenge details, test cases, hints, and solutions.",
+    "longDescription": `
+    <p>The ultimate platform where coding challenges meet artificial intelligence. Dive into a unique coding practice environment where you can customize challenges to fit your learning path and have your solutions evaluated by advanced AI.</p>
+    
+    <h3>Overview</h3>
+    <p>CodeChallenger is an AI-Generated coding challenge platform designed to enhance your programming skills through a variety of customized challenges. Each challenge is accompanied by detailed specifications, test cases, hints, and full solutions to guide you through your learning journey.</p>
+    <p>With CodeChallenger, users can:</p>
+    <ul>
+        <li>Receive AI-generated code challenges tailored to their skill level.</li>
+        <li>Customize the difficulty and topics of the challenges to meet their specific learning goals.</li>
+        <li>Submit solutions directly within the platform and receive instant feedback.</li>
+        <li>Explore detailed explanations and hints to improve their understanding and approach to problems.</li>
+    </ul>
+    <h3>Features</h3>
+    <ul>
+        <li><strong>AI-Generated Challenges:</strong> Get access to a vast array of challenges created by AI, ensuring you always have fresh and relevant problems to solve.</li>
+        <li><strong>Customizable Challenges:</strong> Tailor the difficulty and scope of challenges to match your personal learning objectives.</li>
+        <li><strong>Instant Feedback:</strong> Submit your solutions and receive immediate AI-evaluated feedback with actionable insights.</li>
+        <li><strong>Comprehensive Hints and Solutions:</strong> Struggling with a problem? Access step-by-step hints and detailed solutions to understand complex concepts and improve your coding skills.</li>
+        <li><strong>User-Friendly Interface:</strong> Engage with a clean, intuitive interface that makes learning to code enjoyable and effective.</li>
+    </ul>
+    <h3>Getting Started</h3>
+    <ol>
+        <li><strong>Choose a Challenge:</strong> Browse through the list of challenges and select one that suits your interest or learning goal.</li>
+        <li><strong>Read Challenge Details:</strong> Understand the problem statement, check the test cases, and start planning your solution.</li>
+        <li><strong>Code and Submit:</strong> Enter your solution in the integrated code editor and submit it for evaluation.</li>
+        <li><strong>Review Feedback:</strong> Analyze the feedback provided by AI and learn from the hints and solutions if needed.</li>
+    </ol>
+    `,
     "images": ["https://i.imgur.com/gjRtX8j.png", "https://i.imgur.com/L8RUr0U.png", "w-https://i.imgur.com/EOIECN8.png"],
     "gitLink": "https://github.com/TimHuitt/code-challenger-client",
     "deployLink": "https://code-challenger-app.netlify.app/",
@@ -10,6 +38,27 @@ const projects = [
   {
     "title": "Promptopus",
     "description": "Prompt generator for artist inspiration. Artists can choose between Prompts or Stories. Prompts provide creativity prompts through randomly selected emojis or words. Stories provide random AI generated stories with length and theme options.",
+    "longDescription": `
+    <p>Promptopus is an innovative and engaging app designed to inspire artists and creators by providing unique drawing prompts and storytelling ideas. This project showcases the integration of cutting-edge technologies with creative applications, offering users a platform to spark their imagination and creativity.</p>
+    
+    <h3>Overview</h3>
+    <p>Promptopus is built using Next.js, TypeScript, and OpenAI, demonstrating the latest in web development and artificial intelligence. This app is tailored for artists seeking inspiration, writers looking for story ideas, or anyone in need of a creative boost. Users can choose between generating random words or emojis for drawing prompts or receiving AI-generated stories based on customizable themes and lengths.</p>
+
+    <h3>Key Features</h3>
+    <ul>
+        <li><strong>Dynamic Prompt Generation:</strong> Users can generate unique drawing prompts by selecting between words or emojis, providing endless inspiration for creative projects.</li>
+        <li><strong>AI-Powered Story Generation:</strong> Leveraging OpenAI's capabilities, the app crafts stories in various lengths and themes, offering a rich source of inspiration for more detailed artworks or writing projects.</li>
+        <li><strong>Intuitive User Experience:</strong> A clean, user-friendly interface allows for seamless navigation and interaction, ensuring users can focus on unleashing their creativity.</li>
+        <li><strong>Responsive Design:</strong> The app is fully responsive, providing a consistent and accessible experience across all devices and screen sizes.</li>
+    </ul>
+
+    <h3>Technologies</h3>
+    <ul>
+        <li><strong>Next.js:</strong> Utilized for server-side rendering and static site generation, enhancing SEO and improving performance.</li>
+        <li><strong>TypeScript:</strong> Provides type safety and improves the development experience with static type checking.</li>
+        <li><strong>OpenAI API:</strong> Powers the AI-driven story and prompt generation, offering users creative and varied content.</li>
+    </ul>
+    `,
     "images": ["https://i.imgur.com/8gaRKbp.png", "https://i.imgur.com/8AOi92k.png", "https://i.imgur.com/DoMvn3Z.png", "https://i.imgur.com/fzu6Xx3.png", "https://i.imgur.com/fpH8MtV.png"],
     "gitLink": "https://github.com/TimHuitt/Promptopus",
     "deployLink": "https://promptopus.netlify.app/",
@@ -18,6 +67,30 @@ const projects = [
   {
     "title": "Auto Component",
     "description": "An npm published tool that streamlines UI element creation in React projects through AI prompted element generation.",
+    "longDescription": `
+    <p>AutoComponent is an innovative tool designed to transform the way UI elements are created in React projects. By integrating artificial intelligence with your development environment, AutoComponent speeds up the design and implementation of UI components, allowing developers to focus more on strategic tasks. This tool automates the generation of React components through a simple, user-friendly interface, enhancing productivity and reducing manual coding errors.</p>
+
+    <h2>Key Features</h2>
+    <ul>
+        <li><strong>AI-Prompted Generation:</strong> Streamline the creation of React components with AI-driven prompts that understand your requirements and deliver precise code.</li>
+        <li><strong>Dynamic Rendering:</strong> Use JSXParser to dynamically render the generated code, ensuring what you see is what gets implemented.</li>
+        <li><strong>Code Beautification:</strong> Automatically format your JSX/HTML using js-beautify for improved readability and maintainability.</li>
+        <li><strong>Interactive UI:</strong> Engage with a user-friendly interface that allows for real-time interaction and modifications, facilitating a more intuitive development process.</li>
+    </ul>
+
+    <h2>Technologies Used</h2>
+    <ul>
+        <li><strong>Frontend:</strong> React, enabling dynamic UI development with JavaScript.</li>
+        <li><strong>Backend:</strong> A combination of Mongoose, Express, and Node.js provides a scalable and efficient server-side solution.</li>
+        <li><strong>Dependencies:</strong>
+            <ul>
+                <li><strong>Babel:</strong> Transpile JSX to JavaScript for broader compatibility and publishing.</li>
+                <li><strong>JSXParser:</strong> Render JSX dynamically, integrating generated code seamlessly into your project.</li>
+                <li><strong>js-beautify:</strong> Ensure that the generated UI code is not only functional but also cleanly formatted and easy to read.</li>
+            </ul>
+        </li>
+    </ul>
+    `,
     "images": ["https://i.imgur.com/woDHKJY.png", "https://camo.githubusercontent.com/8b10ffd215e9b1bd8f945c9c1fdb874ae2f639c72fca440d96edebad03a674c9/68747470733a2f2f692e696d6775722e636f6d2f446d58575064432e676966", "https://camo.githubusercontent.com/d43a391e7ffec538f06a4c312fd0492f71d1ba6a8484feec242145a062b0fbae/68747470733a2f2f692e696d6775722e636f6d2f7a5371783969502e676966", "w-https://i.imgur.com/qDJiLJe.png"],
     "gitLink": "https://github.com/TimHuitt/auto-component",
     "deployLink": "https://auto-component.com/",

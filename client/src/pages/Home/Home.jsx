@@ -23,7 +23,7 @@ const Home = () => {
       }
     }, 300)
     return () => clearTimeout(timer)
-  },[])
+  },[windowRef])
 
 
   return (
@@ -37,11 +37,11 @@ const Home = () => {
         <img src={ profileImage } />
       </div>
       <div className="home-skills-container">
-        <Skills small={true} skills={'all'}/>
+        <Skills small={false} skills={['next', 'ts', 'node', 'postgresql', 'py']}/>
       </div>
       <div className='about-me'>
           <p className='home-about about-1'>
-          I&apos;m an experienced and passionate Full-Stack Developer with a strong focus on JavaScript, React, Node.js, and Express. My experience in this field, extending over five years, included a combination of professional projects for small businesses, personal ventures, and continued education, each contributing to my comprehensive understanding of software development and technology.
+          I&apos;m an experienced and passionate Full-Stack Developer with a strong focus on Next, TypeScript, Node.js, and Express. My experience in this field includes a combination of professional projects for small businesses, personal ventures, and continued education, each contributing to my comprehensive understanding of software development and technology.
           </p><br/>
           <div className="more-button" onClick={handleMore}>
             { showMore ? 'less' : 'more'}

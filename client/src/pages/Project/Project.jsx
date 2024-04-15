@@ -46,10 +46,10 @@ const Project = () => {
       <div className="project-skills-container">
           <Skills small={false} skills={project.skills?.length > 0 ? project.skills : ''} />
       </div>
-      <div className='project-details'>
+      <div className='project-details py-8'>
         <div 
-          className='text-base pt-2 w-full'
-          dangerouslySetInnerHTML={{ __html: project.description }} 
+          className='text-base w-full'
+          dangerouslySetInnerHTML={{ __html: project.longDescription }} 
         />
       </div>
       <div className="project-images pb-24">
