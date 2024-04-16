@@ -62,8 +62,7 @@ const Skills = ({ small, skills }) => {
           )
 
           return small ? (
-          
-            <Tooltip content={name}>
+            <Tooltip key={"skill-" + name + "-tooltip"} content={name}>
               {skillElement}
             </Tooltip>
           ) : (
