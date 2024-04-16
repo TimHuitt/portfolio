@@ -63,7 +63,7 @@ const Project = () => {
             return (
               <>
                 { isWire && <p>Wireframe:</p> }
-                <div className="m-5"key={image + "-link"}>
+                <div className="m-5 flex justify-center"key={image + "-link"}>
                   <img src={image} />
                 </div>
               </>
