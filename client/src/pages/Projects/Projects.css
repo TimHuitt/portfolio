@@ -9,10 +9,13 @@
 }
 
 .projects-header {
+  position: relative;
   width: 100%;
   text-align: center;
   border-radius: 10px;
-  border: 1px solid #aaa;
+}
+.projects-header h1 {
+  font-size: 3rem;
 }
 @media (max-width: 500px) {
   .Projects {

@@ -99,6 +99,26 @@ const projects = [
   {
     "title": "Green Diary",
     "description": "Green Diary is an innovative CO2 tracking platform that helps you monitor the environmental impact of your vehicle trips. By understanding the carbon footprint of your travels, Green Diary aims to foster more eco-conscious decisions and behaviors.</a>",
+    "longDescription": `
+    <h2>Features</h2>
+    <ul>
+      <li><strong>CO2 Emission Tracking:</strong> Calculates the amount of CO2 emitted on each trip based on your vehicle's make and model.</li>
+      <li><strong>Tree Mitigation Estimates:</strong> Provides insights into the number of trees required to offset your trip's carbon emissions.</li>
+      <li><strong>Vehicle Database:</strong> Utilizes various APIs to prepopulate vehicle makes and models for easy selection and accurate emission data.</li>
+      <li><strong>User-Friendly Interface:</strong> Built with Django and Bootstrap, the platform offers a responsive and intuitive user experience.</li>
+    </ul>
+
+    <h2>Technologies Used</h2>
+    <ul>
+      <li><strong>Django:</strong> A high-level Python Web framework that encourages rapid development and clean, pragmatic design.</li>
+      <li><strong>Django Authentication:</strong> For managing user accounts and authentication within the application.</li>
+      <li><strong>PostgreSQL:</strong> A powerful, open-source object-relational database system.</li>
+      <li><strong>Third-Party APIs:</strong> Integration of external APIs to fetch vehicle data and calculate emissions accurately.</li>
+      <li><strong>Bootstrap:</strong> For responsive design, ensuring the application is mobile-friendly and accessible on various devices.</li>
+      <li><strong>CSS:</strong> For styling the platform's web pages.</li>
+      <li><strong>HTML:</strong> For structuring the platform's web pages.</li>
+    </ul>
+    `,
     "images": ["https://i.imgur.com/xurUff3.png", "https://i.imgur.com/CZm7h8i.png", "https://i.imgur.com/TCLAWoa.png", "w-https://i.imgur.com/YYFRFXu.png"],
     "gitLink": "https://github.com/elliesolhjou/Green-Diary",
     "deployLink": "https://green-diary-app-2098e92803f3.herokuapp.com/",

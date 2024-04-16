@@ -8,9 +8,14 @@ import './Home.css'
 const Home = () => {
   const { windowRef } = useScrollContext()
   const [ showMore, setShowMore ] = useState(false)
+  const [ showSkills, setShowSkills ] = useState(false)
 
   const handleMore = () => {
     setShowMore(prev => !prev)
+  }
+
+  const handleSkills = () => {
+    setShowSkills(prev => !prev)
   }
 
   useEffect(() => {
@@ -37,7 +42,10 @@ const Home = () => {
         <img src={ profileImage } />
       </div>
       <div className="home-skills-container">
-        <Skills small={false} skills={['next', 'ts', 'node', 'postgresql', 'py']}/>
+        <Skills small={false} skills={showSkills ? 'all' : ['next', 'ts', 'node', 'postgresql', 'py']}/>
+        <div className="skills-button" onClick={handleSkills}>
+          { showSkills ? 'less' : 'more'}
+        </div>
       </div>
       <div className='about-me'>
           <p className='home-about about-1'>

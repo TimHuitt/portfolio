@@ -48,22 +48,27 @@ const Skills = ({ small, skills }) => {
       {Object.keys(skillsList).map((skill) => {
         const name = skillsList[skill].name
         const path = skillsList[skill].path
-        return (
-          skills.includes(skill) || skills === 'all' ? (
-            <Tooltip content={name}>
-              <div 
-                className="skill-container" 
-                key={"skill-" + name} 
-                style={{ width: small ? '30px' : '50px', height: small ? '30px' : '50px' }}
-              >
-                <img src={path} alt={name} style={{ height: small ? '85%' : '60%' }}/>
-                <p>{small ? '' : name}</p>
-              </div>
+        
+        if (skills.includes(skill) || skills === 'all') {
+          const skillElement = ( 
+            <div 
+              className="skill-container" 
+              key={"skill-" + name} 
+              style={{ width: small ? '30px' : '50px', height: small ? '30px' : '50px' }}
+            >
+              <img src={path} alt={name} style={{ height: small ? '85%' : '60%' }}/>
+              <p>{small ? '' : name}</p>
+            </div>
+          )
+
+          return small ? (
+            <Tooltip key={"skill-" + name + "-tooltip"} content={name}>
+              {skillElement}
             </Tooltip>
           ) : (
-            null
+            skillElement
           )
-        )
+        }
       })}
     </div>
   )
