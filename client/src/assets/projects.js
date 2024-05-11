@@ -3,8 +3,10 @@ const projects = [
     "title": "CodeChallenger",
     "description": "AI Generated code challenges. Customize challenges and let AI evaluate your solution. Provides challenge details, test cases, hints, and solutions.",
     "longDescription": `
-    <p>The ultimate platform where coding challenges meet artificial intelligence. Dive into a unique coding practice environment where you can customize challenges to fit your learning path and have your solutions evaluated by advanced AI.</p>
-    
+    <p style="font-size: 24px; text-align: center; margin-bottom: 20px;">The ultimate platform where coding challenges meet artificial intelligence.<br/><br/> Dive into a unique coding practice environment where you can customize challenges to fit your learning path and have your solutions evaluated by advanced AI.</p>
+    <div className="m-5 flex justify-center">
+      <img src="https://i.imgur.com/gjRtX8j.png" />
+    </div>
     <h3>Overview</h3>
     <p>CodeChallenger is an AI-Generated coding challenge platform designed to enhance your programming skills through a variety of customized challenges. Each challenge is accompanied by detailed specifications, test cases, hints, and full solutions to guide you through your learning journey.</p>
     <p>With CodeChallenger, users can:</p>
@@ -14,6 +16,9 @@ const projects = [
         <li>Submit solutions directly within the platform and receive instant feedback.</li>
         <li>Explore detailed explanations and hints to improve their understanding and approach to problems.</li>
     </ul>
+    <div className="m-5 flex justify-center">
+      <img src="https://i.imgur.com/L8RUr0U.png" />
+    </div>
     <h3>Features</h3>
     <ul>
         <li><strong>AI-Generated Challenges:</strong> Get access to a vast array of challenges created by AI, ensuring you always have fresh and relevant problems to solve.</li>
@@ -30,7 +35,7 @@ const projects = [
         <li><strong>Review Feedback:</strong> Analyze the feedback provided by AI and learn from the hints and solutions if needed.</li>
     </ol>
     `,
-    "images": ["https://i.imgur.com/gjRtX8j.png", "https://i.imgur.com/L8RUr0U.png", "w-https://i.imgur.com/EOIECN8.png"],
+    "images": ["https://i.imgur.com/gjRtX8j.png", "w-https://i.imgur.com/EOIECN8.png"],
     "gitLink": "https://github.com/TimHuitt/code-challenger-client",
     "deployLink": "https://code-challenger-app.netlify.app/",
     "skills" : ['react', 'js', 'express', 'node', 'html', 'css']
@@ -148,21 +153,5 @@ const projects = [
     "deployLink": "https://codepen.io/timhuitt/full/NWoGKmo",
     "skills" : ['js', 'html', 'css']
   },
-  {
-    "title": "Muscle Memory Typing Game",
-    "description": "Play through multiple code snippets that get progressively more complex as you move through each stage.",
-    "images": ["https://i.imgur.com/eEaVK62.png", "https://i.imgur.com/LJYDwUz.png", "https://i.imgur.com/mJ8vFnJ.png"],
-    "gitLink": "https://codepen.io/timhuitt/pen/QWYWqwR",
-    "deployLink": "https://codepen.io/timhuitt/full/QWYWqwR",
-    "skills" : ['js', 'html', 'css']
-  },
-  // {
-  //   "title": "Cats, Bats, and Owls",
-  //   "description": "Spooky twist on the classic Rock, Paper, Scissors game. Features animated pieces with result based reactions and persistent score keeping.",
-  //   "images": ["https://i.imgur.com/LflnR9g.png", "https://i.imgur.com/L6JeBny.png", "https://i.imgur.com/PkorTRn.png"],
-  //   "gitLink": "https://codepen.io/timhuitt/pen/yLGRJMK",
-  //   "deployLink": "https://codepen.io/timhuitt/full/yLGRJMK",
-  //   "skills" : ['js', 'html', 'css']
-  // },
-  ]
-  export default projects
+]
+export default projects

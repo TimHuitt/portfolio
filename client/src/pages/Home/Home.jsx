@@ -42,18 +42,15 @@ const Home = () => {
         <img src={ profileImage } />
       </div>
       <div className="home-skills-container">
-        <Skills small={false} skills={showSkills ? 'all' : ['next', 'ts', 'node', 'postgresql', 'py']}/>
+        <Skills small={false} skills={showSkills ? 'all' : ['ts', 'next', 'node', 'postgresql', 'tailwind']}/>
         <div className="skills-button" onClick={handleSkills}>
-          { showSkills ? 'less' : 'more'}
+          { showSkills ? 'less' : 'show more'}
         </div>
       </div>
       <div className='about-me'>
           <p className='home-about about-1'>
           I&apos;m an experienced and passionate Full-Stack Developer with a focus on React/Next, JavaScript/TypeScript, Node.js, and PostgreSQL and proficient with many others. My experience in this field includes a lifetime curiosity and combination of diverse projects for small businesses, personal ventures, and ongoing education, shaping my understanding of software development and technology.
           </p><br/>
-          <div className="more-button" onClick={handleMore}>
-            { showMore ? 'less' : 'more'}
-          </div>
           { showMore ? (
             <div className='about-more'>
               <p className='home-about about-2'>
@@ -72,6 +69,9 @@ const Home = () => {
           ) : (
             ''
           )}
+          <div className="about-button" onClick={handleMore}>
+            { showMore ? 'less' : 'show more'}
+          </div>
       </div>
 
       <div className='projects-header'>

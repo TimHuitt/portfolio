@@ -6,6 +6,7 @@ import { getProject } from '../../utilities/projects-service'
 import Skills from '../../components/Skills/Skills'
 import './Project.css'
 
+
 const Project = () => {
   const { windowRef } = useScrollContext()
   const [isLoading, setIsLoading] = useState(false)
@@ -44,7 +45,9 @@ const Project = () => {
         <Link to={project.deployLink} target="_blank" rel="noopener noreferrer">View App</Link>
       </div>
       <div className="project-skills-container">
+        <div className="project-skills">
           <Skills small={false} skills={project.skills?.length > 0 ? project.skills : ''} />
+        </div>
       </div>
       <div className='project-details py-8'>
         <div 
@@ -63,7 +66,7 @@ const Project = () => {
             return (
               <>
                 { isWire && <p>Wireframe:</p> }
-                <div className="m-5 flex justify-center"key={image + "-link"}>
+                <div className="m-5 flex justify-center" key={image + "-link"}>
                   <img src={image} />
                 </div>
               </>
