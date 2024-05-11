@@ -3,37 +3,23 @@ const projects = [
     "title": "CodeChallenger",
     "description": "AI Generated code challenges. Customize challenges and let AI evaluate your solution. Provides challenge details, test cases, hints, and solutions.",
     "longDescription": `
-    <p style="font-size: 24px; text-align: center; margin-bottom: 20px;">The ultimate platform where coding challenges meet artificial intelligence.<br/><br/> Dive into a unique coding practice environment where you can customize challenges to fit your learning path and have your solutions evaluated by advanced AI.</p>
-    <div className="m-5 flex justify-center">
+    <p style="margin-bottom: 20px;">The ultimate platform where coding challenges meet artificial intelligence<br/><br/> Dive into a unique coding practice environment where you can customize challenges to fit your learning path and have your solutions evaluated by advanced AI</p>
+    <div style="margin-bottom: 40px;">
       <img src="https://i.imgur.com/gjRtX8j.png" />
     </div>
-    <h3>Overview</h3>
-    <p>CodeChallenger is an AI-Generated coding challenge platform designed to enhance your programming skills through a variety of customized challenges. Each challenge is accompanied by detailed specifications, test cases, hints, and full solutions to guide you through your learning journey.</p>
-    <p>With CodeChallenger, users can:</p>
-    <ul>
-        <li>Receive AI-generated code challenges tailored to their skill level.</li>
-        <li>Customize the difficulty and topics of the challenges to meet their specific learning goals.</li>
-        <li>Submit solutions directly within the platform and receive instant feedback.</li>
-        <li>Explore detailed explanations and hints to improve their understanding and approach to problems.</li>
-    </ul>
-    <div className="m-5 flex justify-center">
+    <p>CodeChallenger is designed to enhance your programming skills through a variety of customized challenges <br/><br/><b>Each challenge provides:</b><br/>Detailed Instructions<br/>Test Cases<br/>Hints<br/>Solutions</p>
+    <br/>
+    <div className="">
       <img src="https://i.imgur.com/L8RUr0U.png" />
     </div>
-    <h3>Features</h3>
+    <h3 style="text-decoration: underline;">Features</h3>
     <ul>
-        <li><strong>AI-Generated Challenges:</strong> Get access to a vast array of challenges created by AI, ensuring you always have fresh and relevant problems to solve.</li>
-        <li><strong>Customizable Challenges:</strong> Tailor the difficulty and scope of challenges to match your personal learning objectives.</li>
-        <li><strong>Instant Feedback:</strong> Submit your solutions and receive immediate AI-evaluated feedback with actionable insights.</li>
-        <li><strong>Comprehensive Hints and Solutions:</strong> Struggling with a problem? Access step-by-step hints and detailed solutions to understand complex concepts and improve your coding skills.</li>
-        <li><strong>User-Friendly Interface:</strong> Engage with a clean, intuitive interface that makes learning to code enjoyable and effective.</li>
+        <li><strong>AI-Generated Challenges</strong><br/>Access a vast array of challenges created by AI</li>
+        <br/><li><strong>Customization</strong><br/> Tailor the difficulty and scope of challenges to match your personal learning objectives</li>
+        <br/><li><strong>Instant Feedback</strong><br/> Submit your solutions and receive AI-evaluated feedback with actionable insights</li>
+        <br/><li><strong>Comprehensive Hints and Solutions</strong><br/> Hints and detailed solutions to help you through each challenge</li>
+        <br/><li><strong>User-Friendly Interface</strong><br/>Built with a clean and intuitive design for an enjoyable user experience</li>
     </ul>
-    <h3>Getting Started</h3>
-    <ol>
-        <li><strong>Choose a Challenge:</strong> Browse through the list of challenges and select one that suits your interest or learning goal.</li>
-        <li><strong>Read Challenge Details:</strong> Understand the problem statement, check the test cases, and start planning your solution.</li>
-        <li><strong>Code and Submit:</strong> Enter your solution in the integrated code editor and submit it for evaluation.</li>
-        <li><strong>Review Feedback:</strong> Analyze the feedback provided by AI and learn from the hints and solutions if needed.</li>
-    </ol>
     `,
     "images": ["https://i.imgur.com/gjRtX8j.png", "w-https://i.imgur.com/EOIECN8.png"],
     "gitLink": "https://github.com/TimHuitt/code-challenger-client",

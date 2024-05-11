@@ -51,7 +51,7 @@ const Project = () => {
       </div>
       <div className='project-details py-8'>
         <div 
-          className='text-base w-full'
+          className='w-full'
           dangerouslySetInnerHTML={{ __html: project.longDescription }} 
         />
       </div>
