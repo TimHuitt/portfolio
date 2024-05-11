@@ -27,18 +27,18 @@ const Skills = ({ small, skills }) => {
     'next': { 'name': 'Next.js', 'path': nextSvg },
     'js': { 'name': 'JavaScript', 'path': jsSvg },
     'ts': { 'name': 'TypeScript', 'path': typescriptSvg },
+    'postgresql': { 'name': 'PostgreSQL', 'path': postgresqlSvg },
+    'tailwind': { 'name': 'Tailwind', 'path': tailwindSvg },
     'django': { 'name': 'Django', 'path': djangoSvg },
     'py': { 'name': 'Python', 'path': pythonSvg },
     'node': { 'name': 'Node.js', 'path': nodeSvg },
     'express': { 'name': 'Express', 'path': expressSvg },
     'mongo': { 'name': 'MongoDB', 'path': mongoSvg },
-    'postgresql': { 'name': 'PostgreSQL', 'path': postgresqlSvg },
     'jq': { 'name': 'jQuery', 'path': jquerySvg },
     'vba': { 'name': 'VBA', 'path': vbaSvg },
     'html': { 'name': 'HTML5', 'path': htmlSvg },
     'css': { 'name': 'CSS3', 'path': cssSvg },
     'bootstrap': { 'name': 'Bootstrap', 'path': bootstrapSvg },
-    'tailwind': { 'name': 'Tailwind', 'path': tailwindSvg },
     'npm': { 'name': 'npm', 'path': npmSvg },
     'git': { 'name': 'git', 'path': gitSvg },
   }
@@ -66,7 +66,9 @@ const Skills = ({ small, skills }) => {
               {skillElement}
             </Tooltip>
           ) : (
-            skillElement
+            <Tooltip key={"skill-" + name + "-tooltip"} content={name}>
+              {skillElement}
+            </Tooltip>
           )
         }
       })}
