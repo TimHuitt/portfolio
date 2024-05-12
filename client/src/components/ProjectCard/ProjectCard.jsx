@@ -14,11 +14,11 @@ export const ProjectCard = ({p}) => {
   return (
     <div className="project-card-wrapper" onClick={handleClick}>
       <Link to={"/project/" + p.title}>
-        <div className='project-card text-2xl'>
-          <div className='card-details-wrapper'>
-            <p className="font-bold">{p.title}</p>
+        <div className='project-card'>
+          <div className='card-details-wrapper text-center'>
+            <p className="font-bold text-2xl">{p.title}</p>
             <div 
-            className='text-base pt-2 pr-2'
+            className='pt-2 pr-2 text-xl'
             dangerouslySetInnerHTML={{ __html: p.description }} />
 
           </div>

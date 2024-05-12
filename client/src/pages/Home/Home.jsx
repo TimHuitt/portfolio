@@ -42,22 +42,19 @@ const Home = () => {
         <img src={ profileImage } />
       </div>
       <div className="home-skills-container">
-        <Skills small={false} skills={showSkills ? 'all' : ['next', 'ts', 'node', 'postgresql', 'py']}/>
+        <Skills small={false} skills={showSkills ? 'all' : ['ts', 'next', 'node', 'postgresql', 'tailwind']}/>
         <div className="skills-button" onClick={handleSkills}>
-          { showSkills ? 'less' : 'more'}
+          { showSkills ? 'less' : 'show more'}
         </div>
       </div>
       <div className='about-me'>
           <p className='home-about about-1'>
-          I&apos;m an experienced and passionate Full-Stack Developer with a strong focus on Next, TypeScript, Node.js, and Express. My experience in this field includes a combination of professional projects for small businesses, personal ventures, and continued education, each contributing to my comprehensive understanding of software development and technology.
+          I&apos;m an experienced and passionate Full-Stack Developer with a focus on React/Next, JavaScript/TypeScript, Node.js, and PostgreSQL and proficient with many others. My experience in this field includes a lifetime curiosity and combination of diverse projects for small businesses, personal ventures, and ongoing education, shaping my understanding of software development and technology.
           </p><br/>
-          <div className="more-button" onClick={handleMore}>
-            { showMore ? 'less' : 'more'}
-          </div>
           { showMore ? (
             <div className='about-more'>
               <p className='home-about about-2'>
-              Over the last decade, I have consistently utilized my initiative in professional settings to engineer more efficient systems, earning the trust of my peers and superiors to tackle critical technical challenges. The past five years have been especially transformative, during which I have achieved educational milestones and led the development of enterprise-wide applications for small business using Python and VBA, reflecting my ability to adapt and excel in diverse technological environments.
+              Throughout my career, I have consistently demonstrated initiative in professional environments, optimizing systems and earning trust to tackle critical challenges. The last five years, in particular, have been pivotal in my growth.
               </p><br/>
               <p className='home-about about-3'>
               A graduate of General Assembly&apos;s Software Engineering bootcamp, I am well-versed in modern development practices and technologies including React, Node.js, Django, and various database management systems. My approach combines creativity with efficiency, solving complex problems and leading projects to successful completion.
@@ -72,6 +69,9 @@ const Home = () => {
           ) : (
             ''
           )}
+          <div className="about-button" onClick={handleMore}>
+            { showMore ? 'less' : 'show more'}
+          </div>
       </div>
 
       <div className='projects-header'>

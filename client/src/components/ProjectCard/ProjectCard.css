@@ -10,10 +10,10 @@
   gap: 20px;
   display: grid;
   align-items: bottom;
-  width: 90%;
+  width: 100%;
   height: 100%;
-  padding: 20px;
-  margin: 20px;
+  padding: 8px;
+  margin: 20px 0;
   border-radius: 10px;
   background-color: var(--bg);
   border: 1px solid #ddd;

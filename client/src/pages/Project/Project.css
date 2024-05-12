@@ -1,11 +1,12 @@
 .Project {
-  width: 75%;
+  width: 90%;
   max-width: 900px;
   padding-top: 75px;
   display: grid;
   grid-template-rows: 100px 20px auto auto auto;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .Project h2 {
   padding: 2rem 0;
@@ -16,8 +17,7 @@
   padding: 1rem 0;
   font-weight: bold;
 }
-.Project li,
-.Project p {
+.Project li {
   padding-left: 1rem;
 }
 .project-header {
@@ -50,11 +50,13 @@
   width: 100%;
   height: 100%;
   display: flex;
+  text-align: center;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   grid-row: 4;
   grid-column: 1 / span 2;
+  font-size: 1.25rem;
 }
 .project-images {
   grid-row: 5 / span 2;
@@ -63,4 +65,6 @@
 }
 .project-images img {
   max-height: 70vh;
+  border-radius: 10px;
+  overflow: hidden;
 }
