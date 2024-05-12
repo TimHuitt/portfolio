@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import LogoSvg from '../../assets/logo.jsx'
 import CodepenSvg from '../../assets/codepen.jsx'
 import GithubSvg from '../../assets/github.jsx'
 import LinkedinSvg from '../../assets/linkedin.jsx'
@@ -13,7 +12,7 @@ const Footer = ({ isDark, setIsDark }) => {
   return (
     <div className='Footer'>
       <div className='logo' onClick={toggleDark}>
-        <LogoSvg />
+        { isDark ? <img src='../../../public/light.svg'></img> : <img src='../../../public/dark.svg'></img> }
       </div>
       <div className='footer-links'>
         <Link to="https://github.com/TimHuitt" target="_blank" rel="noopener noreferrer">
