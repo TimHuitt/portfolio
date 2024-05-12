@@ -50,10 +50,21 @@ const Project = () => {
         </div>
       </div>
       <div className='project-details py-8'>
-        <div 
-          className='w-full'
-          dangerouslySetInnerHTML={{ __html: project.longDescription }} 
-        />
+
+
+        <p className="content" dangerouslySetInnerHTML={{ __html: project.header }} ></p>
+        <div className="project-image">
+          <img src={project.images && project.images[0]} />
+        </div>
+        <p className="content" dangerouslySetInnerHTML={{ __html: project.body }} ></p>
+        <div className="project-image">
+          <img src={project.images && project.images[1]} />
+        </div>
+        <ul>
+          {project.features && project.features.map((feature, index) => (
+            <li key={`${feature}-${index}`}><h3>{feature[0]}</h3>{feature[1]}</li>
+          ))}
+        </ul>
       </div>
       <div className="project-images pb-24">
         {
