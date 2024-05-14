@@ -31,7 +31,7 @@ const projects = [
     `,
     "features": [
       ['Dynamic Prompt Generation', 'Users can generate unique drawing prompts by selecting between words or emojis, providing endless inspiration'],
-      ['AI-Powered Story Generation', 'Leveraging OpenAI&apos;s capabilities, the app crafts stories in various lengths and themes'],
+      ['AI-Powered Story Generation', 'Leveraging OpenAI&#39;s capabilities, the app crafts stories in various lengths and themes'],
       ['Intuitive User Experience', 'A clean, user-friendly interface allows for seamless navigation and interaction'],
       ['Responsive Design', 'The app is fully responsive, providing a consistent experience across all devices'],
     ],
