@@ -21,26 +21,6 @@ const projects = [
     "skills" : ['react', 'js', 'express', 'node', 'html', 'css']
   },
   {
-    "title": "Promptopus",
-    "description": "Prompt generator for artist inspiration. Artists can choose between Prompts or Stories.",
-    "header": `
-      Promptopus is an innovative and engaging app designed to inspire artists and creators by providing unique drawing prompts and storytelling ideas
-    `,
-    "body": `
-      Promptopus is built using Next.js, TypeScript, and OpenAI, showcasing the latest in web development and artificial intelligence. Users can choose between generating random words or emojis for drawing prompts or receiving AI-generated stories based on customizable themes and lengths
-    `,
-    "features": [
-      ['Dynamic Prompt Generation', 'Users can generate unique drawing prompts by selecting between words or emojis, providing endless inspiration'],
-      ['AI-Powered Story Generation', 'Leveraging OpenAI&#39;s capabilities, the app crafts stories in various lengths and themes'],
-      ['Intuitive User Experience', 'A clean, user-friendly interface allows for seamless navigation and interaction'],
-      ['Responsive Design', 'The app is fully responsive, providing a consistent experience across all devices'],
-    ],
-    "images": ["https://i.imgur.com/8gaRKbp.png", "https://i.imgur.com/8AOi92k.png"],
-    "gitLink": "https://github.com/TimHuitt/Promptopus",
-    "deployLink": "https://promptopus.netlify.app/",
-    "skills" : ['next', 'ts', 'express', 'node', 'html', 'css'],
-  },
-  {
     "title": "Auto Component",
     "description": "An npm published tool that streamlines UI element creation in React projects through AI prompted element generation.",
     "header": `
@@ -79,6 +59,26 @@ const projects = [
     "gitLink": "https://github.com/elliesolhjou/Green-Diary",
     "deployLink": "https://green-diary-app-2098e92803f3.herokuapp.com/",
     "skills" : ['py', 'django', 'bootstrap', 'postgresql', 'html', 'css']
+  },
+  {
+    "title": "Promptopus",
+    "description": "Prompt generator for artist inspiration. Artists can choose between Prompts or Stories.",
+    "header": `
+      Promptopus is an innovative and engaging app designed to inspire artists and creators by providing unique drawing prompts and storytelling ideas
+    `,
+    "body": `
+      Promptopus is built using Next.js, TypeScript, and OpenAI, showcasing the latest in web development and artificial intelligence. Users can choose between generating random words or emojis for drawing prompts or receiving AI-generated stories based on customizable themes and lengths
+    `,
+    "features": [
+      ['Dynamic Prompt Generation', 'Users can generate unique drawing prompts by selecting between words or emojis, providing endless inspiration'],
+      ['AI-Powered Story Generation', 'Leveraging OpenAI&#39;s capabilities, the app crafts stories in various lengths and themes'],
+      ['Intuitive User Experience', 'A clean, user-friendly interface allows for seamless navigation and interaction'],
+      ['Responsive Design', 'The app is fully responsive, providing a consistent experience across all devices'],
+    ],
+    "images": ["https://i.imgur.com/8gaRKbp.png", "https://i.imgur.com/8AOi92k.png"],
+    "gitLink": "https://github.com/TimHuitt/Promptopus",
+    "deployLink": "https://promptopus.netlify.app/",
+    "skills" : ['next', 'ts', 'express', 'node', 'html', 'css'],
   },
   {
     "title": "pawzbe",

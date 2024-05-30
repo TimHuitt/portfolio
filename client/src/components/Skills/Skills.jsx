@@ -19,6 +19,7 @@ import vbaSvg from '/vba.svg'
 import jquerySvg from '/jquery.svg'
 import nextSvg from '/next.svg'
 import typescriptSvg from '/typescript.svg'
+import cloudinarySvg from '/cloudinary.svg'
 
 const Skills = ({ small, skills }) => {
 
@@ -41,6 +42,7 @@ const Skills = ({ small, skills }) => {
     'bootstrap': { 'name': 'Bootstrap', 'path': bootstrapSvg },
     'npm': { 'name': 'npm', 'path': npmSvg },
     'git': { 'name': 'git', 'path': gitSvg },
+    'cloudinary': { 'name': 'cloudinary', 'path': cloudinarySvg },
   }
 
   return (
