@@ -49,9 +49,7 @@ const Project = () => {
           <Skills small={false} skills={project.skills?.length > 0 ? project.skills : ''} />
         </div>
       </div>
-      <div className='project-details py-8'>
-
-
+      <div className={Array.isArray(project.images) && project.images.length <= 2 ? 'space project-details py-8' : 'project-details py-8'}>
         <p className="content" dangerouslySetInnerHTML={{ __html: project.header }} ></p>
         <div className="project-image">
           <img src={project.images && project.images[0]} />
@@ -67,23 +65,23 @@ const Project = () => {
         </ul>
       </div>
       <div className="project-images pb-24">
-        {
-          Array.isArray(project.images) && project.images.map((image)=> {
-            let isWire = false
-            image.slice(0,2) === "w-" 
-              ? (image = image.slice(2), isWire = true)
-              : null
+        {Array.isArray(project.images) && project.images.map((image)=> {
+          let isWire = false
+          image.slice(0,2) === "w-" 
+            ? (image = image.slice(2), isWire = true)
+            : null
 
-            return (
-              <>
-                { isWire && <p>Wireframe:</p> }
+          return (
+            <>
+              { isWire && <p>Wireframe:</p> }
+              { image !== project.images[0] && image !== project.images[1] && (
                 <div className="m-5 flex justify-center" key={image + "-link"}>
                   <img src={image} />
                 </div>
-              </>
-            )
-          })
-        }
+              )}
+            </>
+          )
+        })}
       </div>
     </div>
   )
