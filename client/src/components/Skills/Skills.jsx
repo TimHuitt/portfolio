@@ -12,8 +12,9 @@ import bootstrapSvg from '/bootstrap.svg'
 import postgresqlSvg from '/postgresql.svg'
 import tailwindSvg from '/tailwind.svg'
 import npmSvg from '/npm.svg'
-import gitSvg from '/git.svg'
 import nodeSvg from '/node.svg'
+import gitSvg from '/git.svg'
+import axiosSvg from '/axios.svg'
 import pythonSvg from '/python.svg'
 import vbaSvg from '/vba.svg'
 import jquerySvg from '/jquery.svg'
@@ -42,6 +43,7 @@ const Skills = ({ small, skills }) => {
     'bootstrap': { 'name': 'Bootstrap', 'path': bootstrapSvg },
     'npm': { 'name': 'npm', 'path': npmSvg },
     'git': { 'name': 'git', 'path': gitSvg },
+    'axios': { 'name': 'Axios', 'path': axiosSvg },
     'cloudinary': { 'name': 'cloudinary', 'path': cloudinarySvg },
   }
 

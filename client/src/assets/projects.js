@@ -1,5 +1,22 @@
 const projects = [
   {
+    "title": "Dynamic Portfolio", 
+    "description": "This project is a portfolio website built using Next.js and TypeScript, PostgreSQL, and Cloudinary, featuring dynamic content management capabilities. It allows the client to log in and make updates to any section of their website through a custom CMS.",
+    "header": "Dynamic portfolio website built to client specification with a fully integrated and authenticated content management system that allows easy updates to any section of the website.",
+    "body": "This portfolio website is designed to provide a showcase of the clients work, while also offering full control over their content.  The custom CMS empowers them to update their website without needing technical expertise.",
+    "features": [
+      ["Server-Side Rendering", "Utilizes Next.js for efficient, dynamic rendering."],
+      ["Custom CMS", "Allows the client to update content without needing technical knowledge."],
+      ["API Integration", "Uses Node.js and axios for backend communication."],
+      ["Image Management", "Integrates Cloudinary for optimized image storage and delivery."],
+      ["Database", "Utilizes PostgreSQL for persistent data storage."]
+    ],
+    "images": ["https://i.imgur.com/nCdJOIu.png", "https://i.imgur.com/f1ujfJY.png", "https://i.imgur.com/0OtWU5d.png"],
+    "gitLink": "https://github.com/TimHuitt/kira-tattoo",
+    "deployLink": "https://kira-art.vercel.app/",
+    "skills" : ['next', 'ts', 'node', 'cloudinary', 'postgresql', 'axios', 'tailwind'],
+  },
+  {
     "title": "CodeChallenger",
     "description": "AI Generated code challenges. Customize challenges and let AI evaluate your solution. Provides challenge details, test cases, hints, and solutions.",
     "header": `
@@ -18,7 +35,7 @@ const projects = [
     "images": ["https://i.imgur.com/gjRtX8j.png", "https://i.imgur.com/TCqkEd1.png", "w-https://i.imgur.com/EOIECN8.png"],
     "gitLink": "https://github.com/TimHuitt/code-challenger-client",
     "deployLink": "https://code-challenger-app.netlify.app/",
-    "skills" : ['react', 'js', 'express', 'node', 'html', 'css']
+    "skills" : ['react', 'js', 'express', 'node', 'html', 'css'],
   },
   {
     "title": "Auto Component",
