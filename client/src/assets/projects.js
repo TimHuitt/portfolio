@@ -12,7 +12,7 @@ const projects = [
       ["Image Management", "Integrates Cloudinary for optimized image storage and delivery."],
       ["Database", "Utilizes PostgreSQL for persistent data storage."]
     ],
-    "images": ["https://i.imgur.com/nCdJOIu.png", "https://i.imgur.com/f1ujfJY.png", "https://i.imgur.com/0OtWU5d.png"],
+    "images": ["https://i.imgur.com/nCdJOIu.png", "https://i.imgur.com/f1ujfJY.png", "https://i.imgur.com/0OtWU5d.png", "https://i.imgur.com/9JDbXQb.png"],
     "gitLink": "https://github.com/TimHuitt/kira-tattoo",
     "deployLink": "https://kira-art.vercel.app/",
     "skills" : ['next', 'ts', 'node', 'cloudinary', 'postgresql', 'axios', 'tailwind'],
@@ -25,7 +25,7 @@ const projects = [
       Coding challenge platform fully controlled by Artificial Intelligence<br/><br/>Unique coding practice environment where you can customize AI created challenges to fit your learning path and receive AI evaluations of your solution.  
     `,
     "body": `
-      CodeChallenger is designed to enhance your programming skills through a variety of customized challenges <br/><br/><b>Each challenge provides:</b><br/>Detailed Instructions<br/>Test Cases<br/>Hints<br/>Solutions</p>
+      CodeChallenger is designed to enhance your programming skills through a variety of customizable AI generated challenges <br/><br/><b>Each challenge provides:</b><br/>Detailed Instructions<br/>Test Cases<br/>Hints<br/>Solutions</p>
     `,
     "features": [
       ['AI-Generated Challenges', 'Access a vast array of challenges created by AI'],
