@@ -1,7 +1,7 @@
 const projects = [
   {
     "title": "Dynamic Portfolio",
-    "role": "Freelance Full Stack Developer",
+    "role": "Freelance Full Stack Engineer",
     "description": "Responsive portfolio website built using Next.js and TypeScript, PostgreSQL, and Cloudinary, featuring dynamic content management capabilities.",
     "header": "Dynamic portfolio website built to client specification with a fully integrated and authenticated content management system that allows easy updates to any section of the website.",
     "body": "This portfolio website is designed to provide a showcase of the clients work, while also offering full control over their content.  The custom CMS empowers them to update their website without needing technical expertise.",
@@ -19,7 +19,7 @@ const projects = [
   },
   {
     "title": "CodeChallenger",
-    "role": "Lead Full Stack Developer",
+    "role": "Lead Full Stack Engineer",
     "description": "AI Generated code challenges. Customize challenges and let AI evaluate your solution. Provides challenge details, test cases, hints, and solutions.",
     "header": `
       Coding challenge platform fully controlled by Artificial Intelligence<br/><br/>Unique coding practice environment where you can customize AI created challenges to fit your learning path and receive AI evaluations of your solution.  
@@ -41,7 +41,7 @@ const projects = [
   },
   {
     "title": "Auto Component",
-    "role": "Front End Developer and AI Prompt Engineer",
+    "role": "Front End Engineer and AI Prompt Engineer",
     "description": "An npm published tool that streamlines UI element creation in React projects through AI prompted element generation.",
     "header": `AutoComponent is a developer tool published to npm and designed to transform the way UI elements are created in React projects. By integrating artificial intelligence with your development environment, AutoComponent speeds up the design and implementation of UI components`,
     "body": `AutoComponent automates the generation of React components through a simple, user-friendly interface, enhancing productivity and reducing manual coding errors`,
@@ -75,7 +75,7 @@ const projects = [
   },
   {
     "title": "Portfolio Website",
-    "role": "Freelance Full Stack Developer",
+    "role": "Freelance Full Stack Engineer",
     "description": "This is a responsive portfolio website built using Next.js and TypeScript. It was designed to showcase the client's work and skills in a clean and professional manner.",
     "header": "A clean and professional portfolio website showcasing the client's skills and work.",
     "body": "This portfolio website provides a concise and visually appealing presentation of the client's work and skills, designed to impress potential clients and collaborators.",
@@ -91,7 +91,7 @@ const projects = [
   },
   {
     "title": "Promptopus",
-    "role": "Lead Developer",
+    "role": "Lead Engineer",
     "description": "Prompt generator for artist inspiration. Artists can choose between Prompts or Stories.",
     "header": `
       Promptopus is an innovative and engaging app designed to inspire artists and creators by providing unique drawing prompts and storytelling ideas
@@ -112,7 +112,7 @@ const projects = [
   },
   {
     "title": "pawzbe",
-    "role": "Lead Developer",
+    "role": "Full Stack Engineer",
     "description": "Pawzbe is a pet social media platform where users can share photos and updates about their pets.",
     "header": `
       Pawzbe is a dedicated social media platform for pets and their owners. Users can create accounts and share updates about their pets with a community of pet lovers
@@ -132,6 +132,7 @@ const projects = [
   },
   {
     "title": "Battleship!",
+    "role": "Lead Developer",
     "description": "Engage in naval warfare with advanced computer opponents and customizable ship placement in this turn-based tactical game.",
     "header": `
       Battleship! offers a classic naval combat experience where players can engage in strategic battles against an advanced AI opponent
@@ -152,6 +153,7 @@ const projects = [
   },
   {
     "title": "Tic Tac Toe",
+    "role": "Lead Developer",
     "description": "Enjoy the classic two-player Tic-Tac-Toe game with modern UI enhancements, featuring turn/piece tracking and a resettable score.",
     "header": `
       Tic Tac Toe brings the traditional game to modern audiences with an updated user interface and enhanced gameplay features
