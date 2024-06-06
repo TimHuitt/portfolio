@@ -49,7 +49,8 @@ const Project = () => {
           <Skills small={false} skills={project.skills?.length > 0 ? project.skills : ''} />
         </div>
       </div>
-      <div className={Array.isArray(project.images) && project.images.length <= 2 ? 'space project-details py-8' : 'project-details py-8'}>
+      <div className={Array.isArray(project.images) && project.images.length <= 2 ? 'project-details mb-[100px] py-8' : 'project-details mt-[-100px] py-8'}>
+        <p className='font-bold text-xl mt-10'>{project.role}</p>
         <p className="content" dangerouslySetInnerHTML={{ __html: project.header }} ></p>
         <div className="project-image">
           <img src={project.images && project.images[0]} />

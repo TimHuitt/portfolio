@@ -1,7 +1,8 @@
 const projects = [
   {
-    "title": "Dynamic Portfolio", 
-    "description": "This project is a portfolio website built using Next.js and TypeScript, PostgreSQL, and Cloudinary, featuring dynamic content management capabilities. It allows the client to log in and make updates to any section of their website through a custom CMS.",
+    "title": "Dynamic Portfolio",
+    "role": "Freelance Full Stack Developer",
+    "description": "Responsive portfolio website built using Next.js and TypeScript, PostgreSQL, and Cloudinary, featuring dynamic content management capabilities.",
     "header": "Dynamic portfolio website built to client specification with a fully integrated and authenticated content management system that allows easy updates to any section of the website.",
     "body": "This portfolio website is designed to provide a showcase of the clients work, while also offering full control over their content.  The custom CMS empowers them to update their website without needing technical expertise.",
     "features": [
@@ -18,6 +19,7 @@ const projects = [
   },
   {
     "title": "CodeChallenger",
+    "role": "Lead Full Stack Developer",
     "description": "AI Generated code challenges. Customize challenges and let AI evaluate your solution. Provides challenge details, test cases, hints, and solutions.",
     "header": `
       The ultimate platform where coding challenges meet artificial intelligence<br/><br/> Dive into a unique coding practice environment where you can customize challenges to fit your learning path and have your solutions evaluated by advanced AI    
@@ -35,17 +37,14 @@ const projects = [
     "images": ["https://i.imgur.com/gjRtX8j.png", "https://i.imgur.com/TCqkEd1.png", "w-https://i.imgur.com/EOIECN8.png"],
     "gitLink": "https://github.com/TimHuitt/code-challenger-client",
     "deployLink": "https://code-challenger-app.netlify.app/",
-    "skills" : ['react', 'js', 'express', 'node', 'html', 'css'],
+    "skills" : ['react', 'js', 'express', 'node', 'openai', 'html', 'css'],
   },
   {
     "title": "Auto Component",
+    "role": "Front End Developer and AI Prompt Engineer",
     "description": "An npm published tool that streamlines UI element creation in React projects through AI prompted element generation.",
-    "header": `
-      AutoComponent is a developer tool published to npm and designed to transform the way UI elements are created in React projects. By integrating artificial intelligence with your development environment, AutoComponent speeds up the design and implementation of UI components
-    `,
-    "body": `
-      AutoComponent automates the generation of React components through a simple, user-friendly interface, enhancing productivity and reducing manual coding errors
-    `,
+    "header": `AutoComponent is a developer tool published to npm and designed to transform the way UI elements are created in React projects. By integrating artificial intelligence with your development environment, AutoComponent speeds up the design and implementation of UI components`,
+    "body": `AutoComponent automates the generation of React components through a simple, user-friendly interface, enhancing productivity and reducing manual coding errors`,
     "features": [
       ['AI-Prompted Generation', 'Streamline the creation of React components with AI-driven prompts that deliver precise code.'],
       ['Dynamic Rendering', 'Use JSXParser to dynamically render the generated code, ensuring accurate implementation.'],
@@ -55,17 +54,14 @@ const projects = [
     "images": ["https://i.imgur.com/woDHKJY.png", "https://i.imgur.com/qDJiLJe.png"],
     "gitLink": "https://github.com/TimHuitt/auto-component",
     "deployLink": "https://auto-component.com/",
-    "skills" : ['react', 'js', 'express', 'node', 'html', 'css']
+    "skills" : ['react', 'js', 'express', 'node', 'openai', 'html', 'css']
   },
   {
     "title": "Green Diary",
+    "role": "Senior Full Stack Engineer",
     "description": "An innovative CO2 tracking platform that helps monitor the environmental impact of your vehicle trips.",
-    "header": `
-      Green Diary is an innovative platform designed to help you monitor the environmental impact of your vehicle trips and foster more eco-conscious decisions
-    `,
-    "body": `
-      By understanding the carbon footprint of your travels, Green Diary aims to encourage eco-friendly behaviors. Utilizes various APIs to populate vehicle data for accurate emission tracking
-    `,
+    "header": `Green Diary is an innovative platform designed to help you monitor the environmental impact of your vehicle trips and foster more eco-conscious decisions`,
+    "body": `By understanding the carbon footprint of your travels, Green Diary aims to encourage eco-friendly behaviors. Utilizes various APIs to populate vehicle data for accurate emission tracking`,
     "features": [
       ['CO2 Emission Tracking', 'Calculates the amount of CO2 emitted on each trip based on your vehicle\'s make and model.'],
       ['Tree Mitigation Estimates', 'Provides insights into the number of trees required to offset your trip\'s carbon emissions.'],
@@ -78,7 +74,24 @@ const projects = [
     "skills" : ['py', 'django', 'bootstrap', 'postgresql', 'html', 'css']
   },
   {
+    "title": "Portfolio Website",
+    "role": "Freelance Full Stack Developer",
+    "description": "This is a responsive portfolio website built using Next.js and TypeScript. It was designed to showcase the client's work and skills in a clean and professional manner.",
+    "header": "A clean and professional portfolio website showcasing the client's skills and work.",
+    "body": "This portfolio website provides a concise and visually appealing presentation of the client's work and skills, designed to impress potential clients and collaborators.",
+    "features": [
+        ["Static Site Generation", "Utilizes Next.js for fast, static rendering."],
+        ["Responsive Design", "Ensures the website looks great on all devices."],
+        ["Custom Styling", "Tailored to the client's branding and style preferences."]
+    ],
+    "images": ["https://i.imgur.com/gAXA3Mf.jpeg", "https://i.imgur.com/KNWXUbv.png", 'https://i.imgur.com/s0Y3AwV.png'],
+    "gitLink": "https://github.com/TimHuitt/steph-art",
+    "deployLink": "https://steph-art.vercel.app/",
+    "skills": ['next', 'ts', 'tailwind']
+  },
+  {
     "title": "Promptopus",
+    "role": "Lead Developer",
     "description": "Prompt generator for artist inspiration. Artists can choose between Prompts or Stories.",
     "header": `
       Promptopus is an innovative and engaging app designed to inspire artists and creators by providing unique drawing prompts and storytelling ideas
@@ -95,10 +108,11 @@ const projects = [
     "images": ["https://i.imgur.com/8gaRKbp.png", "https://i.imgur.com/8AOi92k.png"],
     "gitLink": "https://github.com/TimHuitt/Promptopus",
     "deployLink": "https://promptopus.netlify.app/",
-    "skills" : ['next', 'ts', 'express', 'node', 'html', 'css'],
+    "skills" : ['next', 'ts', 'express', 'node', 'openai', 'html', 'css'],
   },
   {
     "title": "pawzbe",
+    "role": "Lead Developer",
     "description": "Pawzbe is a pet social media platform where users can share photos and updates about their pets.",
     "header": `
       Pawzbe is a dedicated social media platform for pets and their owners. Users can create accounts and share updates about their pets with a community of pet lovers

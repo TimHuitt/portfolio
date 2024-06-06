@@ -16,6 +16,7 @@ import nodeSvg from '/node.svg'
 import gitSvg from '/git.svg'
 import axiosSvg from '/axios.svg'
 import pythonSvg from '/python.svg'
+import openaiSvg from '/openai.svg'
 import vbaSvg from '/vba.svg'
 import jquerySvg from '/jquery.svg'
 import nextSvg from '/next.svg'
@@ -33,6 +34,7 @@ const Skills = ({ small, skills }) => {
     'postgresql': { 'name': 'PostgreSQL', 'path': postgresqlSvg },
     'tailwind': { 'name': 'Tailwind', 'path': tailwindSvg },
     'django': { 'name': 'Django', 'path': djangoSvg },
+    'openai': { 'name': 'OpenAI', 'path': openaiSvg },
     'py': { 'name': 'Python', 'path': pythonSvg },
     'express': { 'name': 'Express', 'path': expressSvg },
     'mongo': { 'name': 'MongoDB', 'path': mongoSvg },
