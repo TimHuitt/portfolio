@@ -22,7 +22,7 @@ const projects = [
     "role": "Lead Full Stack Developer",
     "description": "AI Generated code challenges. Customize challenges and let AI evaluate your solution. Provides challenge details, test cases, hints, and solutions.",
     "header": `
-      The ultimate platform where coding challenges meet artificial intelligence<br/><br/> Dive into a unique coding practice environment where you can customize challenges to fit your learning path and have your solutions evaluated by advanced AI    
+      Coding challenge platform fully controlled by Artificial Intelligence<br/><br/>Unique coding practice environment where you can customize AI created challenges to fit your learning path and receive AI evaluations of your solution.  
     `,
     "body": `
       CodeChallenger is designed to enhance your programming skills through a variety of customized challenges <br/><br/><b>Each challenge provides:</b><br/>Detailed Instructions<br/>Test Cases<br/>Hints<br/>Solutions</p>
@@ -34,7 +34,7 @@ const projects = [
       ['Comprehensive Hints and Solutions', 'Hints and detailed solutions to help you through each challenge'],
       ['User-Friendly Interface', 'Built with a clean and intuitive design for an enjoyable user experience']
     ],
-    "images": ["https://i.imgur.com/gjRtX8j.png", "https://i.imgur.com/TCqkEd1.png", "w-https://i.imgur.com/EOIECN8.png"],
+    "images": ["https://i.imgur.com/gjRtX8j.png", "https://i.imgur.com/TCqkEd1.png", "https://i.imgur.com/eBM2M4h.png", "w-https://i.imgur.com/EOIECN8.png"],
     "gitLink": "https://github.com/TimHuitt/code-challenger-client",
     "deployLink": "https://code-challenger-app.netlify.app/",
     "skills" : ['react', 'js', 'express', 'node', 'openai', 'html', 'css'],
