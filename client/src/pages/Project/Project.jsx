@@ -65,7 +65,7 @@ const Project = () => {
           ))}
         </ul>
       </div>
-      <div className="project-images pb-24">
+      <div className="project-images pb-24 mt-10">
         {Array.isArray(project.images) && project.images.map((image)=> {
           let isWire = false
           image.slice(0,2) === "w-" 
