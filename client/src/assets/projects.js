@@ -1,25 +1,35 @@
 const projects = [
   {
-    "title": "Dynamic Portfolio",
-    "role": "Freelance Full Stack Engineer",
-    "description": "Responsive portfolio website built using Next.js and TypeScript, PostgreSQL, and Cloudinary, featuring dynamic content management capabilities.",
-    "header": "Dynamic portfolio website built to client specification with a fully integrated and authenticated content management system that allows easy updates to any section of the website.",
-    "body": "This portfolio website is designed to provide a showcase of the clients work, while also offering full control over their content.  The custom CMS empowers them to update their website without needing technical expertise.",
+    "title": "Production Platform (NDA)",
+    "role": "Senior Full Stack Engineer",
+    "description": "Sole engineer responsible for designing, building, and operating a production platform used by internal and external users.",
+    "header": `
+      Platform supporting legacy data migration, complex relational systems, and compliance-sensitive constraints
+    `,
+    "body": `
+      <br/><br/>
+      Development included frontend architecture, backend systems, and infrastructure design supporting complex data models, document handling, and internal tooling.
+      This involved building data-driven interfaces that reflect underlying relational state and system constraints, as well as data modeling, API design, and system behavior under incomplete and shifting requirements.
+      <br/><br/>
+      Due to confidentiality, implementation details are not publicly available.
+    `,
     "features": [
-      ["Server-Side Rendering", "Utilizes Next.js for efficient, dynamic rendering."],
-      ["Custom CMS", "Allows the client to update content without needing technical knowledge."],
-      ["API Integration", "Uses Node.js and axios for backend communication."],
-      ["Image Management", "Integrates Cloudinary for optimized image storage and delivery."],
-      ["Database", "Utilizes PostgreSQL for persistent data storage."]
+      ['Relational Domain Modeling', 'Multiple first-class entities with defined relationships and independent lifecycles.'],
+      ['Legacy Data Migration', 'Import and reconciliation workflows for integrating data from external systems.'],
+      ['Document Management', 'Upload, storage, preview, and association of documents across related records.'],
+      ['Data-Driven Interfaces', 'Frontend views that map directly to underlying relational state and system constraints.'],
+      ['Internal Tooling', 'Administrative interfaces for managing records, documents, and operational data.'],
+      ['Access Control', 'Role-based access patterns across internal and external users.'],
+      ['Production Operations', 'Environment separation, validation, and error handling for production use.']
     ],
-    "images": ["https://i.imgur.com/nCdJOIu.png", "https://i.imgur.com/f1ujfJY.png", "https://i.imgur.com/0OtWU5d.png", "https://i.imgur.com/9JDbXQb.png"],
-    "gitLink": "https://github.com/TimHuitt/kira-tattoo",
-    "deployLink": "https://kira-art.vercel.app/",
-    "skills" : ['next', 'ts', 'node', 'cloudinary', 'postgresql', 'axios', 'tailwind'],
+    "images": [],
+    "gitLink": "",
+    "deployLink": "",
+    "skills": ["node", "express", "postgresql", "ts", "git", "npm"]
   },
   {
     "title": "CodeChallenger",
-    "role": "Lead Full Stack Engineer",
+    "role": "Full Stack Engineer",
     "description": "AI Generated code challenges. Customize challenges and let AI evaluate your solution. Provides challenge details, test cases, hints, and solutions.",
     "header": `
       Coding challenge platform fully controlled by Artificial Intelligence<br/><br/>Unique coding practice environment where you can customize AI created challenges to fit your learning path and receive AI evaluations of your solution.  
@@ -41,7 +51,7 @@ const projects = [
   },
   {
     "title": "Auto Component",
-    "role": "Front End Engineer and AI Prompt Engineer",
+    "role": "Front End and AI Prompt Engineer",
     "description": "An npm published tool that streamlines UI element creation in React projects through AI prompted element generation.",
     "header": `AutoComponent is a developer tool published to npm and designed to transform the way UI elements are created in React projects. By integrating artificial intelligence with your development environment, AutoComponent speeds up the design and implementation of UI components`,
     "body": `AutoComponent automates the generation of React components through a simple, user-friendly interface, enhancing productivity and reducing manual coding errors`,
@@ -58,7 +68,7 @@ const projects = [
   },
   {
     "title": "Green Diary",
-    "role": "Senior Full Stack Engineer",
+    "role": "Full Stack Engineer",
     "description": "An innovative CO2 tracking platform that helps monitor the environmental impact of your vehicle trips.",
     "header": `Green Diary is an innovative platform designed to help you monitor the environmental impact of your vehicle trips and foster more eco-conscious decisions`,
     "body": `By understanding the carbon footprint of your travels, Green Diary aims to encourage eco-friendly behaviors. Utilizes various APIs to populate vehicle data for accurate emission tracking`,
@@ -91,7 +101,7 @@ const projects = [
   },
   {
     "title": "Promptopus",
-    "role": "Lead Engineer",
+    "role": "Full Stack Engineer",
     "description": "Prompt generator for artist inspiration. Artists can choose between Prompts or Stories.",
     "header": `
       Promptopus is an innovative and engaging app designed to inspire artists and creators by providing unique drawing prompts and storytelling ideas
@@ -132,7 +142,7 @@ const projects = [
   },
   {
     "title": "Battleship!",
-    "role": "Lead Developer",
+    "role": "Full Stack Engineer",
     "description": "Engage in naval warfare with advanced computer opponents and customizable ship placement in this turn-based tactical game.",
     "header": `
       Battleship! offers a classic naval combat experience where players can engage in strategic battles against an advanced AI opponent
@@ -153,7 +163,7 @@ const projects = [
   },
   {
     "title": "Tic Tac Toe",
-    "role": "Lead Developer",
+    "role": "Full Stack Engineer",
     "description": "Enjoy the classic two-player Tic-Tac-Toe game with modern UI enhancements, featuring turn/piece tracking and a resettable score.",
     "header": `
       Tic Tac Toe brings the traditional game to modern audiences with an updated user interface and enhanced gameplay features
