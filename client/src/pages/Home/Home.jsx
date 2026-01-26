@@ -49,21 +49,21 @@ const Home = () => {
       </div>
       <div className='about-me'>
           <p className='home-about about-1'>
-          I&apos;m an experienced and passionate Full-Stack Developer with a focus on React/Next, JavaScript/TypeScript, Node.js, and PostgreSQL and proficient with many others. My experience in this field includes a lifetime curiosity and combination of diverse projects for small businesses, personal ventures, and ongoing education, shaping my understanding of software development and technology.
+            Senior Full Stack Engineer with experience owning and operating production systems end-to-end, including backend architecture, data modeling, and cloud infrastructure.
           </p><br/>
           { showMore ? (
             <div className='about-more'>
               <p className='home-about about-2'>
-              Throughout my career, I have consistently demonstrated initiative in professional environments, optimizing systems and earning trust to tackle critical challenges. The last five years, in particular, have been pivotal in my growth.
+                In recent work, I have served as the primary engineer on a platform supporting legacy data migration, relational data workflows, and compliance-sensitive operations. My responsibilities span system design, implementation, deployment, and long-term maintenance under operational constraints.
               </p><br/>
               <p className='home-about about-3'>
-              A graduate of General Assembly&apos;s Software Engineering bootcamp, I am well-versed in modern development practices and technologies including React, Node.js, Django, and various database management systems. My approach combines creativity with efficiency, solving complex problems and leading projects to successful completion.
+                I&apos;m most effective in environments with ambiguity, where the work involves making architectural tradeoffs, designing systems that evolve safely over time, and supporting production software.
               </p><br/>
               <p className='home-about about-4'>
-              Outside of my professional endeavors, I have pursued my curiosity and creativity through a series of personal projects. These range from IoT solutions and automation tools to applications designed for entertainment and personal growth, each reinforcing my problem-solving skills and technical versatility.
+                My background includes full-stack development with JavaScript and TypeScript, relational databases, and AWS-based infrastructure.
               </p><br/>
               <p className='home-about about-5'>
-              My current interests and learning goals include  Web3, Blockchain, Smart Contracts, Machine Learning, Neural Networks, Cybersecurity, AWS, Azure, GCP, Docker, Kubernetes.
+                Much of my recent professional work is not publicly displayed due to confidentiality, but I&apos;m always happy to discuss system design decisions, tradeoffs, and lessons learned.
               </p><br/>
             </div>
           ) : (
