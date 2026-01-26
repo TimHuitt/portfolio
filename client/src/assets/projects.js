@@ -50,23 +50,6 @@ const projects = [
     "skills" : ['react', 'js', 'express', 'node', 'openai', 'html', 'css'],
   },
   {
-    "title": "Auto Component",
-    "role": "Front End and AI Prompt Engineer",
-    "description": "An npm published tool that streamlines UI element creation in React projects through AI prompted element generation.",
-    "header": `AutoComponent is a developer tool published to npm and designed to transform the way UI elements are created in React projects. By integrating artificial intelligence with your development environment, AutoComponent speeds up the design and implementation of UI components`,
-    "body": `AutoComponent automates the generation of React components through a simple, user-friendly interface, enhancing productivity and reducing manual coding errors`,
-    "features": [
-      ['AI-Prompted Generation', 'Streamline the creation of React components with AI-driven prompts that deliver precise code.'],
-      ['Dynamic Rendering', 'Use JSXParser to dynamically render the generated code, ensuring accurate implementation.'],
-      ['Code Beautification', 'Automatically formats JSX/HTML using js-beautify for improved readability.'],
-      ['Interactive UI', 'Engage with a user-friendly interface that allows for real-time interaction and modifications.']
-    ],
-    "images": ["https://i.imgur.com/woDHKJY.png", "https://i.imgur.com/qDJiLJe.png"],
-    "gitLink": "https://github.com/TimHuitt/auto-component",
-    "deployLink": "https://auto-component.com/",
-    "skills" : ['react', 'js', 'express', 'node', 'openai', 'html', 'css']
-  },
-  {
     "title": "Green Diary",
     "role": "Full Stack Engineer",
     "description": "An innovative CO2 tracking platform that helps monitor the environmental impact of your vehicle trips.",
@@ -84,20 +67,21 @@ const projects = [
     "skills" : ['py', 'django', 'bootstrap', 'postgresql', 'html', 'css']
   },
   {
-    "title": "Portfolio Website",
-    "role": "Freelance Full Stack Engineer",
-    "description": "This is a responsive portfolio website built using Next.js and TypeScript. It was designed to showcase the client's work and skills in a clean and professional manner.",
-    "header": "A clean and professional portfolio website showcasing the client's skills and work.",
-    "body": "This portfolio website provides a concise and visually appealing presentation of the client's work and skills, designed to impress potential clients and collaborators.",
+    "title": "Auto Component",
+    "role": "Front End and AI Prompt Engineer",
+    "description": "An npm published tool that streamlines UI element creation in React projects through AI prompted element generation.",
+    "header": `AutoComponent is a developer tool published to npm and designed to transform the way UI elements are created in React projects. By integrating artificial intelligence with your development environment, AutoComponent speeds up the design and implementation of UI components`,
+    "body": `AutoComponent automates the generation of React components through a simple, user-friendly interface, enhancing productivity and reducing manual coding errors`,
     "features": [
-        ["Static Site Generation", "Utilizes Next.js for fast, static rendering."],
-        ["Responsive Design", "Ensures the website looks great on all devices."],
-        ["Custom Styling", "Tailored to the client's branding and style preferences."]
+      ['AI-Prompted Generation', 'Streamline the creation of React components with AI-driven prompts that deliver precise code.'],
+      ['Dynamic Rendering', 'Use JSXParser to dynamically render the generated code, ensuring accurate implementation.'],
+      ['Code Beautification', 'Automatically formats JSX/HTML using js-beautify for improved readability.'],
+      ['Interactive UI', 'Engage with a user-friendly interface that allows for real-time interaction and modifications.']
     ],
-    "images": ["https://i.imgur.com/gAXA3Mf.jpeg", "https://i.imgur.com/KNWXUbv.png", 'https://i.imgur.com/s0Y3AwV.png'],
-    "gitLink": "https://github.com/TimHuitt/steph-art",
-    "deployLink": "https://steph-art.vercel.app/",
-    "skills": ['next', 'ts', 'tailwind']
+    "images": ["https://i.imgur.com/woDHKJY.png", "https://i.imgur.com/qDJiLJe.png"],
+    "gitLink": "https://github.com/TimHuitt/auto-component",
+    "deployLink": "https://auto-component.com/",
+    "skills" : ['react', 'js', 'express', 'node', 'openai', 'html', 'css']
   },
   {
     "title": "Promptopus",
