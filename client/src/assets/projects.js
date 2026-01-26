@@ -51,7 +51,7 @@ const projects = [
   },
   {
     "title": "Green Diary",
-    "role": "Full Stack Engineer",
+    "role": "Frontend Engineer",
     "description": "An innovative CO2 tracking platform that helps monitor the environmental impact of your vehicle trips.",
     "header": `Green Diary is an innovative platform designed to help you monitor the environmental impact of your vehicle trips and foster more eco-conscious decisions`,
     "body": `By understanding the carbon footprint of your travels, Green Diary aims to encourage eco-friendly behaviors. Utilizes various APIs to populate vehicle data for accurate emission tracking`,
@@ -68,7 +68,7 @@ const projects = [
   },
   {
     "title": "Auto Component",
-    "role": "Front End and AI Prompt Engineer",
+    "role": "Frontend and AI Prompt Engineer",
     "description": "An npm published tool that streamlines UI element creation in React projects through AI prompted element generation.",
     "header": `AutoComponent is a developer tool published to npm and designed to transform the way UI elements are created in React projects. By integrating artificial intelligence with your development environment, AutoComponent speeds up the design and implementation of UI components`,
     "body": `AutoComponent automates the generation of React components through a simple, user-friendly interface, enhancing productivity and reducing manual coding errors`,
@@ -91,7 +91,7 @@ const projects = [
       Promptopus is an innovative and engaging app designed to inspire artists and creators by providing unique drawing prompts and storytelling ideas
     `,
     "body": `
-      Promptopus is built using Next.js, TypeScript, and OpenAI, showcasing the latest in web development and artificial intelligence. Users can choose between generating random words or emojis for drawing prompts or receiving AI-generated stories based on customizable themes and lengths
+      Promptopus is built using Next.js, TypeScript, and OpenAI. Users can choose between generating random words or emojis for drawing prompts or receiving AI-generated stories based on customizable themes and lengths
     `,
     "features": [
       ['Dynamic Prompt Generation', 'Users can generate unique drawing prompts by selecting between words or emojis, providing endless inspiration'],
@@ -106,7 +106,7 @@ const projects = [
   },
   {
     "title": "pawzbe",
-    "role": "Full Stack Engineer",
+    "role": "Frontend Engineer",
     "description": "Pawzbe is a pet social media platform where users can share photos and updates about their pets.",
     "header": `
       Pawzbe is a dedicated social media platform for pets and their owners. Users can create accounts and share updates about their pets with a community of pet lovers
@@ -126,7 +126,7 @@ const projects = [
   },
   {
     "title": "Battleship!",
-    "role": "Full Stack Engineer",
+    "role": "Developer",
     "description": "Engage in naval warfare with advanced computer opponents and customizable ship placement in this turn-based tactical game.",
     "header": `
       Battleship! offers a classic naval combat experience where players can engage in strategic battles against an advanced AI opponent
@@ -147,7 +147,7 @@ const projects = [
   },
   {
     "title": "Tic Tac Toe",
-    "role": "Full Stack Engineer",
+    "role": "Developer",
     "description": "Enjoy the classic two-player Tic-Tac-Toe game with modern UI enhancements, featuring turn/piece tracking and a resettable score.",
     "header": `
       Tic Tac Toe brings the traditional game to modern audiences with an updated user interface and enhanced gameplay features
