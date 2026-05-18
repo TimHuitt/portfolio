@@ -50,23 +50,6 @@ const projects = [
     "skills" : ['react', 'js', 'express', 'node', 'openai', 'html', 'css'],
   },
   {
-    "title": "Green Diary",
-    "role": "Frontend Engineer",
-    "description": "An innovative CO2 tracking platform that helps monitor the environmental impact of your vehicle trips.",
-    "header": `Green Diary is an innovative platform designed to help you monitor the environmental impact of your vehicle trips and foster more eco-conscious decisions`,
-    "body": `By understanding the carbon footprint of your travels, Green Diary aims to encourage eco-friendly behaviors. Utilizes various APIs to populate vehicle data for accurate emission tracking`,
-    "features": [
-      ['CO2 Emission Tracking', 'Calculates the amount of CO2 emitted on each trip based on your vehicle\'s make and model.'],
-      ['Tree Mitigation Estimates', 'Provides insights into the number of trees required to offset your trip\'s carbon emissions.'],
-      ['User-Friendly Interface', 'Built with Django and Bootstrap, offering a responsive and intuitive experience.'],
-      ['Comprehensive Vehicle Database', 'Utilizes extensive vehicle data for accurate emission calculations.']
-    ],
-    "images": ["https://i.imgur.com/xurUff3.png", "https://i.imgur.com/YYFRFXu.png"],
-    "gitLink": "https://github.com/elliesolhjou/Green-Diary",
-    "deployLink": "https://green-diary-app-2098e92803f3.herokuapp.com/",
-    "skills" : ['py', 'django', 'bootstrap', 'postgresql', 'html', 'css']
-  },
-  {
     "title": "Auto Component",
     "role": "Frontend and AI Prompt Engineer",
     "description": "An npm published tool that streamlines UI element creation in React projects through AI prompted element generation.",
@@ -84,86 +67,103 @@ const projects = [
     "skills" : ['react', 'js', 'express', 'node', 'openai', 'html', 'css']
   },
   {
-    "title": "Promptopus",
-    "role": "Full Stack Engineer",
-    "description": "Prompt generator for artist inspiration. Artists can choose between Prompts or Stories.",
-    "header": `
-      Promptopus is an innovative and engaging app designed to inspire artists and creators by providing unique drawing prompts and storytelling ideas
-    `,
-    "body": `
-      Promptopus is built using Next.js, TypeScript, and OpenAI. Users can choose between generating random words or emojis for drawing prompts or receiving AI-generated stories based on customizable themes and lengths
-    `,
-    "features": [
-      ['Dynamic Prompt Generation', 'Users can generate unique drawing prompts by selecting between words or emojis, providing endless inspiration'],
-      ['AI-Powered Story Generation', 'Leveraging OpenAIs capabilities, the app crafts stories in various lengths and themes'],
-      ['Intuitive User Experience', 'A clean, user-friendly interface allows for seamless navigation and interaction'],
-      ['Responsive Design', 'The app is fully responsive, providing a consistent experience across all devices'],
-    ],
-    "images": ["https://i.imgur.com/8gaRKbp.png", "https://i.imgur.com/8AOi92k.png"],
-    "gitLink": "https://github.com/TimHuitt/Promptopus",
-    "deployLink": "https://promptopus.netlify.app/",
-    "skills" : ['next', 'ts', 'express', 'node', 'openai', 'html', 'css'],
-  },
-  {
-    "title": "pawzbe",
+    "title": "Green Diary",
     "role": "Frontend Engineer",
-    "description": "Pawzbe is a pet social media platform where users can share photos and updates about their pets.",
-    "header": `
-      Pawzbe is a dedicated social media platform for pets and their owners. Users can create accounts and share updates about their pets with a community of pet lovers
-    `,
-    "body": `
-      User can create accounts using either Google or Github logins, engaging with friends and other pet enthusiasts
-    `,
+    "description": "An innovative CO2 tracking platform that helps monitor the environmental impact of your vehicle trips.",
+    "header": `Green Diary is an innovative platform designed to help you monitor the environmental impact of your vehicle trips and foster more eco-conscious decisions`,
+    "body": `By understanding the carbon footprint of your travels, Green Diary aims to encourage eco-friendly behaviors. Utilizes various APIs to populate vehicle data for accurate emission tracking`,
     "features": [
-      ['User-Friendly Social Interaction', 'Create a personal space for your pets and connect with other pet owners.'],
-      ['Multiple Login Options', 'Sign in with Google or Github for quick access.'],
-      ['Interactive Media Sharing', 'Share photos and updates, creating a vibrant pet-centric community.']
+      ['CO2 Emission Tracking', 'Calculates the amount of CO2 emitted on each trip based on your vehicle\'s make and model.'],
+      ['Tree Mitigation Estimates', 'Provides insights into the number of trees required to offset your trip\'s carbon emissions.'],
+      ['User-Friendly Interface', 'Built with Django and Bootstrap, offering a responsive and intuitive experience.'],
+      ['Comprehensive Vehicle Database', 'Utilizes extensive vehicle data for accurate emission calculations.']
     ],
-    "images": ["https://i.imgur.com/Ct1IKgx.png", "https://i.imgur.com/6CN6238.png"],
-    "gitLink": "https://github.com/TimHuitt/pawzbe",
-    "deployLink": "https://pawzbe.com/",
-    "skills" : ['js', 'express', 'node', 'mongo', 'html', 'css']
+    "images": ["https://i.imgur.com/xurUff3.png", "https://i.imgur.com/YYFRFXu.png"],
+    "gitLink": "https://github.com/elliesolhjou/Green-Diary",
+    "deployLink": "https://green-diary-app-2098e92803f3.herokuapp.com/",
+    "skills" : ['py', 'django', 'bootstrap', 'postgresql', 'html', 'css']
   },
-  {
-    "title": "Battleship!",
-    "role": "Developer",
-    "description": "Engage in naval warfare with advanced computer opponents and customizable ship placement in this turn-based tactical game.",
-    "header": `
-      Battleship! offers a classic naval combat experience where players can engage in strategic battles against an advanced AI opponent
-    `,
-    "body": `
-      Enjoy customizable ship placement and tactical gameplay with pop-up notifications and game stats to track your progress
-    `,
-    "features": [
-      ['Advanced Computer Opponent', 'Challenge yourself against AI designed to test your strategic thinking.'],
-      ['Customizable Ship Placement', 'Strategically place your fleet to outmaneuver your opponent.'],
-      ['Turn-Based Gameplay', 'Take turns and make critical decisions to sink your opponent\'s ships.'],
-      ['Game Stats and Notifications', 'Keep track of your victories and receive updates with in-game notifications.']
-    ],
-    "images": ["https://i.imgur.com/ukgZLb4.png", "https://i.imgur.com/LOHaSfv.png"],
-    "gitLink": "https://github.com/TimHuitt/battleship",
-    "deployLink": "https://timhuitt.github.io/battleship/",
-    "skills" : ['js', 'html', 'css']
-  },
-  {
-    "title": "Tic Tac Toe",
-    "role": "Developer",
-    "description": "Enjoy the classic two-player Tic-Tac-Toe game with modern UI enhancements, featuring turn/piece tracking and a resettable score.",
-    "header": `
-      Tic Tac Toe brings the traditional game to modern audiences with an updated user interface and enhanced gameplay features
-    `,
-    "body": `
-      This game includes player turn/piece tracking and offers a resettable persistent score to keep the competition lively and engaging
-    `,
-    "features": [
-      ['Updated User Interface', 'A fresh look for a classic game, enhancing the overall experience.'],
-      ['Player Turn/Piece Tracking', 'Easily keep track of whose turn it is and what pieces are in play.'],
-      ['Resettable Score', 'Reset scores to start a new series of games, keeping gameplay competitive and fair.']
-    ],
-    "images": ["https://i.imgur.com/ehk6k0f.png", "https://i.imgur.com/idWiPTd.png"],
-    "gitLink": "https://codepen.io/timhuitt/pen/NWoGKmo",
-    "deployLink": "https://codepen.io/timhuitt/full/NWoGKmo",
-    "skills" : ['js', 'html', 'css']
-  },
+  // {
+  //   "title": "Promptopus",
+  //   "role": "Full Stack Engineer",
+  //   "description": "Prompt generator for artist inspiration. Artists can choose between Prompts or Stories.",
+  //   "header": `
+  //     Promptopus is an innovative and engaging app designed to inspire artists and creators by providing unique drawing prompts and storytelling ideas
+  //   `,
+  //   "body": `
+  //     Promptopus is built using Next.js, TypeScript, and OpenAI. Users can choose between generating random words or emojis for drawing prompts or receiving AI-generated stories based on customizable themes and lengths
+  //   `,
+  //   "features": [
+  //     ['Dynamic Prompt Generation', 'Users can generate unique drawing prompts by selecting between words or emojis, providing endless inspiration'],
+  //     ['AI-Powered Story Generation', 'Leveraging OpenAIs capabilities, the app crafts stories in various lengths and themes'],
+  //     ['Intuitive User Experience', 'A clean, user-friendly interface allows for seamless navigation and interaction'],
+  //     ['Responsive Design', 'The app is fully responsive, providing a consistent experience across all devices'],
+  //   ],
+  //   "images": ["https://i.imgur.com/8gaRKbp.png", "https://i.imgur.com/8AOi92k.png"],
+  //   "gitLink": "https://github.com/TimHuitt/Promptopus",
+  //   "deployLink": "https://promptopus.netlify.app/",
+  //   "skills" : ['next', 'ts', 'express', 'node', 'openai', 'html', 'css'],
+  // },
+  // {
+  //   "title": "pawzbe",
+  //   "role": "Frontend Engineer",
+  //   "description": "Pawzbe is a pet social media platform where users can share photos and updates about their pets.",
+  //   "header": `
+  //     Pawzbe is a dedicated social media platform for pets and their owners. Users can create accounts and share updates about their pets with a community of pet lovers
+  //   `,
+  //   "body": `
+  //     User can create accounts using either Google or Github logins, engaging with friends and other pet enthusiasts
+  //   `,
+  //   "features": [
+  //     ['User-Friendly Social Interaction', 'Create a personal space for your pets and connect with other pet owners.'],
+  //     ['Multiple Login Options', 'Sign in with Google or Github for quick access.'],
+  //     ['Interactive Media Sharing', 'Share photos and updates, creating a vibrant pet-centric community.']
+  //   ],
+  //   "images": ["https://i.imgur.com/Ct1IKgx.png", "https://i.imgur.com/6CN6238.png"],
+  //   "gitLink": "https://github.com/TimHuitt/pawzbe",
+  //   "deployLink": "https://pawzbe.com/",
+  //   "skills" : ['js', 'express', 'node', 'mongo', 'html', 'css']
+  // },
+  // {
+  //   "title": "Battleship!",
+  //   "role": "Developer",
+  //   "description": "Engage in naval warfare with advanced computer opponents and customizable ship placement in this turn-based tactical game.",
+  //   "header": `
+  //     Battleship! offers a classic naval combat experience where players can engage in strategic battles against an advanced AI opponent
+  //   `,
+  //   "body": `
+  //     Enjoy customizable ship placement and tactical gameplay with pop-up notifications and game stats to track your progress
+  //   `,
+  //   "features": [
+  //     ['Advanced Computer Opponent', 'Challenge yourself against AI designed to test your strategic thinking.'],
+  //     ['Customizable Ship Placement', 'Strategically place your fleet to outmaneuver your opponent.'],
+  //     ['Turn-Based Gameplay', 'Take turns and make critical decisions to sink your opponent\'s ships.'],
+  //     ['Game Stats and Notifications', 'Keep track of your victories and receive updates with in-game notifications.']
+  //   ],
+  //   "images": ["https://i.imgur.com/ukgZLb4.png", "https://i.imgur.com/LOHaSfv.png"],
+  //   "gitLink": "https://github.com/TimHuitt/battleship",
+  //   "deployLink": "https://timhuitt.github.io/battleship/",
+  //   "skills" : ['js', 'html', 'css']
+  // },
+  // {
+  //   "title": "Tic Tac Toe",
+  //   "role": "Developer",
+  //   "description": "Enjoy the classic two-player Tic-Tac-Toe game with modern UI enhancements, featuring turn/piece tracking and a resettable score.",
+  //   "header": `
+  //     Tic Tac Toe brings the traditional game to modern audiences with an updated user interface and enhanced gameplay features
+  //   `,
+  //   "body": `
+  //     This game includes player turn/piece tracking and offers a resettable persistent score to keep the competition lively and engaging
+  //   `,
+  //   "features": [
+  //     ['Updated User Interface', 'A fresh look for a classic game, enhancing the overall experience.'],
+  //     ['Player Turn/Piece Tracking', 'Easily keep track of whose turn it is and what pieces are in play.'],
+  //     ['Resettable Score', 'Reset scores to start a new series of games, keeping gameplay competitive and fair.']
+  //   ],
+  //   "images": ["https://i.imgur.com/ehk6k0f.png", "https://i.imgur.com/idWiPTd.png"],
+  //   "gitLink": "https://codepen.io/timhuitt/pen/NWoGKmo",
+  //   "deployLink": "https://codepen.io/timhuitt/full/NWoGKmo",
+  //   "skills" : ['js', 'html', 'css']
+  // },
 ]
 export default projects
