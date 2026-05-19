@@ -49,21 +49,21 @@ const Home = () => {
       </div>
       <div className='about-me'>
           <p className='home-about about-1'>
-            Senior Full Stack Engineer with experience owning and operating production systems end-to-end, with a strong focus on building reliable, data-driven user interfaces.
+            I help businesses replace the processes they've outgrown with software built around how they actually operate. From initial planning through deployment, I work directly with the people closest to the problem to make sure the solution fits.
           </p><br/>
           { showMore ? (
             <div className='about-more'>
               <p className='home-about about-2'>
-                In recent work, I served as the sole engineer on a production platform supporting legacy data migration, complex relational systems, and compliance-sensitive constraints. The role involved designing frontend architecture alongside backend systems and infrastructure, ensuring the system behaved correctly from data model through user-facing workflows.
+                My most recent work involved serving as the sole engineer on a production platform, responsible for full stack design and operation from backend infrastructure through user-facing workflows. This included inheriting and significantly expanding a complex data model to support evolving business requirements.
               </p><br/>
               <p className='home-about about-3'>
-                While I work comfortably across the stack, I am most engaged when solving problems at the boundary between system behavior and user experience, where frontend design must accurately reflect underlying state, constraints, and business logic.
+                My technical background is accompanied by decades in client-facing and operational roles across management, financial services, and data analytics. This experience allows me to better understand problems and how to approach them throughout development.
               </p><br/>
               <p className='home-about about-4'>
-                My background includes frontend development with React, Next.js, and TypeScript, supported by backend APIs, relational data modeling, and cloud infrastructure where needed to deliver complete, production-ready systems.
+                Across frontend development, backend APIs, databases, and cloud infrastructure, I deliver complete production-ready systems.
               </p><br/>
               <p className='home-about about-5'>
-                Much of my recent professional work is not publicly displayed due to confidentiality, but I&apos;m always happy to discuss system design decisions, architectural tradeoffs, and lessons learned.
+                Most of my professional work is confidential, but I'm always happy to discuss the work itself, the decisions made, and the problems it solved.
               </p><br/>
             </div>
           ) : (
@@ -76,7 +76,7 @@ const Home = () => {
 
       <div className='projects-header'>
         <h1>Projects</h1>
-        <small>click for more details</small>
+        <small>Select a project for more details</small>
       </div>
       <Projects />
     </div>
