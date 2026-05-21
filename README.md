@@ -1,4 +1,4 @@
-# Portfolio — Tim Huitt
+# Portfolio - Tim Huitt
 
 Personal portfolio site built with React and Vite.
 
