@@ -40,10 +40,12 @@ const Project = () => {
       <div className='project-header'>
           <h1 className='font-bold text-3xl'>{project.title}</h1>
       </div>
-      <div className="project-links">
-        <Link to={project.gitLink} target="_blank" rel="noopener noreferrer">View Code</Link>
-        <Link to={project.deployLink} target="_blank" rel="noopener noreferrer">View App</Link>
-      </div>
+      {(project.gitLink || project.deployLink) && (
+        <div className="project-links">
+          {project.gitLink && <Link to={project.gitLink} target="_blank" rel="noopener noreferrer">View Code</Link>}
+          {project.deployLink && <Link to={project.deployLink} target="_blank" rel="noopener noreferrer">View App</Link>}
+        </div>
+      )}
       <div className="project-skills-container">
         <div className="project-skills">
           <Skills small={false} skills={project.skills?.length > 0 ? project.skills : ''} />
@@ -52,13 +54,24 @@ const Project = () => {
       <div className={Array.isArray(project.images) && project.images.length <= 2 ? 'project-details mb-[100px] py-8' : 'project-details mt-[-100px] py-8'}>
         <p className='font-bold text-xl mt-10'>{project.role}</p>
         <p className="content" dangerouslySetInnerHTML={{ __html: project.header }} ></p>
-        <div className="project-image">
-          <img src={project.images && project.images[0]} />
-        </div>
+        {project.images?.[0] && (
+          <div className="project-image">
+            <img src={project.images[0]} />
+          </div>
+        )}
         <p className="content" dangerouslySetInnerHTML={{ __html: project.body }} ></p>
-        <div className="project-image">
-          <img src={project.images && project.images[1]} />
-        </div>
+        {project.images?.[1] && (
+          <div className="project-image">
+            <img src={project.images[1]} />
+          </div>
+        )}
+        {project.caseStudy && (
+          <div className="flex justify-center mt-10 pb-10">
+            <Link to="/cases" className="text-xl font-[400] border border-[#aaa] rounded-lg px-8 py-3 hover:underline">
+              View Case Study
+            </Link>
+          </div>
+        )}
         <ul>
           {project.features && project.features.map((feature, index) => (
             <li key={`${feature}-${index}`}><h3>{feature[0]}</h3>{feature[1]}</li>

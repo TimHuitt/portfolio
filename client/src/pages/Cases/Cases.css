@@ -1,0 +1,11 @@
+.Cases {
+  width: 100%;
+  max-width: 1800px;
+  display: flex;
+  justify-content: center;
+}
+.cases-container {
+  position: relative;
+  width: 90vw;
+  margin: 100px 0;
+}

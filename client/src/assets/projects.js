@@ -25,6 +25,7 @@ const projects = [
     "images": [],
     "gitLink": "",
     "deployLink": "",
+    "caseStudy": true,
     "skills": ["node", "express", "postgresql", "ts", "git", "npm"]
   },
   {
