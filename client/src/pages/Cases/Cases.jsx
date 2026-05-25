@@ -1,5 +1,5 @@
 import "./Cases.css"
-import casestudyPDF from '../../assets/Healthcare-Operations-Platform.pdf'
+import casestudyPDF from '../../assets/Tim-Huitt_Case-Study.pdf'
 
 export const metadata = {
   title: 'Healthcare Operations Platform — Case Study',

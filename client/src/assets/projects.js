@@ -62,7 +62,7 @@ const projects = [
       ['Code Beautification', 'Automatically formats JSX/HTML using js-beautify for improved readability.'],
       ['Interactive UI', 'Engage with a user-friendly interface that allows for real-time interaction and modifications.']
     ],
-    "images": ["https://i.imgur.com/woDHKJY.png", "https://i.imgur.com/qDJiLJe.png"],
+    "images": ["https://poly-screenshots.wellfound.com/Project/6b/1448054/4462645c6c7d864f39dabdc55454959b-original.gif", "https://i.imgur.com/qDJiLJe.png"],
     "gitLink": "https://github.com/TimHuitt/auto-component",
     "deployLink": "https://auto-component.com/",
     "skills" : ['react', 'js', 'express', 'node', 'openai', 'html', 'css']
