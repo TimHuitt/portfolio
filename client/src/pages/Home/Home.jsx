@@ -49,7 +49,7 @@ const Home = () => {
       </div>
       <div className='about-me'>
           <p className='home-about about-1'>
-            I help businesses replace the processes they've outgrown with software built around how they actually operate. From initial planning through deployment, From initial planning through deployment, I own the full stack and everything in between.
+            I help businesses replace the processes they've outgrown with software built around how they actually operate. From initial planning through deployment, I own the full stack and everything in between.
           </p><br/>
           { showMore ? (
             <div className='about-more'>
