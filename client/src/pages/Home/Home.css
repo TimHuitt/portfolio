@@ -36,7 +36,7 @@
   margin-right: 10px;
   background-color: rgb(171, 181, 202);
   animation: slide-in .5s ease-in forwards;
-  animation-delay: .5s;
+  animation-delay: .25s;
   transform: translateX(-100%);
   opacity: 0;
 }
@@ -45,7 +45,7 @@
   margin: 4px 0;
   color: rgb(105, 119, 137);
   font-size: 1.5rem;
-  animation: fade-in 1s 1s ease-in forwards;
+  animation: fade-in .75s .75s ease-in forwards;
   opacity: 0;
 }
 
@@ -78,25 +78,25 @@
 .home-about {
   animation: text-in .4s ease-in forwards;
   opacity: 0;
-  animation-delay: 1.25s;
+  animation-delay: .35s;
 }
 .about-2 {
-  animation-delay: .1s;
+  animation-delay: .02s;
 }
 .about-3 {
-  animation-delay: .25s;
+  animation-delay: .2s;
 }
 .about-4 {
-  animation-delay: .5s;
+  animation-delay: .3s;
 }
 .about-5 {
-  animation-delay: .75s;
+  animation-delay: .4s;
 }
 .profile-image {
   margin: 0 auto;
   padding: 10px;
   opacity: 0;
-  animation: fade-in 1s 1s ease-in forwards;
+  animation: fade-in .25s .25s ease-in forwards;
 }
 .profile-image img {
   height: 150px;
@@ -108,7 +108,7 @@
   align-items: center;
   width: 100%;
   max-width: 400px;
-  animation: slide-up 1s 1.5s forwards;
+  animation: slide-up .25s .45s forwards;
   opacity: 0;
 }
 .about-button,

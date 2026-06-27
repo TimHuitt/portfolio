@@ -49,20 +49,17 @@ const Home = () => {
       </div>
       <div className='about-me'>
           <p className='home-about about-1'>
-            I help businesses replace the processes they've outgrown with software built around how they actually operate. From initial planning through deployment, I work directly with the people closest to the problem to make sure the solution fits.
+            I help businesses replace the processes they've outgrown with software built around how they actually operate. From initial planning through deployment, From initial planning through deployment, I own the full stack and everything in between.
           </p><br/>
           { showMore ? (
             <div className='about-more'>
               <p className='home-about about-2'>
-                My most recent work involved serving as the sole engineer on a production platform, responsible for full stack design and operation from backend infrastructure through user-facing workflows. This included inheriting and significantly expanding a complex data model to support evolving business requirements.
+                I most recently served as the sole engineer on a production platform, responsible for full stack design and operation from backend infrastructure through user-facing workflows. The engagement included inheriting and significantly expanding a complex data model as requirements evolved.
               </p><br/>
               <p className='home-about about-3'>
-                My technical background is accompanied by decades in client-facing and operational roles across management, financial services, and data analytics. This experience allows me to better understand problems and how to approach them throughout development.
+                My technical background is accompanied by decades in client-facing and operational roles across management, financial services, and data analytics. That experience shapes how I read problems and how I build toward solutions, across frontend, backend, databases, and cloud infrastructure.
               </p><br/>
               <p className='home-about about-4'>
-                Across frontend development, backend APIs, databases, and cloud infrastructure, I deliver complete production-ready systems.
-              </p><br/>
-              <p className='home-about about-5'>
                 Most of my professional work is confidential, but I'm always happy to discuss the work itself, the decisions made, and the problems it solved.
               </p><br/>
             </div>
