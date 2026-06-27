@@ -16,8 +16,8 @@
   margin: 20px 0;
   border-radius: 10px;
   background-color: var(--bg);
-  border: 1px solid #ddd;
-  box-shadow: 5px 5px 10px var(--shadow-light);
+  border: 1px solid #3b3b47;
+  /* box-shadow: 5px 5px 10px var(--shadow-light); */
 }
 .project-card:hover {
   background-color: var(--bg-light);

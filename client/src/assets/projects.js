@@ -29,6 +29,29 @@ const projects = [
     "skills": ["node", "express", "postgresql", "ts", "git", "npm"]
   },
   {
+    "title": "DevLedger",
+    "role": "Full Stack Engineer",
+    "description": "Full-stack freelance business management platform centered on scope tracking, time tracking and billing, and document organization - with pipeline management, invoicing, and an interactive demo.",
+    "header": "Freelance business management from prospect to invoice<br/><br/>Provides lead, client, and project management, versioned scope tracking, time and invoice tools, and extensive notes and document management. <br/><br/>Live PostgreSQL and Vercel Blob storage for authenticated users, with a fully interactive demo for everyone else.",
+    "body": "The dashboard provides pipeline status, project health, flagged requirements, invoice status, and earnings at a glance with direct linking to every item.<br/><br/>Each client supports multiple projects with in-depth requirement and time tracking. Projects connect at the client level and offer combined invoicing with PDF exports.<br/><br/>Notes and file attachments are organized per client, project, and scope item, with folder hierarchy and drag-to-reorder throughout.",
+    "features": [
+      ["Prospect Pipeline", "Priority-ranked pipeline with statistics and dashboard visibility."],
+      ["Client & Project Management", "Linked client and project records with status tracking and next-action scheduling."],
+      ["Scope & Requirements", "Date-versioned requirement tracking with status-based alerts linking to flagged rows on the dashboard."],
+      ["Time Tracking & Billing", "Multiple billing roles per project with independent rates, a persistent timer, and time aggregated by day, month, and year."],
+      ["Dashboard", "Pipeline health, scope alerts, client actions, and a 12-month earned vs. paid chart with client drill-down."],
+      ["File Attachments", "File attachments across clients, projects, and scope items with private storage and secure access."],
+      ["Authentication & Demo Mode", "Google and GitHub OAuth with live PostgreSQL. Unauthenticated visitors get a full seed-data demo on the same routes and components."],
+      ["Invoicing", "Invoice management with status tracking, time entry import by pay period and role, and PDF export."],
+      ["Notes & Attachments", "Notes and uploads available for all clients, project, and requirements, with hierarchical notes with folder organization."]
+    ],
+    "images": ["/images/K7vQn2X.png", "/images/mP4aR8d.png", "/images/Zx9Lf3H.png", "/images/cT6wJq1.png", "/images/N8bYk5M.png"],
+    "gitLink": "https://github.com/TimHuitt/devledger",
+    "deployLink": "https://devledger-alpha.vercel.app/",
+    "caseStudy": false,
+    "skills": ["next", "react", "ts", "tailwind", "postgres", "git"]
+  },
+  {
     "title": "CodeChallenger",
     "role": "Full Stack Engineer",
     "description": "AI Generated code challenges. Customize challenges and let AI evaluate your solution. Provides challenge details, test cases, hints, and solutions.",
@@ -43,9 +66,8 @@ const projects = [
       ['Customization', 'Tailor the difficulty and scope of challenges to match your personal learning objectives'],
       ['Instant Feedback', 'Submit your solutions and receive AI-evaluated feedback with actionable insights'],
       ['Comprehensive Hints and Solutions', 'Hints and detailed solutions to help you through each challenge'],
-      ['User-Friendly Interface', 'Built with a clean and intuitive design for an enjoyable user experience']
     ],
-    "images": ["https://i.imgur.com/gjRtX8j.png", "https://i.imgur.com/TCqkEd1.png", "https://i.imgur.com/eBM2M4h.png", "w-https://i.imgur.com/EOIECN8.png"],
+    "images": ["/images/gjRtX8j.png", "/images/TCqkEd1.png", "/images/eBM2M4h.png"],
     "gitLink": "https://github.com/TimHuitt/code-challenger-client",
     "deployLink": "https://code-challenger-app.netlify.app/",
     "skills" : ['react', 'js', 'express', 'node', 'openai', 'html', 'css'],
@@ -62,7 +84,7 @@ const projects = [
       ['Code Beautification', 'Automatically formats JSX/HTML using js-beautify for improved readability.'],
       ['Interactive UI', 'Engage with a user-friendly interface that allows for real-time interaction and modifications.']
     ],
-    "images": ["https://i.imgur.com/woDHKJY.png", "https://i.imgur.com/qDJiLJe.png"],
+    "images": ["/images/X23fHN8.png", "/images/Jjd9Eu2.gif", "/images/woDHKJY.png", "w-/images/qDJiLJe.png"],
     "gitLink": "https://github.com/TimHuitt/auto-component",
     "deployLink": "https://auto-component.com/",
     "skills" : ['react', 'js', 'express', 'node', 'openai', 'html', 'css']
@@ -77,9 +99,9 @@ const projects = [
       ['CO2 Emission Tracking', 'Calculates the amount of CO2 emitted on each trip based on your vehicle\'s make and model.'],
       ['Tree Mitigation Estimates', 'Provides insights into the number of trees required to offset your trip\'s carbon emissions.'],
       ['User-Friendly Interface', 'Built with Django and Bootstrap, offering a responsive and intuitive experience.'],
-      ['Comprehensive Vehicle Database', 'Utilizes extensive vehicle data for accurate emission calculations.']
+      ['Comprehensive Vehicle Database', 'Utilizes extensive vehicle data via API for accurate emission calculations.']
     ],
-    "images": ["https://i.imgur.com/xurUff3.png", "https://i.imgur.com/YYFRFXu.png"],
+    "images": ["/images/xurUff3.png", "/images/YYFRFXu.png"],
     "gitLink": "https://github.com/elliesolhjou/Green-Diary",
     "deployLink": "https://green-diary-app-2098e92803f3.herokuapp.com/",
     "skills" : ['py', 'django', 'bootstrap', 'postgresql', 'html', 'css']
@@ -100,7 +122,7 @@ const projects = [
   //     ['Intuitive User Experience', 'A clean, user-friendly interface allows for seamless navigation and interaction'],
   //     ['Responsive Design', 'The app is fully responsive, providing a consistent experience across all devices'],
   //   ],
-  //   "images": ["https://i.imgur.com/8gaRKbp.png", "https://i.imgur.com/8AOi92k.png"],
+  //   "images": ["/images/8gaRKbp.png", "/images/8AOi92k.png"],
   //   "gitLink": "https://github.com/TimHuitt/Promptopus",
   //   "deployLink": "https://promptopus.netlify.app/",
   //   "skills" : ['next', 'ts', 'express', 'node', 'openai', 'html', 'css'],
@@ -120,7 +142,7 @@ const projects = [
   //     ['Multiple Login Options', 'Sign in with Google or Github for quick access.'],
   //     ['Interactive Media Sharing', 'Share photos and updates, creating a vibrant pet-centric community.']
   //   ],
-  //   "images": ["https://i.imgur.com/Ct1IKgx.png", "https://i.imgur.com/6CN6238.png"],
+  //   "images": ["/images/Ct1IKgx.png", "/images/6CN6238.png"],
   //   "gitLink": "https://github.com/TimHuitt/pawzbe",
   //   "deployLink": "https://pawzbe.com/",
   //   "skills" : ['js', 'express', 'node', 'mongo', 'html', 'css']
@@ -141,7 +163,7 @@ const projects = [
   //     ['Turn-Based Gameplay', 'Take turns and make critical decisions to sink your opponent\'s ships.'],
   //     ['Game Stats and Notifications', 'Keep track of your victories and receive updates with in-game notifications.']
   //   ],
-  //   "images": ["https://i.imgur.com/ukgZLb4.png", "https://i.imgur.com/LOHaSfv.png"],
+  //   "images": ["/images/ukgZLb4.png", "/images/LOHaSfv.png"],
   //   "gitLink": "https://github.com/TimHuitt/battleship",
   //   "deployLink": "https://timhuitt.github.io/battleship/",
   //   "skills" : ['js', 'html', 'css']
@@ -161,7 +183,7 @@ const projects = [
   //     ['Player Turn/Piece Tracking', 'Easily keep track of whose turn it is and what pieces are in play.'],
   //     ['Resettable Score', 'Reset scores to start a new series of games, keeping gameplay competitive and fair.']
   //   ],
-  //   "images": ["https://i.imgur.com/ehk6k0f.png", "https://i.imgur.com/idWiPTd.png"],
+  //   "images": ["/images/ehk6k0f.png", "/images/idWiPTd.png"],
   //   "gitLink": "https://codepen.io/timhuitt/pen/NWoGKmo",
   //   "deployLink": "https://codepen.io/timhuitt/full/NWoGKmo",
   //   "skills" : ['js', 'html', 'css']
