@@ -26,7 +26,7 @@ const projects = [
     "gitLink": "",
     "deployLink": "",
     "caseStudy": true,
-    "skills": ["node", "express", "postgresql", "ts", "git", "npm"]
+    "skills": ["next", "react", "ts", "tailwind", "postgres", "node", "express"]
   },
   {
     "title": "DevLedger",
@@ -49,7 +49,7 @@ const projects = [
     "gitLink": "https://github.com/TimHuitt/devledger",
     "deployLink": "https://devledger-alpha.vercel.app/",
     "caseStudy": false,
-    "skills": ["next", "react", "ts", "tailwind", "postgres", "git"]
+    "skills": ["next", "react", "ts", "tailwind", "postgres", "node", "express"]
   },
   {
     "title": "CodeChallenger",
@@ -70,7 +70,7 @@ const projects = [
     "images": ["/images/gjRtX8j.png", "/images/TCqkEd1.png", "/images/eBM2M4h.png"],
     "gitLink": "https://github.com/TimHuitt/code-challenger-client",
     "deployLink": "https://code-challenger-app.netlify.app/",
-    "skills" : ['react', 'js', 'express', 'node', 'openai', 'html', 'css'],
+    "skills" : ['react', 'js', 'express', 'node', 'openai'],
   },
   {
     "title": "Auto Component",
@@ -87,7 +87,7 @@ const projects = [
     "images": ["/images/X23fHN8.png", "/images/Jjd9Eu2.gif", "/images/woDHKJY.png", "w-/images/qDJiLJe.png"],
     "gitLink": "https://github.com/TimHuitt/auto-component",
     "deployLink": "https://auto-component.com/",
-    "skills" : ['react', 'js', 'express', 'node', 'openai', 'html', 'css']
+    "skills" : ['react', 'js', 'express', 'node', 'openai']
   },
   {
     "title": "Green Diary",
@@ -104,7 +104,7 @@ const projects = [
     "images": ["/images/xurUff3.png", "/images/YYFRFXu.png"],
     "gitLink": "https://github.com/elliesolhjou/Green-Diary",
     "deployLink": "https://green-diary-app-2098e92803f3.herokuapp.com/",
-    "skills" : ['py', 'django', 'bootstrap', 'postgresql', 'html', 'css']
+    "skills" : ['py', 'django', 'bootstrap', 'postgresql']
   },
   // {
   //   "title": "Promptopus",
@@ -125,7 +125,7 @@ const projects = [
   //   "images": ["/images/8gaRKbp.png", "/images/8AOi92k.png"],
   //   "gitLink": "https://github.com/TimHuitt/Promptopus",
   //   "deployLink": "https://promptopus.netlify.app/",
-  //   "skills" : ['next', 'ts', 'express', 'node', 'openai', 'html', 'css'],
+  //   "skills" : ['next', 'ts', 'express', 'node', 'openai'],
   // },
   // {
   //   "title": "pawzbe",
@@ -145,7 +145,7 @@ const projects = [
   //   "images": ["/images/Ct1IKgx.png", "/images/6CN6238.png"],
   //   "gitLink": "https://github.com/TimHuitt/pawzbe",
   //   "deployLink": "https://pawzbe.com/",
-  //   "skills" : ['js', 'express', 'node', 'mongo', 'html', 'css']
+  //   "skills" : ['js', 'express', 'node', 'mongo']
   // },
   // {
   //   "title": "Battleship!",
@@ -166,7 +166,7 @@ const projects = [
   //   "images": ["/images/ukgZLb4.png", "/images/LOHaSfv.png"],
   //   "gitLink": "https://github.com/TimHuitt/battleship",
   //   "deployLink": "https://timhuitt.github.io/battleship/",
-  //   "skills" : ['js', 'html', 'css']
+  //   "skills" : ['js']
   // },
   // {
   //   "title": "Tic Tac Toe",
@@ -186,7 +186,7 @@ const projects = [
   //   "images": ["/images/ehk6k0f.png", "/images/idWiPTd.png"],
   //   "gitLink": "https://codepen.io/timhuitt/pen/NWoGKmo",
   //   "deployLink": "https://codepen.io/timhuitt/full/NWoGKmo",
-  //   "skills" : ['js', 'html', 'css']
+  //   "skills" : ['js']
   // },
 ]
 export default projects
