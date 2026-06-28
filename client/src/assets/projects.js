@@ -26,7 +26,7 @@ const projects = [
     "gitLink": "",
     "deployLink": "",
     "caseStudy": true,
-    "skills": ["next", "react", "ts", "tailwind", "postgres", "node", "express"]
+    "skills": ["next", "react", "ts", "tailwind", "postgresql", "node", "express", "html", "css"]
   },
   {
     "title": "DevLedger",
@@ -49,7 +49,7 @@ const projects = [
     "gitLink": "https://github.com/TimHuitt/devledger",
     "deployLink": "https://devledger-alpha.vercel.app/",
     "caseStudy": false,
-    "skills": ["next", "react", "ts", "tailwind", "postgres", "node", "express"]
+    "skills": ["next", "react", "ts", "tailwind", "postgresql", "node", "express", "html", "css"]
   },
   {
     "title": "CodeChallenger",
@@ -70,7 +70,7 @@ const projects = [
     "images": ["/images/gjRtX8j.png", "/images/TCqkEd1.png", "/images/eBM2M4h.png"],
     "gitLink": "https://github.com/TimHuitt/code-challenger-client",
     "deployLink": "https://code-challenger-app.netlify.app/",
-    "skills" : ['react', 'js', 'express', 'node', 'openai'],
+    "skills" : ['react', 'js', 'express', 'node', 'openai', "html", "css"],
   },
   {
     "title": "Auto Component",
@@ -87,7 +87,7 @@ const projects = [
     "images": ["/images/X23fHN8.png", "/images/Jjd9Eu2.gif", "/images/woDHKJY.png", "w-/images/qDJiLJe.png"],
     "gitLink": "https://github.com/TimHuitt/auto-component",
     "deployLink": "https://auto-component.com/",
-    "skills" : ['react', 'js', 'express', 'node', 'openai']
+    "skills" : ['react', 'js', 'express', 'node', 'openai', "html", "css"]
   },
   {
     "title": "Green Diary",
@@ -104,7 +104,7 @@ const projects = [
     "images": ["/images/xurUff3.png", "/images/YYFRFXu.png"],
     "gitLink": "https://github.com/elliesolhjou/Green-Diary",
     "deployLink": "https://green-diary-app-2098e92803f3.herokuapp.com/",
-    "skills" : ['py', 'django', 'bootstrap', 'postgresql']
+    "skills" : ['py', 'django', 'bootstrap', 'postgresql', "html", "css"]
   },
   // {
   //   "title": "Promptopus",
