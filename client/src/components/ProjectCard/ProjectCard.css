@@ -7,7 +7,7 @@
 .project-card {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   display: grid;
   align-items: bottom;
   width: 100%;
@@ -39,4 +39,10 @@
 }
 .project-card-images img {
   max-height: 50vh;
+}
+.project-content {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 0px 4px 4px 4px
 }

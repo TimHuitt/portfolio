@@ -45,21 +45,21 @@ const projects = [
       ["Invoicing", "Invoice management with status tracking, time entry import by pay period and role, and PDF export."],
       ["Notes & Attachments", "Notes and uploads available for all clients, project, and requirements, with hierarchical notes with folder organization."]
     ],
-    "images": ["/images/K7vQn2X.png", "/images/mP4aR8d.png", "/images/Zx9Lf3H.png", "/images/cT6wJq1.png", "/images/N8bYk5M.png"],
+    "images": ["/images/K7vQn2X.png", "/images/mP4aR8d.png", "/images/N8bYk5M.png", "/images/Zx9Lf3H.png", "/images/cT6wJq1.png"],
     "gitLink": "https://github.com/TimHuitt/devledger",
     "deployLink": "https://devledger-alpha.vercel.app/",
     "caseStudy": false,
     "skills": ["next", "react", "ts", "tailwind", "postgresql", "node", "express", "html", "css"]
   },
   {
-    "title": "CodeChallenger",
+    "title": "Code Challenger",
     "role": "Full Stack Engineer",
     "description": "AI Generated code challenges. Customize challenges and let AI evaluate your solution. Provides challenge details, test cases, hints, and solutions.",
     "header": `
       Coding challenge platform fully controlled by Artificial Intelligence<br/><br/>Unique coding practice environment where you can customize AI created challenges to fit your learning path and receive AI evaluations of your solution.  
     `,
     "body": `
-      CodeChallenger is designed to enhance your programming skills through a variety of customizable AI generated challenges <br/><br/><b>Each challenge provides:</b><br/>Detailed Instructions<br/>Test Cases<br/>Hints<br/>Solutions</p>
+      Code Challenger is designed to enhance your programming skills through a variety of customizable AI generated challenges <br/><br/><b>Each challenge provides:</b><br/>Detailed Instructions<br/>Test Cases<br/>Hints<br/>Solutions</p>
     `,
     "features": [
       ['AI-Generated Challenges', 'Access a vast array of challenges created by AI'],

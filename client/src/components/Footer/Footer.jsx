@@ -24,13 +24,13 @@ const Footer = ({ isDark, setIsDark }) => {
             </span>
           </div>
         </Link>
-        <Link to="https://codepen.io/timhuitt" target="_blank" rel="noopener noreferrer">
+        {/* <Link to="https://codepen.io/timhuitt" target="_blank" rel="noopener noreferrer">
           <div className='footer-link'>
             <span>
               <CodepenSvg />
             </span>
           </div>
-        </Link>
+        </Link> */}
         <Link to="https://www.linkedin.com/in/timhuitt/" target="_blank" rel="noopener noreferrer">
           <div className='footer-link'>
             <span>

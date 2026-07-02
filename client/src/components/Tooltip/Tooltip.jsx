@@ -24,6 +24,7 @@ const Tooltip = ({ children, content }) => {
           padding: '2px 6px',
           borderRadius: '5px',
           backgroundColor: 'rgba(53, 53, 53, 0.95)',
+          color: '#ffffff',
           zIndex: 10 
         }}>
           {content}
