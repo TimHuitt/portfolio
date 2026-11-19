@@ -7,10 +7,10 @@ export const metadata = {
   openGraph: {
     title: 'Healthcare Operations Platform — Case Study',
     description: 'Solo engineering engagement replacing Salesforce for a healthcare-adjacent organization.',
-    url: 'https://timhuitt.com/cases',
+    url: 'https://portfolio.timhuitt.com/cases',
     images: [
       {
-        url: 'https://timhuitt.com/og-cases.png',
+        url: 'https://portfolio.timhuitt.com/og-cases.png',
         width: 1200,
         height: 630,
       }
