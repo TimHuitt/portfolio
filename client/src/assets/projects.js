@@ -52,6 +52,48 @@ const projects = [
     "skills": ["next", "react", "ts", "tailwind", "postgresql", "node", "express", "html", "css"]
   },
   {
+    "title": "Work Orders",
+    "role": "Frontend Engineer",
+    "description": "Work order management demo for a fictional electrical contractor: a status-grouped job board with drag and drop, technician assignment, checklists, permit tracking, and crew activity logs.",
+    "header": "Job tracking for a trade business, from the first call to the finished checklist<br/><br/>A demo built around how a small electrical contractor actually runs. Dispatch sees emergencies, unassigned jobs, and today's schedule at a glance, and every job carries its own checklist, permit status, and crew notes.",
+    "body": "Built with Next.js 16, React 19, TypeScript, and Tailwind CSS. State lives in a small store built on useSyncExternalStore and persisted to sessionStorage, so every visitor gets a fully interactive demo that resets each session.<br/><br/>Seed data is generated relative to today, so schedules, overdue flags, and activity timestamps always look current.",
+    "features": [
+      ["Dispatch Dashboard", "Active jobs, today's schedule, emergencies, and unassigned work at a glance."],
+      ["Status Board", "Jobs grouped by status, with drag and drop to reorder them or move them between stages."],
+      ["Inline Editing", "Priority, job type, technician, and schedule set directly from the list."],
+      ["Job Details", "Checklists with progress, permit tracking, estimated hours, and customer and job site details."],
+      ["Activity Log", "Crew notes plus automatic entries for status, priority, assignment, and schedule changes."],
+      ["Search & Filters", "Filter by technician, priority, and job type, or search jobs, customers, and addresses."],
+      ["Session Demo", "Fully interactive with seeded data; changes persist for the browser session, with a one-click reset."]
+    ],
+    "images": ["/images/work-orders-list.jpg", "/images/work-orders-detail.jpg"],
+    "gitLink": "",
+    "deployLink": "https://work-orders-lovat.vercel.app/",
+    "caseStudy": false,
+    "skills": ["next", "react", "ts", "tailwind", "html", "css"]
+  },
+  {
+    "title": "Patient Intake",
+    "role": "Frontend Engineer",
+    "description": "Front desk check-in and visit queue demo for a fictional family clinic: a four-step intake, symptom-based triage suggestions, live wait timers, and an editable patient panel.",
+    "header": "Patient check-in and visit flow for a busy front desk<br/><br/>Patients move from Waiting to Roomed to Seen, sorted by triage level and arrival time, with a wait timer on every card so staff can see who's next at a glance.",
+    "body": "Built with Next.js 16, React 19, TypeScript, and Tailwind CSS. A small store built on useSyncExternalStore persists to sessionStorage, and a shared 15-second clock keeps every timer in sync without reading the time during server rendering.<br/><br/>All patients, clinicians, and insurers are fictional, and the demo isn't connected to any real health records.",
+    "features": [
+      ["Visit Board", "Waiting, Roomed, and Seen columns with wait timers, sorted by triage level and then arrival."],
+      ["Guided Check-In", "Four steps: patient details, reason for visit, medical history, and review."],
+      ["Triage Suggestions", "Symptoms map to a suggested triage level, modeled loosely on ESI levels 1 to 5."],
+      ["Patient Panel", "A slide-over panel to edit visit type, clinician, triage, and vitals in place."],
+      ["Filters & Search", "Filter by clinician or visit type, or search by name or reason for visit."],
+      ["Mobile Layout", "The three columns become tabs at phone width."],
+      ["Session Demo", "Fully interactive with seeded data; changes persist for the browser session, with a one-click reset."]
+    ],
+    "images": ["/images/intake-board.jpg", "/images/intake-patient.jpg", "/images/intake-checkin.jpg"],
+    "gitLink": "",
+    "deployLink": "https://patient-intake-kappa.vercel.app/",
+    "caseStudy": false,
+    "skills": ["next", "react", "ts", "tailwind", "html", "css"]
+  },
+  {
     "title": "Code Challenger",
     "role": "Full Stack Engineer",
     "description": "AI Generated code challenges. Customize challenges and let AI evaluate your solution. Provides challenge details, test cases, hints, and solutions.",
