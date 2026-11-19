@@ -43,9 +43,10 @@ const projects = [
       ["File Attachments", "File attachments across clients, projects, and scope items with private storage and secure access."],
       ["Authentication & Demo Mode", "Google and GitHub OAuth with live PostgreSQL. Unauthenticated visitors get a full seed-data demo on the same routes and components."],
       ["Invoicing", "Invoice management with status tracking, time entry import by pay period and role, and PDF export."],
-      ["Notes & Attachments", "Notes and uploads available for all clients, project, and requirements, with hierarchical notes with folder organization."]
+      ["Notes & Attachments", "Notes and uploads available for all clients, project, and requirements, with hierarchical notes with folder organization."],
+      ["Light & Dark Themes", "Follows the system color scheme by default, with a manual toggle in the header."]
     ],
-    "images": ["/images/K7vQn2X.png", "/images/mP4aR8d.png", "/images/N8bYk5M.png", "/images/Zx9Lf3H.png", "/images/cT6wJq1.png"],
+    "images": ["/images/K7vQn2X.png", "/images/mP4aR8d.png", "/images/N8bYk5M.png", "/images/Zx9Lf3H.png", "/images/cT6wJq1.png", "/images/devledger-light-dashboard.jpg"],
     "gitLink": "https://github.com/TimHuitt/devledger",
     "deployLink": "https://devledger-alpha.vercel.app/",
     "caseStudy": false,
