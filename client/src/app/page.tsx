@@ -8,7 +8,7 @@ import {
 import { skillLabel } from "@/data/skills";
 import { ExpandableSkills } from "@/components/ExpandableSkills";
 import { ContactForm } from "@/components/ContactForm";
-import { PdfModalButton } from "@/components/PdfModal";
+
 
 function SkillChip({ skill }: { skill: string }) {
   return (
@@ -57,7 +57,7 @@ function WorkCard({ project }: { project: Project }) {
 
           <p className="mb-4 text-sm leading-6 text-muted">{headerLine}</p>
 
-          <ul className="mb-5 grid grid-cols-1 gap-1.5 sm:grid-cols-2">
+          <ul className="mb-5 hidden md:grid grid-cols-1 gap-1.5 md:grid-cols-2">
             {project.features.map(([name]) => (
               <li key={name} className="flex items-center gap-2 text-sm text-text/80">
                 <span className="size-1.5 shrink-0 rounded-full bg-accent/60" />
@@ -104,13 +104,12 @@ function WorkCard({ project }: { project: Project }) {
             </a>
           )}
           {project.caseStudy && (
-            <PdfModalButton
-              url="/Tim-Huitt_Case-Study.pdf"
-              title="Case Study"
+            <Link
+              href="/case-study"
               className="text-xs font-medium text-accent transition-colors hover:underline"
             >
               Case Study →
-            </PdfModalButton>
+            </Link>
           )}
         </div>
       </div>
@@ -179,12 +178,39 @@ function LegacyCard({ project }: { project: Project }) {
   );
 }
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Tim Huitt",
+  jobTitle: "Software Engineer",
+  url: "https://portfolio.timhuitt.com",
+  email: "tim@timhuitt.com",
+  sameAs: [
+    "https://github.com/TimHuitt",
+    "https://www.linkedin.com/in/timhuitt/",
+  ],
+  knowsAbout: [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Node.js",
+    "PostgreSQL",
+    "AWS",
+    "Full-Stack Web Development",
+  ],
+};
+
 export default function HomePage() {
   const mainProjects = getMainProjects();
   const legacyProjects = getLegacyProjects();
 
   return (
-    <div className="mx-auto max-w-5xl px-6">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <div className="mx-auto max-w-5xl px-6">
       {/* ── Hero ─────────────────────────────────────────────── */}
       <section className="pb-20 pt-24">
         <h1 className="text-5xl font-bold tracking-tight text-text sm:text-6xl">
@@ -201,31 +227,6 @@ export default function HomePage() {
           platform, from architecture through deployment.
         </p>
 
-        <div className="mt-8 flex flex-wrap gap-3">
-          <a
-            href="/Tim-Huitt_Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-surface px-4 py-2 text-sm text-text transition-colors hover:border-border-hover hover:bg-surface-hover"
-          >
-            Resume ↗
-          </a>
-          <a
-            href="https://github.com/TimHuitt"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-surface px-4 py-2 text-sm text-text transition-colors hover:border-border-hover hover:bg-surface-hover"
-          >
-            GitHub ↗
-          </a>
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-surface px-4 py-2 text-sm text-text transition-colors hover:border-border-hover hover:bg-surface-hover"
-          >
-            Contact
-          </a>
-        </div>
-
         <div className="mt-8">
           <ExpandableSkills />
         </div>
@@ -237,7 +238,50 @@ export default function HomePage() {
           Selected Work
         </p>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          {mainProjects.map((p) => (
+          {mainProjects.slice(0, 2).map((p) => (
+            <WorkCard key={p.slug} project={p} />
+          ))}
+        </div>
+
+        {/* Freelance practice — horizontal card, full-width */}
+        <a
+          href="https://timhuitt.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group mt-6 flex flex-col overflow-hidden rounded-xl border border-border bg-surface transition-colors hover:border-border-hover sm:flex-row"
+        >
+          <div className="relative h-52 shrink-0 overflow-hidden bg-bg sm:h-auto sm:w-80">
+            <Image
+              src="/images/timhuitt-hero.jpg"
+              alt="timhuitt.com — freelance practice site"
+              fill
+              className="object-cover object-top transition-transform duration-300 group-hover:scale-[1.02]"
+              sizes="(max-width: 640px) 100vw, 320px"
+            />
+          </div>
+          <div className="flex flex-1 flex-col justify-center gap-3 p-6 md:p-8">
+            <div className="flex flex-wrap items-center gap-2">
+              <h3 className="font-semibold text-text">timhuitt.com</h3>
+              <RoleBadge role="Design & Development" />
+            </div>
+            <p className="max-w-lg text-sm leading-6 text-muted">
+              Marketing site for my freelance practice — websites, portals, and
+              internal tools for small businesses in Western Connecticut. Built
+              and designed end-to-end with Next.js, TypeScript, and Tailwind.
+            </p>
+            <div className="flex flex-wrap gap-1.5">
+              {(["next", "ts", "tailwind", "react"] as const).map((s) => (
+                <SkillChip key={s} skill={s} />
+              ))}
+            </div>
+            <span className="text-sm font-medium text-accent group-hover:underline">
+              Visit timhuitt.com ↗
+            </span>
+          </div>
+        </a>
+
+        <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
+          {mainProjects.slice(2).map((p) => (
             <WorkCard key={p.slug} project={p} />
           ))}
         </div>
@@ -248,9 +292,11 @@ export default function HomePage() {
         <p className="mb-6 text-xs uppercase tracking-widest text-muted">
           Earlier Projects
         </p>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="flex gap-4 overflow-x-auto pb-2 lg:grid lg:grid-cols-3 lg:overflow-visible lg:pb-0">
           {legacyProjects.map((p) => (
-            <LegacyCard key={p.slug} project={p} />
+            <div key={p.slug} className="w-72 shrink-0 lg:w-auto">
+              <LegacyCard project={p} />
+            </div>
           ))}
         </div>
       </section>
@@ -297,8 +343,38 @@ export default function HomePage() {
         <p className="mb-8 text-xs uppercase tracking-widest text-muted">
           Contact
         </p>
+        <h2 className="mb-3 text-3xl font-bold text-text">Get in touch</h2>
+        <p className="mb-8 leading-7 text-muted">
+          Open to roles, freelance work, and interesting problems. Fill out the
+          form below or reach out directly.
+        </p>
+        <div className="mb-8 flex flex-wrap gap-3">
+          <a
+            href="mailto:tim@timhuitt.com"
+            className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-surface px-4 py-2 text-sm text-text transition-colors hover:border-border-hover hover:bg-surface-hover"
+          >
+            Email ↗
+          </a>
+          <a
+            href="https://www.linkedin.com/in/timhuitt/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-surface px-4 py-2 text-sm text-text transition-colors hover:border-border-hover hover:bg-surface-hover"
+          >
+            LinkedIn ↗
+          </a>
+          <a
+            href="https://github.com/TimHuitt"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-surface px-4 py-2 text-sm text-text transition-colors hover:border-border-hover hover:bg-surface-hover"
+          >
+            GitHub ↗
+          </a>
+        </div>
         <ContactForm />
       </section>
     </div>
+    </>
   );
 }

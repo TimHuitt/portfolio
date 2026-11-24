@@ -4,7 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { projects, getProject } from "@/data/projects";
 import { skillLabel } from "@/data/skills";
-import { PdfModalButton } from "@/components/PdfModal";
+
 
 export async function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
@@ -71,13 +71,12 @@ export default async function ProjectPage({ params }: Props) {
             </a>
           )}
           {project.caseStudy && (
-            <PdfModalButton
-              url="/Tim-Huitt_Case-Study.pdf"
-              title="Case Study"
+            <Link
+              href="/case-study"
               className="inline-flex items-center gap-1.5 rounded-lg border border-accent/40 bg-accent-soft px-4 py-2 text-sm font-medium text-accent transition-colors hover:border-accent/60"
             >
               View Case Study →
-            </PdfModalButton>
+            </Link>
           )}
         </div>
       )}

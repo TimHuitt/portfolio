@@ -12,15 +12,10 @@ export function Header() {
           Tim Huitt
         </Link>
         <div className="flex items-center gap-5 text-sm">
-          <a
-            href="/Tim-Huitt_Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted transition-colors hover:text-text"
-          >
+          <Link href="/resume" className="text-muted transition-colors hover:text-text">
             Resume
-          </a>
-          <Link href="/contact" className="text-muted transition-colors hover:text-text">
+          </Link>
+          <Link href="/#contact" className="text-muted transition-colors hover:text-text">
             Contact
           </Link>
           <ThemeToggle />

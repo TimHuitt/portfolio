@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { PdfModalRoot } from "@/components/PdfModal";
+
 
 export const metadata: Metadata = {
   title: {
@@ -11,6 +11,19 @@ export const metadata: Metadata = {
   },
   description:
     "Full-stack engineer building production web applications with React, Next.js, TypeScript, Node.js, PostgreSQL, and AWS. Most recently sole engineer on a healthcare operations platform.",
+  authors: [{ name: "Tim Huitt", url: "https://portfolio.timhuitt.com" }],
+  keywords: [
+    "Tim Huitt",
+    "Software Engineer",
+    "Full-Stack Engineer",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Node.js",
+    "PostgreSQL",
+    "AWS",
+    "Web Development",
+  ],
   metadataBase: new URL("https://portfolio.timhuitt.com"),
   openGraph: {
     type: "website",
@@ -43,7 +56,6 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
-        <PdfModalRoot />
       </body>
     </html>
   );
