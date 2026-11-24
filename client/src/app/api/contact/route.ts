@@ -53,8 +53,8 @@ export async function POST(request: Request) {
     return Response.json({ error: "The form isn't set up yet." }, { status: 503 });
   }
 
-  const to = process.env.CONTACT_TO ?? "timhuitt@gmail.com";
-  const from = process.env.CONTACT_FROM ?? "Portfolio contact <contact@timhuitt.com>";
+  const to = process.env.CONTACT_TO || "tim@timhuitt.com";
+  const from = process.env.CONTACT_FROM || "Portfolio contact <contact@timhuitt.com>";
 
   const text = [
     `Name: ${name}`,
