@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0e0f14;
+  --surface: #161720;
+  --surface-hover: #1d1e2a;
+  --border: #22232e;
+  --border-hover: #38394a;
+  --text: #e1e2ea;
+  --muted: #8b8ca8;
+  --accent: #818cf8;
+  --accent-soft: rgba(129, 140, 248, 0.1);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-border: var(--border);
+  --color-border-hover: var(--border-hover);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 3.5rem;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--text);
+}
+
+/* Reset for headings inside dangerouslySetInnerHTML content */
+.prose p { margin-bottom: 1rem; }
+.prose p:last-child { margin-bottom: 0; }

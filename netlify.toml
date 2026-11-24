@@ -1,0 +1,11 @@
+# Next.js portfolio — Netlify builds from client/ and the Next.js plugin handles routing.
+[build]
+  base = "client"
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
