@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { projects, getProject } from "@/data/projects";
 import { skillLabel } from "@/data/skills";
+import { PdfModalButton } from "@/components/PdfModal";
 
 export async function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
@@ -70,12 +71,13 @@ export default async function ProjectPage({ params }: Props) {
             </a>
           )}
           {project.caseStudy && (
-            <Link
-              href="/case-study"
+            <PdfModalButton
+              url="/Tim-Huitt_Case-Study.pdf"
+              title="Case Study"
               className="inline-flex items-center gap-1.5 rounded-lg border border-accent/40 bg-accent-soft px-4 py-2 text-sm font-medium text-accent transition-colors hover:border-accent/60"
             >
               View Case Study →
-            </Link>
+            </PdfModalButton>
           )}
         </div>
       )}
@@ -105,11 +107,6 @@ export default async function ProjectPage({ params }: Props) {
             height={675}
             className="w-full"
           />
-          {project.exampleImages && (
-            <p className="border-t border-border bg-surface px-4 py-2 text-xs text-muted">
-              Example screen — fictional data
-            </p>
-          )}
         </div>
       )}
 
@@ -137,6 +134,13 @@ export default async function ProjectPage({ params }: Props) {
         </div>
       )}
 
+      {/* Example screen note — shown once after features */}
+      {project.exampleImages && (
+        <p className="mb-10 text-xs text-muted/60">
+          * Screenshots use example screen data and do not reflect real patient or case information.
+        </p>
+      )}
+
       {/* Additional images */}
       {project.images.slice(1).map((src, i) => (
         <div key={i} className="mb-6 overflow-hidden rounded-xl border border-border">
@@ -147,11 +151,6 @@ export default async function ProjectPage({ params }: Props) {
             height={675}
             className="w-full"
           />
-          {project.exampleImages && (
-            <p className="border-t border-border bg-surface px-4 py-2 text-xs text-muted">
-              Example screen — fictional data
-            </p>
-          )}
         </div>
       ))}
     </div>

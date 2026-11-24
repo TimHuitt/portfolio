@@ -14,7 +14,7 @@ export const skillMap: Record<string, string> = {
   python: "Python",
   django: "Django",
   bootstrap: "Bootstrap",
-  openai: "OpenAI",
+  openai: "AI",
   vba: "VBA",
   axios: "Axios",
   git: "Git",

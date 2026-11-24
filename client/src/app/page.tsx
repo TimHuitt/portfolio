@@ -6,8 +6,9 @@ import {
   type Project,
 } from "@/data/projects";
 import { skillLabel } from "@/data/skills";
-import { ClickableImage } from "@/components/ClickableImage";
 import { ExpandableSkills } from "@/components/ExpandableSkills";
+import { ContactForm } from "@/components/ContactForm";
+import { PdfModalButton } from "@/components/PdfModal";
 
 function SkillChip({ skill }: { skill: string }) {
   return (
@@ -30,111 +31,57 @@ function WorkCard({ project }: { project: Project }) {
   const isNda = !project.gitLink && !project.deployLink && project.caseStudy;
 
   return (
-    <article className="flex flex-col overflow-hidden rounded-xl border border-border bg-surface transition-colors hover:border-border-hover">
-      <ClickableImage
-        src={project.images[0]}
-        alt={`${project.title} screenshot`}
-        caption={project.exampleImages ? "Example screen — fictional data" : undefined}
-        sizes="(max-width: 768px) 100vw, 50vw"
-      />
-
-      <div className="flex flex-1 flex-col p-5 md:p-6">
-        {isNda && (
-          <span className="mb-3 inline-flex w-fit rounded border border-border px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-muted/60">
-            NDA
-          </span>
-        )}
-
-        <div className="mb-2 flex flex-wrap items-start gap-2">
-          <h3 className="font-semibold text-text">{project.title}</h3>
-          <RoleBadge role={project.role} />
+    <article className="group flex flex-col overflow-hidden rounded-xl border border-border bg-surface transition-colors hover:border-border-hover">
+      {/* Clickable top — image + content */}
+      <Link href={`/projects/${project.slug}`} className="block flex-1">
+        <div className="relative overflow-hidden bg-bg" style={{ aspectRatio: "16/9" }}>
+          <Image
+            src={project.images[0]}
+            alt={`${project.title} screenshot`}
+            fill
+            className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
         </div>
 
-        <p className="mb-4 text-sm leading-6 text-muted">{headerLine}</p>
-
-        <ul className="mb-5 grid grid-cols-1 gap-1.5 sm:grid-cols-2">
-          {project.features.map(([name]) => (
-            <li key={name} className="flex items-center gap-2 text-sm text-text/80">
-              <span className="size-1.5 shrink-0 rounded-full bg-accent/60" />
-              {name}
-            </li>
-          ))}
-        </ul>
-
-        <div className="mb-5 flex flex-wrap gap-1.5">
-          {project.skills.map((s) => (
-            <SkillChip key={s} skill={s} />
-          ))}
-        </div>
-
-        <div className="mt-auto flex items-center justify-between border-t border-border pt-4">
-          <Link
-            href={`/projects/${project.slug}`}
-            className="text-xs text-muted transition-colors hover:text-accent"
-          >
-            Details →
-          </Link>
-          <div className="flex gap-4">
-            {project.gitLink && (
-              <a
-                href={project.gitLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs text-muted transition-colors hover:text-accent"
-              >
-                GitHub ↗
-              </a>
-            )}
-            {project.deployLink && (
-              <a
-                href={project.deployLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs text-muted transition-colors hover:text-accent"
-              >
-                Demo ↗
-              </a>
-            )}
-            {project.caseStudy && (
-              <Link
-                href="/case-study"
-                className="text-xs font-medium text-accent transition-colors hover:underline"
-              >
-                Case Study →
-              </Link>
+        <div className="p-5 pb-4 md:p-6 md:pb-5">
+          <div className="mb-2 flex flex-wrap items-start gap-2">
+            <h3 className="font-semibold text-text">{project.title}</h3>
+            <RoleBadge role={project.role} />
+            {isNda && (
+              <span className="rounded border border-border px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-muted/60">
+                NDA
+              </span>
             )}
           </div>
-        </div>
-      </div>
-    </article>
-  );
-}
 
-function LegacyCard({ project }: { project: Project }) {
-  return (
-    <article className="flex flex-col overflow-hidden rounded-xl border border-border/60 bg-surface/60 transition-colors hover:border-border">
-      {project.images[0] && (
-        <ClickableImage
-          src={project.images[0]}
-          alt={`${project.title} screenshot`}
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-        />
-      )}
-      <div className="flex flex-1 flex-col p-4">
-        <div className="mb-1 flex flex-wrap items-start gap-2">
-          <h3 className="text-sm font-semibold text-text/90">{project.title}</h3>
+          <p className="mb-4 text-sm leading-6 text-muted">{headerLine}</p>
+
+          <ul className="mb-5 grid grid-cols-1 gap-1.5 sm:grid-cols-2">
+            {project.features.map(([name]) => (
+              <li key={name} className="flex items-center gap-2 text-sm text-text/80">
+                <span className="size-1.5 shrink-0 rounded-full bg-accent/60" />
+                {name}
+              </li>
+            ))}
+          </ul>
+
+          <div className="flex flex-wrap gap-1.5">
+            {project.skills.map((s) => (
+              <SkillChip key={s} skill={s} />
+            ))}
+          </div>
         </div>
-        <p className="mb-3 grow text-xs leading-5 text-muted">{project.description}</p>
-        <div className="mb-3 flex flex-wrap gap-1">
-          {project.skills.map((s) => (
-            <span
-              key={s}
-              className="rounded border border-border/50 px-2 py-0.5 font-mono text-[10px] text-muted/70"
-            >
-              {skillLabel(s)}
-            </span>
-          ))}
-        </div>
+      </Link>
+
+      {/* Footer — independent links, outside the main Link */}
+      <div className="flex items-center justify-between border-t border-border px-5 py-4 md:px-6">
+        <Link
+          href={`/projects/${project.slug}`}
+          className="text-xs text-muted transition-colors hover:text-accent"
+        >
+          Details →
+        </Link>
         <div className="flex gap-4">
           {project.gitLink && (
             <a
@@ -156,8 +103,78 @@ function LegacyCard({ project }: { project: Project }) {
               Demo ↗
             </a>
           )}
+          {project.caseStudy && (
+            <PdfModalButton
+              url="/Tim-Huitt_Case-Study.pdf"
+              title="Case Study"
+              className="text-xs font-medium text-accent transition-colors hover:underline"
+            >
+              Case Study →
+            </PdfModalButton>
+          )}
         </div>
       </div>
+    </article>
+  );
+}
+
+function LegacyCard({ project }: { project: Project }) {
+  return (
+    <article className="group flex flex-col overflow-hidden rounded-xl border border-border/60 bg-surface/60 transition-colors hover:border-border">
+      {/* Clickable top — image + content */}
+      <Link href={`/projects/${project.slug}`} className="block flex-1">
+        {project.images[0] && (
+          <div className="relative overflow-hidden bg-bg" style={{ aspectRatio: "16/9" }}>
+            <Image
+              src={project.images[0]}
+              alt={`${project.title} screenshot`}
+              fill
+              className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            />
+          </div>
+        )}
+        <div className="p-4 pb-3">
+          <h3 className="mb-1 text-sm font-semibold text-text/90">{project.title}</h3>
+          <p className="mb-3 text-xs leading-5 text-muted">{project.description}</p>
+          <div className="flex flex-wrap gap-1">
+            {project.skills.map((s) => (
+              <span
+                key={s}
+                className="rounded border border-border/50 px-2 py-0.5 font-mono text-[10px] text-muted/70"
+              >
+                {skillLabel(s)}
+              </span>
+            ))}
+          </div>
+        </div>
+      </Link>
+
+      {/* Footer — independent links */}
+      {(project.gitLink || project.deployLink) && (
+        <div className="flex gap-4 border-t border-border/60 px-4 py-3">
+          {project.gitLink && (
+            <a
+              href={project.gitLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-muted transition-colors hover:text-accent"
+            >
+              GitHub ↗
+            </a>
+          )}
+          {project.deployLink && (
+            <a
+              href={project.deployLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-muted transition-colors hover:text-accent"
+            >
+              Demo ↗
+            </a>
+          )}
+        </div>
+      )}
     </article>
   );
 }
@@ -170,18 +187,21 @@ export default function HomePage() {
     <div className="mx-auto max-w-5xl px-6">
       {/* ── Hero ─────────────────────────────────────────────── */}
       <section className="pb-20 pt-24">
-        <h1 className="mb-2 text-5xl font-bold tracking-tight text-text sm:text-6xl">
+        <h1 className="text-5xl font-bold tracking-tight text-text sm:text-6xl">
           Tim Huitt
         </h1>
-        <p className="mb-6 text-xl text-muted">Software Engineer</p>
-        <p className="mb-8 max-w-2xl leading-7 text-text/70">
+        <p className="mt-2 pl-0.5 text-xs font-semibold uppercase tracking-[0.22em] text-accent/80">
+          Software Engineer
+        </p>
+
+        <p className="mt-10 max-w-xl leading-7 text-text/70">
           Full-stack engineer building production web applications with React,
           Next.js, TypeScript, Node.js, PostgreSQL, and AWS. Most recently the
           sole engineer behind a healthcare services company&apos;s operations
           platform, from architecture through deployment.
         </p>
 
-        <div className="mb-8 flex flex-wrap gap-3">
+        <div className="mt-8 flex flex-wrap gap-3">
           <a
             href="/Tim-Huitt_Resume.pdf"
             target="_blank"
@@ -199,14 +219,16 @@ export default function HomePage() {
             GitHub ↗
           </a>
           <a
-            href="mailto:timhuitt@gmail.com"
+            href="#contact"
             className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-surface px-4 py-2 text-sm text-text transition-colors hover:border-border-hover hover:bg-surface-hover"
           >
-            timhuitt@gmail.com
+            Contact
           </a>
         </div>
 
-        <ExpandableSkills />
+        <div className="mt-8">
+          <ExpandableSkills />
+        </div>
       </section>
 
       {/* ── Selected Work ──────────────────────────────────────── */}
@@ -268,6 +290,14 @@ export default function HomePage() {
             </p>
           </div>
         </div>
+      </section>
+
+      {/* ── Contact ────────────────────────────────────────────── */}
+      <section id="contact" className="pb-24">
+        <p className="mb-8 text-xs uppercase tracking-widest text-muted">
+          Contact
+        </p>
+        <ContactForm />
       </section>
     </div>
   );

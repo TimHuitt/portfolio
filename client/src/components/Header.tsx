@@ -12,12 +12,14 @@ export function Header() {
           Tim Huitt
         </Link>
         <div className="flex items-center gap-5 text-sm">
-          <Link href="/resume" className="text-muted transition-colors hover:text-text">
+          <a
+            href="/Tim-Huitt_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted transition-colors hover:text-text"
+          >
             Resume
-          </Link>
-          <Link href="/case-study" className="text-muted transition-colors hover:text-text">
-            Case Study
-          </Link>
+          </a>
           <Link href="/contact" className="text-muted transition-colors hover:text-text">
             Contact
           </Link>
