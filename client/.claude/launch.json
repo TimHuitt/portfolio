@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "portfolio-dev",
+      "runtimeExecutable": "wsl.exe",
+      "runtimeArgs": ["-d", "Ubuntu", "bash", "-c", "cd /home/tim/projects/portfolio/client && npm run dev -- --port 3010 --turbopack"],
+      "port": 3010
+    }
+  ]
+}

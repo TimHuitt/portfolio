@@ -6,8 +6,8 @@ import {
   type Project,
 } from "@/data/projects";
 import { skillLabel } from "@/data/skills";
-
-const HERO_SKILLS = ["ts", "next", "node", "postgresql", "tailwind"];
+import { ClickableImage } from "@/components/ClickableImage";
+import { ExpandableSkills } from "@/components/ExpandableSkills";
 
 function SkillChip({ skill }: { skill: string }) {
   return (
@@ -25,144 +25,85 @@ function RoleBadge({ role }: { role: string }) {
   );
 }
 
-function ProjectLinks({ project }: { project: Project }) {
+function WorkCard({ project }: { project: Project }) {
+  const headerLine = project.header.split("\n\n")[0];
+  const isNda = !project.gitLink && !project.deployLink && project.caseStudy;
+
   return (
-    <div className="flex gap-4">
-      {project.gitLink && (
-        <a
-          href={project.gitLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-xs text-muted transition-colors hover:text-accent"
-        >
-          GitHub ↗
-        </a>
-      )}
-      {project.deployLink && (
-        <a
-          href={project.deployLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-xs text-muted transition-colors hover:text-accent"
-        >
-          Live ↗
-        </a>
-      )}
-    </div>
-  );
-}
+    <article className="flex flex-col overflow-hidden rounded-xl border border-border bg-surface transition-colors hover:border-border-hover">
+      <ClickableImage
+        src={project.images[0]}
+        alt={`${project.title} screenshot`}
+        caption={project.exampleImages ? "Example screen — fictional data" : undefined}
+        sizes="(max-width: 768px) 100vw, 50vw"
+      />
 
-function FeaturedProject({ project }: { project: Project }) {
-  return (
-    <article className="rounded-xl border border-border bg-surface p-6 md:p-8">
-      {/* 2×2 example screenshot grid */}
-      <div className="mb-2 grid grid-cols-2 gap-2">
-        {project.images.map((src, i) => (
-          <div
-            key={i}
-            className="relative overflow-hidden rounded-lg bg-bg"
-            style={{ aspectRatio: "16/9" }}
-          >
-            <Image
-              src={src}
-              alt={`Example screen ${i + 1}`}
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 50vw, 400px"
-            />
-          </div>
-        ))}
-      </div>
-      <p className="mb-6 text-xs text-muted">
-        Example screens — fictional data
-      </p>
-
-      {/* Title + role */}
-      <div className="mb-3 flex flex-wrap items-start gap-3">
-        <h3 className="text-xl font-semibold text-text">{project.title}</h3>
-        <RoleBadge role={project.role} />
-      </div>
-
-      {/* Header text */}
-      <p className="mb-6 leading-7 text-muted">{project.header}</p>
-
-      {/* Key features (first 4) */}
-      <ul className="mb-6 grid grid-cols-1 gap-2 sm:grid-cols-2">
-        {project.features.slice(0, 4).map(([name]) => (
-          <li key={name} className="flex items-center gap-2 text-sm text-text/80">
-            <span className="size-1.5 shrink-0 rounded-full bg-accent/60" />
-            {name}
-          </li>
-        ))}
-      </ul>
-
-      {/* Skills */}
-      <div className="mb-6 flex flex-wrap gap-2">
-        {project.skills.map((s) => (
-          <SkillChip key={s} skill={s} />
-        ))}
-      </div>
-
-      {/* Links */}
-      <div className="flex items-center justify-between">
-        <ProjectLinks project={project} />
-        {project.caseStudy && (
-          <Link
-            href="/case-study"
-            className="text-sm font-medium text-accent transition-colors hover:underline"
-          >
-            View Case Study →
-          </Link>
+      <div className="flex flex-1 flex-col p-5 md:p-6">
+        {isNda && (
+          <span className="mb-3 inline-flex w-fit rounded border border-border px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-muted/60">
+            NDA
+          </span>
         )}
-      </div>
-    </article>
-  );
-}
 
-function ProjectCard({ project }: { project: Project }) {
-  return (
-    <article className="group flex flex-col overflow-hidden rounded-xl border border-border bg-surface transition-colors hover:border-border-hover">
-      {/* Screenshot */}
-      {project.images[0] && (
-        <div className="relative overflow-hidden bg-bg" style={{ aspectRatio: "16/9" }}>
-          <Image
-            src={project.images[0]}
-            alt={`${project.title} screenshot`}
-            fill
-            className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          />
-        </div>
-      )}
-
-      <div className="flex flex-1 flex-col p-5">
-        {/* Title + role */}
         <div className="mb-2 flex flex-wrap items-start gap-2">
           <h3 className="font-semibold text-text">{project.title}</h3>
           <RoleBadge role={project.role} />
         </div>
 
-        {/* Description */}
-        <p className="mb-4 grow text-sm leading-6 text-muted">
-          {project.description}
-        </p>
+        <p className="mb-4 text-sm leading-6 text-muted">{headerLine}</p>
 
-        {/* Skills */}
-        <div className="mb-4 flex flex-wrap gap-1.5">
+        <ul className="mb-5 grid grid-cols-1 gap-1.5 sm:grid-cols-2">
+          {project.features.map(([name]) => (
+            <li key={name} className="flex items-center gap-2 text-sm text-text/80">
+              <span className="size-1.5 shrink-0 rounded-full bg-accent/60" />
+              {name}
+            </li>
+          ))}
+        </ul>
+
+        <div className="mb-5 flex flex-wrap gap-1.5">
           {project.skills.map((s) => (
             <SkillChip key={s} skill={s} />
           ))}
         </div>
 
-        {/* Links row */}
-        <div className="flex items-center justify-between border-t border-border pt-4">
+        <div className="mt-auto flex items-center justify-between border-t border-border pt-4">
           <Link
             href={`/projects/${project.slug}`}
             className="text-xs text-muted transition-colors hover:text-accent"
           >
             Details →
           </Link>
-          <ProjectLinks project={project} />
+          <div className="flex gap-4">
+            {project.gitLink && (
+              <a
+                href={project.gitLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-muted transition-colors hover:text-accent"
+              >
+                GitHub ↗
+              </a>
+            )}
+            {project.deployLink && (
+              <a
+                href={project.deployLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-muted transition-colors hover:text-accent"
+              >
+                Demo ↗
+              </a>
+            )}
+            {project.caseStudy && (
+              <Link
+                href="/case-study"
+                className="text-xs font-medium text-accent transition-colors hover:underline"
+              >
+                Case Study →
+              </Link>
+            )}
+          </div>
         </div>
       </div>
     </article>
@@ -173,15 +114,11 @@ function LegacyCard({ project }: { project: Project }) {
   return (
     <article className="flex flex-col overflow-hidden rounded-xl border border-border/60 bg-surface/60 transition-colors hover:border-border">
       {project.images[0] && (
-        <div className="relative overflow-hidden bg-bg" style={{ aspectRatio: "16/9" }}>
-          <Image
-            src={project.images[0]}
-            alt={`${project.title} screenshot`}
-            fill
-            className="object-cover opacity-80"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          />
-        </div>
+        <ClickableImage
+          src={project.images[0]}
+          alt={`${project.title} screenshot`}
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        />
       )}
       <div className="flex flex-1 flex-col p-4">
         <div className="mb-1 flex flex-wrap items-start gap-2">
@@ -198,7 +135,28 @@ function LegacyCard({ project }: { project: Project }) {
             </span>
           ))}
         </div>
-        <ProjectLinks project={project} />
+        <div className="flex gap-4">
+          {project.gitLink && (
+            <a
+              href={project.gitLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-muted transition-colors hover:text-accent"
+            >
+              GitHub ↗
+            </a>
+          )}
+          {project.deployLink && (
+            <a
+              href={project.deployLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-muted transition-colors hover:text-accent"
+            >
+              Demo ↗
+            </a>
+          )}
+        </div>
       </div>
     </article>
   );
@@ -207,7 +165,6 @@ function LegacyCard({ project }: { project: Project }) {
 export default function HomePage() {
   const mainProjects = getMainProjects();
   const legacyProjects = getLegacyProjects();
-  const [featured, ...rest] = mainProjects;
 
   return (
     <div className="mx-auto max-w-5xl px-6">
@@ -218,19 +175,20 @@ export default function HomePage() {
         </h1>
         <p className="mb-6 text-xl text-muted">Software Engineer</p>
         <p className="mb-8 max-w-2xl leading-7 text-text/70">
-          I help businesses replace the processes they&apos;ve outgrown with
-          software built around how they actually operate. From initial planning
-          through deployment, I own the full stack and everything in between.
+          Full-stack engineer building production web applications with React,
+          Next.js, TypeScript, Node.js, PostgreSQL, and AWS. Most recently the
+          sole engineer behind a healthcare services company&apos;s operations
+          platform, from architecture through deployment.
         </p>
 
-        {/* CTAs */}
         <div className="mb-8 flex flex-wrap gap-3">
           <a
             href="/Tim-Huitt_Resume.pdf"
-            download
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-surface px-4 py-2 text-sm text-text transition-colors hover:border-border-hover hover:bg-surface-hover"
           >
-            Resume ↓
+            Resume ↗
           </a>
           <a
             href="https://github.com/TimHuitt"
@@ -248,12 +206,7 @@ export default function HomePage() {
           </a>
         </div>
 
-        {/* Stack chips */}
-        <div className="flex flex-wrap gap-2">
-          {HERO_SKILLS.map((s) => (
-            <SkillChip key={s} skill={s} />
-          ))}
-        </div>
+        <ExpandableSkills />
       </section>
 
       {/* ── Selected Work ──────────────────────────────────────── */}
@@ -261,14 +214,9 @@ export default function HomePage() {
         <p className="mb-6 text-xs uppercase tracking-widest text-muted">
           Selected Work
         </p>
-
-        {/* Featured project */}
-        {featured && <FeaturedProject project={featured} />}
-
-        {/* Main project grid */}
-        <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {rest.map((p) => (
-            <ProjectCard key={p.slug} project={p} />
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+          {mainProjects.map((p) => (
+            <WorkCard key={p.slug} project={p} />
           ))}
         </div>
       </section>
@@ -300,31 +248,23 @@ export default function HomePage() {
               className="rounded-full"
             />
           </div>
-          <div className="max-w-2xl space-y-5 text-text/75 leading-7">
+          <div className="max-w-2xl space-y-5 leading-7 text-text/75">
             <p>
-              I help businesses replace the processes they&apos;ve outgrown with
-              software built around how they actually operate. From initial
-              planning through deployment, I own the full stack and everything
-              in between.
+              Most recently, I was the sole engineer on a production platform
+              for a healthcare services company, owning everything from database
+              design and AWS infrastructure to the user-facing workflows. Over
+              18 months I inherited and substantially expanded a complex data
+              model (70+ tables), built separate portals for internal staff and
+              several hundred outside attorneys on a shared backend, and
+              migrated 500,000+ records and 80,000+ documents off Salesforce,
+              all under HIPAA-conscious security requirements.
             </p>
             <p>
-              I most recently served as the sole engineer on a production
-              platform, responsible for full stack design and operation from
-              backend infrastructure through user-facing workflows. The
-              engagement included inheriting and significantly expanding a
-              complex data model as requirements evolved.
-            </p>
-            <p>
-              My technical background is accompanied by decades in
-              client-facing and operational roles across management, financial
-              services, and data analytics. That experience shapes how I read
-              problems and how I build toward solutions, across frontend,
-              backend, databases, and cloud infrastructure.
-            </p>
-            <p className="text-muted">
-              Most of my professional work is confidential, but I&apos;m always
-              happy to discuss the work itself, the decisions made, and the
-              problems it solved.
+              Before engineering, I spent years in client-facing and operational
+              roles across management, financial services, and data analytics.
+              That background shapes how I work: I start with how the business
+              actually runs, ask questions before writing code, and build
+              software that holds up once real users depend on it.
             </p>
           </div>
         </div>

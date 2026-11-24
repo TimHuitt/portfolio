@@ -12,6 +12,33 @@
   --accent-soft: rgba(129, 140, 248, 0.1);
 }
 
+/* Light mode — activated by system preference or explicit [data-theme="light"] */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #f7f8fc;
+    --surface: #ffffff;
+    --surface-hover: #eef0f8;
+    --border: #dfe1ee;
+    --border-hover: #c4c7db;
+    --text: #1a1b26;
+    --muted: #626488;
+    --accent: #4f46e5;
+    --accent-soft: rgba(79, 70, 229, 0.08);
+  }
+}
+
+:root[data-theme="light"] {
+  --bg: #f7f8fc;
+  --surface: #ffffff;
+  --surface-hover: #eef0f8;
+  --border: #dfe1ee;
+  --border-hover: #c4c7db;
+  --text: #1a1b26;
+  --muted: #626488;
+  --accent: #4f46e5;
+  --accent-soft: rgba(79, 70, 229, 0.08);
+}
+
 @theme inline {
   --color-bg: var(--bg);
   --color-surface: var(--surface);

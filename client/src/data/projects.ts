@@ -18,7 +18,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     slug: "production-platform",
-    title: "Production Platform (NDA)",
+    title: "Healthcare Staff & External Portal",
     role: "Senior Full Stack Engineer",
     description:
       "Sole engineer responsible for designing, building, and operating a production platform used by internal and external users.",

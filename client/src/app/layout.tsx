@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: "%s | Tim Huitt",
   },
   description:
-    "Full stack engineer specializing in Next.js, TypeScript, Node.js, and PostgreSQL. Formerly sole engineer on a production healthcare operations platform.",
+    "Full-stack engineer building production web applications with React, Next.js, TypeScript, Node.js, PostgreSQL, and AWS. Most recently sole engineer on a healthcare operations platform.",
   metadataBase: new URL("https://portfolio.timhuitt.com"),
   openGraph: {
     type: "website",
@@ -25,6 +25,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Runs before paint: apply stored theme to avoid flash */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}`,
+          }}
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
